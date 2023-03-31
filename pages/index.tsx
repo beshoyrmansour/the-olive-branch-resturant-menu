@@ -9,7 +9,6 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ data }: { data: MenuItem[] }) {
   const grouped = groupArrayByCategory(data);
-  console.log({ grouped });
   return (
     <>
       <Head>
@@ -56,7 +55,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
 }
 
 // This gets called on every request
-export async function getServerSideProps() {
+export async function getStaticProps() {
   // Fetch data from external API
   const res = await fetch(`${checkEnvironment()}/data.json`, {
     headers: {
