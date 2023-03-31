@@ -2,10 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import { checkEnvironment, groupArrayByCategory } from './helpers'
+import { Categories, MenuCategory, MenuItem } from '@/models/menu'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({ data }: { data: MenuItem[] }) {
+  const grouped = groupArrayByCategory(data);
+  console.log({ grouped });
   return (
     <>
       <Head>
@@ -14,110 +18,54 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+      <main className={styles.container}>
+
+        {grouped.map((cat: MenuCategory) => (<div className={styles.menu}>
+          <h2 className={styles.menu_group_heading}>
+            {Categories[cat.category]}
+          </h2>
+          <div className={styles.menu_group}>
+
+            {cat.items.map((item: MenuItem) => (
+              <div className={styles.menu_item}>
+                <Image className={styles.menu_item_image} src={`/Produkty/${item.img}`}
+                  alt="Vercel Logo"
+                  width={1000}
+                  height={1000}
+                  priority />
+                <div className={styles.menu_item_text}>
+                  <h2 className={styles.menu_item_heading}>
+                    <div className={styles.menu_item_heading_name}>
+                      <span className={styles.menu_item_name}>{item.cz_name}</span>
+                      <span className={styles.menu_item_name_sub}>{item.en_name}</span>
+                    </div>
+                    <span className={styles.menu_item_price}>
+                      <span className={styles.menu_item_price_amount}>{item.price}</span>
+                      <span className={styles.menu_item_price_currency}>CZK</span>
+                    </span>
+                  </h2>
+                  <p className={styles.menu_item_description}>{item.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+        </div>))}
       </main>
     </>
   )
+}
+
+// This gets called on every request
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`${checkEnvironment()}/data.json`, {
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    }
+  })
+  const data = await res.json()
+
+  // Pass data to the page via props
+  return { props: { data } }
 }
