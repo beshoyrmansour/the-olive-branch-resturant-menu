@@ -30,9 +30,9 @@
     "img": "Foul mdmas.jpg"
   },
   {
-    "id": "003",
-    "number": "003",
-    "category": "3",
+    "id": "004",
+    "number": "004",
+    "category": "2",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
     "price": "69",
     "cz_name": "Humus falafel",
@@ -40,13 +40,53 @@
     "img": "Humus falafel.jpg"
   },
   {
-    "id": "004",
-    "number": "004",
-    "category": "1",
+    "id": "005",
+    "number": "005",
+    "category": "3",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
     "price": "500",
+    "cz_name": "Humus s hovezim",
+    "en_name": "Humus s hovezim",
+    "img": "Humus s hovezim.jpg"
+  },
+  {
+    "id": "006",
+    "number": "006",
+    "category": "3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+    "price": "4 00",
     "cz_name": "Humus musabaha",
     "en_name": "Humus musabaha",
     "img": "Humus musabaha.jpg"
+  },
+  {
+    "id": "007",
+    "number": "007",
+    "category": "4",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+    "price": "300",
+    "cz_name": "Humus s kurecim",
+    "en_name": "Humus s kurecim",
+    "img": "Humus s kurecim.jpg"
+  },
+  {
+    "id": "008",
+    "number": "008",
+    "category": "4",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+    "price": "500",
+    "cz_name": "Sistau",
+    "en_name": "Sistau",
+    "img": "Sistau.jpg"
+  },
+  {
+    "id": "009",
+    "number": "009",
+    "category": "3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+    "price": "500",
+    "cz_name": "Musakhan",
+    "en_name": "Musakhan",
+    "img": "Musakhan.jpg"
   }
 ]
