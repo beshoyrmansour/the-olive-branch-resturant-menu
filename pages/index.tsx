@@ -18,7 +18,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.container}>
-
+        <header><Image className={styles.logo} src={`/logo.svg`} width='1000' height='130' alt='Plastinian Resturant logo' /></header>
         {grouped.map((cat: MenuCategory) => (<div className={styles.menu} key={`menu_category_${cat}`}>
           <h2 className={styles.menu_group_heading}>
             {Categories[cat.category]}
@@ -27,11 +27,16 @@ export default function Home({ data }: { data: MenuItem[] }) {
 
             {cat.items.map((item: MenuItem) => (
               <div className={styles.menu_item} key={`menu_item_${item.id}`}>
-                <Image className={styles.menu_item_image} src={`/Produkty/${item.img}`}
-                  alt="Vercel Logo"
-                  width={1000}
-                  height={1000}
-                  priority />
+                <div className={styles.top_section}>
+
+                  <Image className={styles.menu_item_image} src={`/Produkty/${item.img}`}
+                    alt="Vercel Logo"
+                    width={1000}
+                    height={1000}
+                    priority />
+                  {item.isVegan && <span className={styles.vegan}>Veganské</span>}
+                </div>
+                <h3 className={styles.order_nummber}>#{item.number}</h3>
                 <div className={styles.menu_item_text}>
                   <h2 className={styles.menu_item_heading}>
                     <div className={styles.menu_item_heading_name}>
@@ -43,7 +48,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       <span className={styles.menu_item_price_currency}>CZK</span>
                     </span>
                   </h2>
-                  <p className={styles.menu_item_description}>{item.description}</p>
+                  {/* <p className={styles.menu_item_description}>{item.description}</p> */}
                 </div>
               </div>
             ))}
