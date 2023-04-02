@@ -1,7 +1,7 @@
 [
   {
     "id": "001",
-    "number": "001",
+    "number": "01",
     "category": "1",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
     "price": "100",
@@ -12,7 +12,7 @@
   },
   {
     "id": "002",
-    "number": "002",
+    "number": "02",
     "category": "1",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
     "price": "1000",
@@ -23,7 +23,7 @@
   },
   {
     "id": "003",
-    "number": "003",
+    "number": "03",
     "category": "2",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
     "price": "65",
@@ -34,7 +34,7 @@
   },
   {
     "id": "004",
-    "number": "004",
+    "number": "04",
     "category": "2",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
     "price": "69",
@@ -45,7 +45,7 @@
   },
   {
     "id": "005",
-    "number": "005",
+    "number": "05",
     "category": "1",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
     "price": "500",
@@ -56,7 +56,7 @@
   },
   {
     "id": "006",
-    "number": "006",
+    "number": "06",
     "category": "1",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
     "price": "400",
@@ -67,7 +67,7 @@
   },
   {
     "id": "007",
-    "number": "007",
+    "number": "07",
     "category": "4",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
     "price": "300",
@@ -78,7 +78,7 @@
   },
   {
     "id": "008",
-    "number": "008",
+    "number": "08",
     "category": "4",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
     "price": "500",
@@ -89,7 +89,7 @@
   },
   {
     "id": "009",
-    "number": "009",
+    "number": "09",
     "category": "1",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
     "price": "500",

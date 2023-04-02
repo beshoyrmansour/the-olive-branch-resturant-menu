@@ -16,15 +16,19 @@ export default function Home({ data }: { data: MenuItem[] }) {
         <meta name="description" content="Plastinian resturant menu" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Fondamento" />
       </Head>
       <main className={styles.container}>
-        <header><Image className={styles.logo} src={`/logo.svg`} width='1000' height='130' alt='Plastinian Resturant logo' /></header>
+        <header>
+          <Image className={styles.logo} src={`/logo.svg`} width='1000' height='130' alt='Plastinian Resturant logo' />
+          <Image className={styles.hero} src={`/hero.jpg`} width='100' height='330' alt='Plastinian Resturant logo' />
+        </header>
         {grouped.map((cat: MenuCategory) => (<div className={styles.menu} key={`menu_category_${cat}`}>
           <h2 className={styles.menu_group_heading}>
             {Categories[cat.category]}
           </h2>
           <div className={styles.menu_group}>
-
             {cat.items.map((item: MenuItem) => (
               <div className={styles.menu_item} key={`menu_item_${item.id}`}>
                 <div className={styles.top_section}>
