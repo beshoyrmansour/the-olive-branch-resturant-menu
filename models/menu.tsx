@@ -14,6 +14,7 @@ export type MenuItem = {
   cz_name: string;
   en_name: string;
   img: string;
+  isVegan: boolean;
 }
 
 export type MenuCategory = {

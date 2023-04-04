@@ -1,123 +1,128 @@
-[
-  {
-    "id": "001",
-    "number": "001",
-    "category": "3",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
-    "price": "100",
-    "cz_name": "Mazah",
-    "en_name": "Mazah",
-    "img": "Nazah.jpg"
-  },
-  {
-    "id": "002",
-    "number": "002",
-    "category": "0",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
-    "price": "1000",
-    "cz_name": "Vařený burgul",
-    "en_name": "Bulgul",
-    "img": "Bulgur.jpg"
-  },
-  {
-    "id": "003",
-    "number": "003",
-    "category": "1",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
-    "price": "65",
-    "cz_name": "Foul mdamas menu",
-    "en_name": "Foul mdmas meal",
-    "img": "Foul mdmas.jpg"
-  },
-  {
-    "id": "004",
-    "number": "004",
-    "category": "1",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
-    "price": "69",
-    "cz_name": "Hummus falafel menu",
-    "en_name": "Humus falafel meal",
-    "img": "Humus falafel.jpg"
-  },
-  {
-    "id": "005",
-    "number": "005",
-    "category": "1",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
-    "price": "500",
-    "cz_name": "Hummus s hovězím masem",
-    "en_name": "Humus With Beef",
-    "img": "Humus s hovezim.jpg"
-  },
-  {
-    "id": "006",
-    "number": "006",
-    "category": "1",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
-    "price": "4 00",
-    "cz_name": "Hummus musabaha menu",
-    "en_name": "Humus musabaha meal",
-    "img": "Humus musabaha.jpg"
-  },
-  {
-    "id": "007",
-    "number": "007",
-    "category": "1",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
-    "price": "300",
-    "cz_name": "Hummus s kuřecí šawarmou",
-    "en_name": "Humus with Chicken Shawerma",
-    "img": "Humus s kurecim.jpg"
-  },
-  {
-    "id": "008",
-    "number": "008",
-    "category": "2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
-    "price": "500",
-    "cz_name": "Šištau",
-    "en_name": "Shishtawo",
-    "img": "Sistau.jpg"
-  },
-  {
-    "id": "009",
-    "number": "009",
-    "category": "1",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
-    "price": "500",
-    "cz_name": "Musachan",
-    "en_name": "Muskhan",
-    "img": "Musakhan.jpg"
-  },
-  {
-    "id": "010",
-    "number": "010",
-    "category": "1",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
-    "price": "500",
-    "cz_name": "Musachan lafa",
-    "en_name": "Muskhan wrap",
-    "img": "Musakhan lafa.jpg"
-  },
-  {
-    "id": "011",
-    "number": "011",
-    "category": "2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
-    "price": "500",
-    "cz_name": "Grilované hovězí špízy menu",
-    "en_name": "Grilled beef skewers meal",
-    "img": "Jehneci spiz.jpg"
-  }
-  ,
-  {
-    "id": "012",
-    "number": "012",
-    "category": "2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
-    "price": "500",
-    "cz_name": "Grilovaná kuřecí prsa menu",
-    "en_name": "Grilled chicken breast menu",
-    "img": "kureci steak"
-  }
+[{
+  "id": "001",
+  "number": "001",
+  "category": "3",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+  "price": "100",
+  "cz_name": "Mazah",
+  "en_name": "Mazah",
+  "img": "Nazah.jpg",
+  "isVegan": true
+},
+{
+  "id": "002",
+  "number": "002",
+  "category": "0",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+  "price": "1000",
+  "cz_name": "Vařený burgul",
+  "en_name": "Bulgul",
+  "img": "Bulgur.jpg",
+  "isVegan": true
+},
+{
+  "id": "003",
+  "number": "003",
+  "category": "1",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+  "price": "65",
+  "cz_name": "Foul mdamas menu",
+  "en_name": "Foul mdmas meal",
+  "img": "Foul mdmas.jpg",
+  "isVegan": true
+},
+{
+  "id": "004",
+  "number": "004",
+  "category": "1",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+  "price": "69",
+  "cz_name": "Hummus falafel menu",
+  "en_name": "Humus falafel meal",
+  "img": "Humus falafel.jpg"
+},
+{
+  "id": "005",
+  "number": "005",
+  "category": "1",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+  "price": "500",
+  "cz_name": "Hummus s hovězím masem",
+  "en_name": "Humus With Beef",
+  "img": "Humus s hovezim.jpg"
+},
+{
+  "id": "006",
+  "number": "006",
+  "category": "1",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+  "price": "4 00",
+  "cz_name": "Hummus musabaha menu",
+  "en_name": "Humus musabaha meal",
+  "img": "Humus musabaha.jpg",
+  "isVegan": true
+},
+{
+  "id": "007",
+  "number": "007",
+  "category": "1",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+  "price": "300",
+  "cz_name": "Hummus s kuřecí šawarmou",
+  "en_name": "Humus with Chicken Shawerma",
+  "img": "Humus s kurecim.jpg",
+  "isVegan": true
+},
+{
+  "id": "008",
+  "number": "008",
+  "category": "2",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+  "price": "500",
+  "cz_name": "Šištau",
+  "en_name": "Shishtawo",
+  "img": "Sistau.jpg",
+  "isVegan": true
+},
+{
+  "id": "009",
+  "number": "009",
+  "category": "1",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+  "price": "500",
+  "cz_name": "Musachan",
+  "en_name": "Muskhan",
+  "img": "Musakhan.jpg"
+},
+{
+  "id": "010",
+  "number": "010",
+  "category": "1",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+  "price": "500",
+  "cz_name": "Musachan lafa",
+  "en_name": "Muskhan wrap",
+  "img": "Musakhan lafa.jpg"
+
+},
+{
+  "id": "011",
+  "number": "011",
+  "category": "2",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+  "price": "500",
+  "cz_name": "Grilované hovězí špízy menu",
+  "en_name": "Grilled beef skewers meal",
+  "img": "Jehneci spiz.jpg"
+},
+{
+  "id": "012",
+  "number": "012",
+  "category": "2",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, rerum, minus reiciendis dolore et architecto corrupti iure eligendi a ut omnis alias ullam consequuntur esse error reprehenderit. Molestiae, voluptas.",
+  "price": "500",
+  "cz_name": "Grilovaná kuřecí prsa menu",
+  "en_name": "Grilled chicken breast menu",
+  "img": "kureci steak"
+}
 ]
