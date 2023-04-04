@@ -1,8 +1,8 @@
 export enum Categories {
-  'Mashawi',
-  'Side Dishes',
-  'Drinks',
-  'Main',
+  'předkrmy',
+  'Východní desky',
+  'Grilovaný',
+  'Přílohy',
 }
 
 export type MenuItem = {
@@ -21,4 +21,3 @@ export type MenuCategory = {
   category: Categories;
   items: MenuItem[];
 }
-
