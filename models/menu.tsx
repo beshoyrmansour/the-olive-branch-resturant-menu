@@ -1,15 +1,22 @@
 export enum Categories {
-  'předkrmy',
+  'Předkrmy',
   'Východní desky',
   'Grilovaný',
   'Přílohy',
+}
+export enum Categories_en {
+  'Appetizers',
+  'Eastern Plates',
+  'Grilled',
+  'Side dishes',
 }
 
 export type MenuItem = {
   id: string;
   number: string;
   category: Categories;
-  description: string;
+  cz_description: string;
+  en_description: string;
   price: string;
   cz_name: string;
   en_name: string;
