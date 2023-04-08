@@ -22,7 +22,6 @@ export default function Home({ data }: { data: MenuItem[] }) {
       <main className={styles.container}>
         <header>
           <Image className={styles.logo} src={`/logo.svg`} width='1000' height='130' alt='Plastinian Resturant logo' />
-          <Image className={styles.hero} src={`/hero.jpg`} width='100' height='330' alt='Plastinian Resturant logo' />
         </header>
         {grouped.map((cat: MenuCategory) => (<div className={styles.menu} key={`menu_category_${cat}`}>
           <h2 className={styles.menu_group_heading}>
