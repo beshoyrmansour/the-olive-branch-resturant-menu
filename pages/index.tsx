@@ -96,7 +96,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
           </div>
           <div className={styles.footer_top_section}>
             <div className={styles.footer_top_section}>
-              <h3>call <span>us</span></h3>
+              <h3>Call <span>us</span></h3>
               <a href='tel:+420602342820'>+420 602 342 820</a>
             </div>
             <div className={styles.footer_top_section}>
