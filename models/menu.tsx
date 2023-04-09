@@ -1,14 +1,16 @@
 export enum Categories {
-  'Předkrmy',
-  'Východní desky',
-  'Grilovaný',
-  'Přílohy',
+  'Talíře s hummusem',
+  'Plněné placky a tortilly',
+  'Naše specialita',
+  'Něco z našeho grilu',
+  'Přílohy'
 }
 export enum Categories_en {
-  'Appetizers',
-  'Eastern Plates',
-  'Grilled',
-  'Side dishes',
+  'Hummus Section',
+  'Sandwiches',
+  'Our Specials',
+  'Our grill',
+  'Extras'
 }
 
 export type MenuItem = {
