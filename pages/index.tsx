@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ data }: { data: MenuItem[] }) {
   const grouped = groupArrayByCategory(data);
-  const [lang, setLang] = useState('en')
+  const [lang, setLang] = useState('cz')
   return (
     <>
       <Head>
@@ -24,7 +24,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
       </Head>
       <main className={styles.container}>
         <header>
-          <Image className={styles.logo} src={`/logo.svg`} width='1000' height='130' alt='Plastinian Resturant logo' />
+          <Image className={styles.logo} src={`/logo_v.svg`} width='1000' height='130' alt='Plastinian Resturant logo' />
         </header>
         <div className={styles.langSelector} onClick={() => {
           setLang(prev => prev === 'en' ? 'cz' : 'en')
@@ -156,6 +156,8 @@ export default function Home({ data }: { data: MenuItem[] }) {
           </div>
         </div>
         <div className={styles.footer_bottom}>
+          <Image className={styles.logo} src={`/logo_h.svg`} width='100' height='130' alt='Plastinian Resturant logo' />
+
           <div className={styles.copyright}>
             Copyright © 2023 Palstinian Restaurant - All rights reserved <br /> Designed By: <a target='_blank' href='http://digitalizers.co/'>Digitalizers</a>
           </div>
