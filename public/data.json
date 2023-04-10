@@ -139,7 +139,8 @@
     "price": "190",
     "cz_name": "Falafel Wrap",
     "en_name": "Falafel Wrap",
-    "img": "Humus falafel.jpg"
+    "img": "Humus falafel.jpg",
+    "isVegan": true
   },
   {
     "id": "013",
@@ -260,7 +261,8 @@
     "price": "120",
     "cz_name": "Salát fatúš",
     "en_name": "Fatush Salad",
-    "img": "Salat fatus.jpg"
+    "img": "Salat fatus.jpg",
+    "isVegan": true
   },
   {
     "id": "024",
@@ -271,7 +273,8 @@
     "price": "90",
     "cz_name": "Vařený burgul",
     "en_name": "Burgul",
-    "img": "Bulgur.jpg"
+    "img": "Bulgur.jpg",
+    "isVegan": true
   },
   {
     "id": "025",
@@ -282,7 +285,8 @@
     "price": "90",
     "cz_name": "Hommos",
     "en_name": "Hummus",
-    "img": "Nazah.jpg"
+    "img": "Nazah.jpg",
+    "isVegan": true
   },
   {
     "id": "026",
@@ -293,7 +297,8 @@
     "price": "60",
     "cz_name": "Hranolky",
     "en_name": "Fries",
-    "img": "Nazah.jpg"
+    "img": "Nazah.jpg",
+    "isVegan": true
   },
   {
     "id": "027",
