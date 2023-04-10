@@ -48,7 +48,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                     width={1000}
                     height={1000}
                     priority />
-                  {item.isVegan && <span className={styles.vegan}>{lang === 'en' ? 'Vegan' : 'Veganské'}</span>}
+                  {item.isVegan && <span className={styles.vegan}>{lang === 'en' ? 'Vegetarian' : 'Vegetariánský'}</span>}
                 </div>
                 {/* <h3 className={styles.order_nummber}>#{item.number}</h3> */}
                 <div className={styles.menu_item_text}>
