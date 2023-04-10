@@ -80,6 +80,11 @@ export default function Home({ data }: { data: MenuItem[] }) {
         <div className={styles.footer_top}>
           <div className={styles.footer_top_section}>
             <h3>Find <span>Us</span></h3>
+            <div className={styles.social}>
+              <a target='_blank' href='https://wolt.com/en/cze/prague/restaurant/grill-restaurant' className={styles.wolt_icon}>W</a>
+              <a target='_blank' href='https://m.facebook.com/profile.php?id=100080996603475' className="fa fa-facebook"></a>
+              <a target='_blank' href='https://www.instagram.com/mr.falafelprague/?hl=en' className="fa fa-instagram"></a  >
+            </div>
             <a href='https://maps.app.goo.gl/Lj9YspNJBbt3D8318?g_st=ic'> <span>Spálená 90/17, 110 00 Nové Město, Czechia</span>
               {/* <div className={styles.map}
                 title="Map showing business location."></div> */}
@@ -99,12 +104,6 @@ export default function Home({ data }: { data: MenuItem[] }) {
             <div className={styles.footer_top_section}>
               <h3>Call <span>Us</span></h3>
               <a href='tel:+420602342820'>+420 602 342 820</a>
-
-              <div className={styles.social}>
-                <a target='_blank' href='https://wolt.com/en/cze/prague/restaurant/grill-restaurant' className={styles.wolt_icon}>W</a>
-                <a target='_blank' href='https://m.facebook.com/profile.php?id=100080996603475' className="fa fa-facebook"></a>
-                <a target='_blank' href='https://www.instagram.com/mr.falafelprague/?hl=en' className="fa fa-instagram"></a  >
-              </div>
             </div>
             <div className={styles.footer_top_section}>
               <h3>Business <span>Hours</span></h3>
