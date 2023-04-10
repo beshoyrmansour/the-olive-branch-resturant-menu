@@ -18,8 +18,9 @@ export default function Home({ data }: { data: MenuItem[] }) {
         <meta name="description" content="Plastinian resturant menu" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Fondamento" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Fondamento&display=swap" rel="stylesheet" />
       </Head>
       <main className={styles.container}>
         <header>
@@ -91,7 +92,11 @@ export default function Home({ data }: { data: MenuItem[] }) {
                 }}
                 allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </a>
-
+            <div className={styles.social}>
+              <a target='_blank' href='https://wolt.com/en/cze/prague/restaurant/grill-restaurant' className={styles.wolt_icon}>W</a>
+              <a target='_blank' href='https://m.facebook.com/profile.php?id=100080996603475' className="fa fa-facebook"></a>
+              <a target='_blank' href='https://www.instagram.com/mr.falafelprague/?hl=en' className="fa fa-instagram"></a  >
+            </div>
 
           </div>
           <div className={styles.footer_top_section}>
@@ -151,7 +156,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
         </div>
         <div className={styles.footer_bottom}>
           <div className={styles.copyright}>
-            Copyright © 2023 Palstinian Restaurant - All rights reserved <br /> Designed By: <a href='http://digitalizers.co/'>Digitalizers</a>
+            Copyright © 2023 Palstinian Restaurant - All rights reserved <br /> Designed By: <a target='_blank' href='http://digitalizers.co/'>Digitalizers</a>
           </div>
           <div className={styles.flag_background}>
             <div className={styles.flag_top}></div>

@@ -285,6 +285,18 @@
   /* background-color: #009736; */
 }
 
+.social {
+  display: flex;
+}
+
+.social a {
+  padding: 1rem;
+}
+
+.wolt_icon {
+  font-family: 'Delicious Handrawn', cursive;
+}
+
 @media screen and (min-width: 992px) {}
 
 /* Enable hover only on non-touch devices */
@@ -397,6 +409,14 @@
   .footer_top_section a {
     padding: 0px;
   }
+}
+
+.footer_top_section a {
+  color: #00541e;
+}
+
+.footer_top_section a:hover {
+  color: #009736;
 }
 
 /* Tablet and Smaller Desktop */
