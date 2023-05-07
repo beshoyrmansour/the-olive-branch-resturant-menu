@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
@@ -9,8 +9,18 @@ import { Categories, Categories_en, MenuCategory, MenuItem } from '@/models/menu
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ data }: { data: MenuItem[] }) {
-  const grouped = groupArrayByCategory(data);
   const [lang, setLang] = useState('cz')
+  const [grouped, setGrouped] = useState<Array<MenuCategory>>([])
+  useEffect(() => {
+    if (data.length)
+      setGrouped(groupArrayByCategory(data))
+
+    return () => {
+
+    }
+  }, [data])
+
+  console.log({ data, grouped });
   return (
     <>
       <Head>
@@ -35,7 +45,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
           }
           {/* <span style={{ paddingLeft: '0.6rem' }}>{lang === 'en' ? 'České menu' : 'English menu'}</span> */}
         </div>
-        {grouped.map((cat: MenuCategory) => (<div className={styles.menu} key={`menu_category_${cat}`}>
+        {grouped.length > 0 && grouped.map((cat: MenuCategory) => (<div className={styles.menu} key={`menu_category_${cat}`}>
           <h2 className={styles.menu_group_heading}>
             {lang === 'en' ? Categories_en[cat.category] : Categories[cat.category]}
           </h2>
