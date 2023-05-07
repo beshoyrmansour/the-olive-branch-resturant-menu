@@ -4,7 +4,7 @@ export const checkEnvironment = () => {
   let base_url =
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
-      : "https://palastinianrestraunt.com/"; // https://v2ds.netlify.app
+      : "http://palestinianrestraunt.com/"; // https://v2ds.netlify.app
   // : "palastinian-resturant-menu.surge.sh"; // https://v2ds.netlify.app
 
   return base_url;
