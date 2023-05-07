@@ -14,8 +14,8 @@ export default function Home({ data }: { data: MenuItem[] }) {
   return (
     <>
       <Head>
-        <title>Plastinian Resturant</title>
-        <meta name="description" content="Plastinian resturant menu" />
+        <title>Palastinian Resturant</title>
+        <meta name="description" content="Palastinian resturant menu" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
@@ -44,12 +44,12 @@ export default function Home({ data }: { data: MenuItem[] }) {
               <div className={styles.menu_item} key={`menu_item_${item.id}`}>
                 <div className={styles.top_section}>
 
-                  <Image className={styles.menu_item_image} src={`/Produkty/${item.img}`}
+                  {/* <Image className={styles.menu_item_image} src={`/Produkty/${item.img}`}
                     alt={`${item.en_name} - ${item.cz_name}`}
                     width={1000}
                     height={1000}
-                    priority />
-                  {item.isVegan && <span className={styles.vegan}>{lang === 'en' ? 'Vegetarian' : 'Vegetariánský'}</span>}
+                    priority /> */}
+                  {/* {item.isVegan && <span className={styles.vegan}>{lang === 'en' ? 'Vegetarian' : 'Vegetarianánské'}</span>} */}
                 </div>
                 {/* <h3 className={styles.order_nummber}>#{item.number}</h3> */}
                 <div className={styles.menu_item_text}>
@@ -68,7 +68,9 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       <h3 className={styles.order_nummber_under_price}>#{item.number}</h3>
                     </div>
                   </h2>
+                  {item.isVegan && <span className={styles.vegan_no_image}>{lang === 'en' ? 'Vegetarian' : 'Vegetarianánské'}</span>}
                   <p className={styles.menu_item_description}>{lang === 'en' ? item.en_description : item.cz_description}</p>
+
                 </div>
               </div>
             ))}
@@ -79,7 +81,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
       <footer className={styles.footer}>
         <div className={styles.footer_top}>
           <div className={styles.footer_top_section}>
-            <h3>Find <span>Us</span></h3>
+            <h3>Find <span>us</span></h3>
             <div className={styles.social}>
               <a target='_blank' href='https://wolt.com/en/cze/prague/restaurant/grill-restaurant' className={styles.wolt_icon}>W</a>
               <a target='_blank' href='https://m.facebook.com/profile.php?id=100080996603475' className="fa fa-facebook"></a>
@@ -102,11 +104,11 @@ export default function Home({ data }: { data: MenuItem[] }) {
           </div>
           <div className={styles.footer_top_section}>
             <div className={styles.footer_top_section}>
-              <h3>Call <span>Us</span></h3>
+              <h3>Call <span>us</span></h3>
               <a href='tel:+420602342820'>+420 602 342 820</a>
             </div>
             <div className={styles.footer_top_section}>
-              <h3>Business <span>Hours</span></h3>
+              <h3>Business <span>hours</span></h3>
               <table itemProp="openingHours"><tbody>
                 <tr>
                   <th className="x2TOCf">Mon:</th>
@@ -156,10 +158,10 @@ export default function Home({ data }: { data: MenuItem[] }) {
           </div>
         </div>
         <div className={styles.footer_bottom}>
-          <Image className={styles.logo} src={`/logo_h.svg`} width='100' height='130' alt='Plastinian Resturant logo' />
+          <Image className={styles.logo} src={`/logo_h.svg`} width='100' height='130' alt='Palastinian Resturant logo' />
 
           <div className={styles.copyright}>
-            Copyright © 2023 Palstinian Restaurant - All rights reserved <br /> Designed By: <a target='_blank' href='http://digitalizers.co/'>Digitalizers</a>
+            Copyright © 2023 palstinian restaurant - All rights reserved <br /> Designed By: <a target='_blank' href='http://digitalizers.co/'>Digitalizers</a>
           </div>
           <div className={styles.flag_background}>
             <div className={styles.flag_top}></div>

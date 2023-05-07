@@ -84,6 +84,19 @@
   text-align: center;
 }
 
+.vegan_no_image {
+  /* position: absolute; */
+  /* left: 0;
+  top: 90px; */
+  /* margin: 1rem 0px; */
+  padding: 0.5rem 0px;
+  color: #009736;
+  /* border-radius: 0px 0px 8px 8px;
+  background: #fff; */
+  width: calc(160px - 1.5rem);
+  text-align: center;
+}
+
 .order_nummber {
   height: 0px;
   position: absolute;
@@ -388,6 +401,17 @@
     margin-bottom: 1rem;
     left: auto;
     right: 0px;
+    top: auto;
+    bottom: 0;
+    border-radius: 8px 0px 0px 0px;
+    /* background-color: #009736d6; */
+    width: auto;
+  }
+
+  .vegan_no_image {
+    margin-bottom: 1rem;
+    /* left: auto;
+    right: 0px; */
     top: auto;
     bottom: 0;
     border-radius: 8px 0px 0px 0px;
