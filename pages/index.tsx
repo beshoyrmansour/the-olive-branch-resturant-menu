@@ -190,7 +190,9 @@ export default function Home({ data }: { data: MenuItem[] }) {
 // This gets called on every request
 export async function getStaticProps() {
   // Fetch data from external API
-  const res = await fetch(`${checkEnvironment()}/data.json`, {
+  const base_url = checkEnvironment();
+  const newUrl = base_url.charAt(base_url.length - 1) === '/' ? `${base_url}data.json` : `${base_url}/data.json`
+  const res = await fetch(newUrl, {
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json'
