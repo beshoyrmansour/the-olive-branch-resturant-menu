@@ -2,7 +2,7 @@ import { MenuItem, Categories, MenuCategory } from "@/models/menu";
 
 export const checkEnvironment = () => {
   let base_url =
-  process.env.NEXT_PUBLIC_URL?process.env.NEXT_PUBLIC_URL:
+  // process.env.NEXT_PUBLIC_URL?process.env.NEXT_PUBLIC_URL:
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
       :"http://palestinianrestaurant.com";
