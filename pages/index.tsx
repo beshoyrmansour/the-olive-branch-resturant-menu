@@ -20,7 +20,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
     }
   }, [data])
 
-  console.log({ data, grouped });
+  // console.log({ data, grouped });
   return (
     <>
       <Head>

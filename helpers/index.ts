@@ -2,11 +2,10 @@ import { MenuItem, Categories, MenuCategory } from "@/models/menu";
 
 export const checkEnvironment = () => {
   let base_url =
+  process.env.NEXT_PUBLIC_URL?process.env.NEXT_PUBLIC_URL:
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
-      : "https://palestinianrestaurant.com"; // https://v2ds.netlify.app
-  // : "palastinian-resturant-menu.surge.sh"; // https://v2ds.netlify.app
-
+      :"http://palestinianrestaurant.com";
   return base_url;
 };
 
