@@ -392,6 +392,17 @@
     "id": "035",
     "number": "35",
     "category": "6",
+    "en_description": "Mattoni",
+    "cz_description": "Mattoni",
+    "price": "55",
+    "cz_name": "Mattoni",
+    "en_name": "Mattoni",
+    "img": "Nazah.jpg"
+  },
+  {
+    "id": "036",
+    "number": "36",
+    "category": "6",
     "en_description": "Tea for 1 person",
     "cz_description": "Čaj pro 1 osobu",
     "price": "50",
@@ -400,8 +411,8 @@
     "img": "Nazah.jpg"
   },
   {
-    "id": "036",
-    "number": "36",
+    "id": "037",
+    "number": "37",
     "category": "6",
     "en_description": "Tea for 2 people",
     "cz_description": "Čaj pro 2 osoby",
@@ -411,8 +422,8 @@
     "img": "Nazah.jpg"
   },
   {
-    "id": "037",
-    "number": "37",
+    "id": "038",
+    "number": "38",
     "category": "6",
     "en_description": "Tea for 4 people",
     "cz_description": "Čaj pro 4 osoby",
