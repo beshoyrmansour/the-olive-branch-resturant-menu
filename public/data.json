@@ -358,6 +358,17 @@
   {
     "id": "032",
     "number": "32",
+    "category": "5",
+    "en_description": "Basbosa",
+    "cz_description": "Basbosa",
+    "price": "50",
+    "cz_name": "Basbosa",
+    "en_name": "Basbosa",
+    "img": "Nazah.jpg"
+  },
+  {
+    "id": "033",
+    "number": "33",
     "category": "6",
     "en_description": "Cocacola / Fanta",
     "cz_description": "Cocacola / Fanta",
@@ -367,8 +378,8 @@
     "img": "Nazah.jpg"
   },
   {
-    "id": "033",
-    "number": "33",
+    "id": "034",
+    "number": "34",
     "category": "6",
     "en_description": "Relax Juice",
     "cz_description": "Relax džus",
@@ -378,8 +389,8 @@
     "img": "Nazah.jpg"
   },
   {
-    "id": "034",
-    "number": "34",
+    "id": "035",
+    "number": "35",
     "category": "6",
     "en_description": "Sparkling or still water",
     "cz_description": "Perlivá nebo neperlivá voda",
@@ -389,8 +400,8 @@
     "img": "Nazah.jpg"
   },
   {
-    "id": "035",
-    "number": "35",
+    "id": "036",
+    "number": "36",
     "category": "6",
     "en_description": "Mattoni",
     "cz_description": "Mattoni",
@@ -400,8 +411,8 @@
     "img": "Nazah.jpg"
   },
   {
-    "id": "036",
-    "number": "36",
+    "id": "037",
+    "number": "37",
     "category": "6",
     "en_description": "Tea for 1 person",
     "cz_description": "Čaj pro 1 osobu",
@@ -411,8 +422,8 @@
     "img": "Nazah.jpg"
   },
   {
-    "id": "037",
-    "number": "37",
+    "id": "038",
+    "number": "38",
     "category": "6",
     "en_description": "Tea for 2 people",
     "cz_description": "Čaj pro 2 osoby",
@@ -422,8 +433,8 @@
     "img": "Nazah.jpg"
   },
   {
-    "id": "038",
-    "number": "38",
+    "id": "039",
+    "number": "39",
     "category": "6",
     "en_description": "Tea for 4 people",
     "cz_description": "Čaj pro 4 osoby",
