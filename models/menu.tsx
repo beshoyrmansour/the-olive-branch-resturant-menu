@@ -3,14 +3,18 @@ export enum Categories {
   'Plněné placky a tortilly',
   'Naše specialita',
   'Něco z našeho grilu',
-  'Přílohy'
+  'Přílohy',
+  'Dezerty',
+  'Nápoje'
 }
 export enum Categories_en {
   'Hummus Section',
   'Sandwiches',
   'Our Specials',
   'Our grill',
-  'Extras'
+  'Extras',
+  'Desserts',
+  'Beverages'
 }
 
 export type MenuItem = {
