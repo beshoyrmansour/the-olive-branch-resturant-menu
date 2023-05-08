@@ -171,7 +171,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
           <Image className={styles.logo} src={`/logo_h.svg`} width='100' height='130' alt='Palastinian Resturant logo' />
 
           <div className={styles.copyright}>
-            Copyright © 2023 Palestinian restaurant - All rights reserved <br /> Designed By: <a target='_blank' href='http://digitalizers.co/'>Digitalizers</a>
+            Copyright © 2023 Palestinian restaurant - All rights reserved <br /> Designed By: <a target='_blank' href='http://digitalizers.co/'>Digitalizers Agency</a>
           </div>
           <div className={styles.flag_background}>
             <div className={styles.flag_top}></div>
