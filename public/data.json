@@ -204,8 +204,8 @@
     "en_description": "2 Chicken skewers, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables, arabic bread",
     "cz_description": "2 Kuřecí špízy, hranolky, hommos, baba ganuš, turecký salát, nakládaná a čerstvá zelenina, arabský chléb",
     "price": "270",
-    "cz_name": "Šištau Menu",
-    "en_name": "Shishtau Meal",
+    "cz_name": "Šištauk Menu",
+    "en_name": "Shishtauk Meal",
     "img": "Sistau.jpg"
   },
   {
@@ -215,7 +215,7 @@
     "en_description": "Beef Kabab, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables, arabic bread",
     "cz_description": "Hovězí kabab, hranolky, hommos, baba ganuš, turecký salát, nakládaná a čerstvá zelenina, arabský chléb",
     "price": "290",
-    "cz_name": "Šištau Menu",
+    "cz_name": "Šiš Kabab Menu",
     "en_name": "Shish Kabab Meal",
     "img": "kebab.jpg"
   },
@@ -225,8 +225,8 @@
     "category": "3",
     "en_description": "2 Beef skewers, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables, arabic bread",
     "cz_description": "2 Hovězí špízy, hranolky, hommos, baba ganuš, turecký salát, nakládaná a čerstvá zelenina, arabský chléb",
-    "price": "320",
-    "cz_name": "Grilované hovězí špízy menu",
+    "price": "350",
+    "cz_name": "Grilované hovězí jehněčí menu",
     "en_name": "Grilled Meat Meal",
     "img": "Jehneci spiz.jpg"
   },
@@ -305,7 +305,7 @@
     "category": "4",
     "en_description": "Fries",
     "cz_description": "Hranolky",
-    "price": "60",
+    "price": "70",
     "cz_name": "Hranolky",
     "en_name": "Fries",
     "img": "Nazah.jpg",
