@@ -75,7 +75,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                         <span className={styles.menu_item_price_amount}>{item.price}</span>
                         <span className={styles.menu_item_price_currency}>CZK</span>
                       </span>
-                      <h3 className={styles.order_nummber_under_price}>#{item.number}</h3>
+                      <h3 className={styles.order_nummber_under_price}>{item.number}</h3>
                     </div>
                   </h2>
                   {item.isVegan && <span className={styles.vegan_no_image}>{lang === 'en' ? 'Vegetarian' : 'Vegetarianánské'}</span>}
