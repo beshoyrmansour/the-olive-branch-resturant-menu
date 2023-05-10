@@ -199,7 +199,6 @@ export async function getStaticProps() {
     }
   })
   const data = await res.json()
-
   // Pass data to the page via props
   return { props: { data } }
 }
