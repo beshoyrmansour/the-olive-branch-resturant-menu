@@ -65,7 +65,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                 <div className={styles.menu_item_text}>
                   <h2 className={styles.menu_item_heading}>
                     <div className={styles.menu_item_heading_name}>
-                      <span className={styles.menu_item_name}>{lang === 'en' ? item.en_name : item.cz_name}</span>
+                      <span className={styles.menu_item_name}>{item.number+". "+lang === 'en' ? item.en_name : item.cz_name}</span>
                       <span className={styles.menu_item_name_sub}>{lang === 'en' ? item.cz_name : item.en_name}</span>
                       {/* <span className={styles.menu_item_name_sub}>{item.en_name}</span> */}
                     </div>
@@ -75,10 +75,10 @@ export default function Home({ data }: { data: MenuItem[] }) {
                         <span className={styles.menu_item_price_amount}>{item.price}</span>
                         <span className={styles.menu_item_price_currency}>CZK</span>
                       </span>
-                      <h3 className={styles.order_nummber_under_price}>{item.number}</h3>
+                      {/* <h3 className={styles.order_nummber_under_price}>{item.number}</h3> */}
                     </div>
                   </h2>
-                  {item.isVegan && <span className={styles.vegan_no_image}>{lang === 'en' ? 'Vegetarian' : 'Vegetarianánské'}</span>}
+                  {item.isVegan && <span className={styles.vegan_no_image}>{lang === 'en' ? 'Vegetarian' : 'Vegetariánské'}</span>}
                   <p className={styles.menu_item_description}>{lang === 'en' ? item.en_description : item.cz_description}</p>
 
                 </div>
@@ -168,7 +168,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
           </div>
         </div>
         <div className={styles.footer_bottom}>
-          <Image className={styles.logo} src={`/logo_h.svg`} width='100' height='130' alt='Palastinian Resturant logo' />
+          <Image className={styles.logo} src={`/logo_h.svg`} width='100' height='130' alt='Palestinian Resturant logo' />
 
           <div className={styles.copyright}>
             Copyright © 2023 Palestinian restaurant - All rights reserved <br /> Designed By: <a target='_blank' href='http://digitalizers.co/'>Digitalizers agency</a>
