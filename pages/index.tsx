@@ -65,7 +65,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                 <div className={styles.menu_item_text}>
                   <h2 className={styles.menu_item_heading}>
                     <div className={styles.menu_item_heading_name}>
-                      <span className={styles.menu_item_name}>{item.number+". "+lang === 'en' ? item.en_name : item.cz_name}</span>
+                      <span className={styles.menu_item_name}>{ lang === 'en' ? item.number+". "+item.en_name : item.number+". "+item.cz_name}</span>
                       <span className={styles.menu_item_name_sub}>{lang === 'en' ? item.cz_name : item.en_name}</span>
                       {/* <span className={styles.menu_item_name_sub}>{item.en_name}</span> */}
                     </div>
