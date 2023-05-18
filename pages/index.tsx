@@ -54,18 +54,18 @@ export default function Home({ data }: { data: MenuItem[] }) {
               <div className={styles.menu_item} key={`menu_item_${item.id}`}>
                 <div className={styles.top_section}>
 
-                  {/* <Image className={styles.menu_item_image} src={`/Produkty/${item.img}`}
+                  <Image className={styles.menu_item_image} src={`/Produkty/${item.img}`}
                     alt={`${item.en_name} - ${item.cz_name}`}
                     width={1000}
                     height={1000}
-                    priority /> */}
-                  {/* {item.isVegan && <span className={styles.vegan}>{lang === 'en' ? 'Vegetarian' : 'Vegetarianánské'}</span>} */}
+                    priority />
+                  {item.isVegan && <span className={styles.vegan}>{lang === 'en' ? 'Vegetarian' : 'Vegetarianánské'}</span>}
                 </div>
                 {/* <h3 className={styles.order_nummber}>#{item.number}</h3> */}
                 <div className={styles.menu_item_text}>
                   <h2 className={styles.menu_item_heading}>
                     <div className={styles.menu_item_heading_name}>
-                      <span className={styles.menu_item_name}>{ lang === 'en' ? item.number+". "+item.en_name : item.number+". "+item.cz_name}</span>
+                      <span className={styles.menu_item_name}>{lang === 'en' ? item.number + ". " + item.en_name : item.number + ". " + item.cz_name}</span>
                       <span className={styles.menu_item_name_sub}>{lang === 'en' ? item.cz_name : item.en_name}</span>
                       {/* <span className={styles.menu_item_name_sub}>{item.en_name}</span> */}
                     </div>
@@ -78,8 +78,8 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {/* <h3 className={styles.order_nummber_under_price}>{item.number}</h3> */}
                     </div>
                   </h2>
-                  {item.isVegan && <span className={styles.vegan_no_image}>{lang === 'en' ? 'Vegetarian' : 'Vegetariánské'}</span>}
-                  <p className={styles.menu_item_description}>{lang === 'en' ? item.en_description : item.cz_description}</p>
+                  {/* {item.isVegan && <span className={styles.vegan_no_image}>{lang === 'en' ? 'Vegetarian' : 'Vegetariánské'}</span>}
+                  <p className={styles.menu_item_description}>{lang === 'en' ? item.en_description : item.cz_description}</p> */}
 
                 </div>
               </div>
