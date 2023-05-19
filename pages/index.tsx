@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { checkEnvironment, groupArrayByCategory } from '../helpers'
-import { Categories, Categories_en, MenuCategory, MenuItem } from '@/models/menu'
+import { Categories, Categories_en, MenuCategory, MenuItem, MenuItemOption } from '@/models/menu'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -43,7 +43,6 @@ export default function Home({ data }: { data: MenuItem[] }) {
             <img src={'./czech-republic.png'} width={30} height={30} alt='change nemu language' />
             : <img src={'./united-kingdom.png'} width={30} height={30} alt='change nemu language' />
           }
-          {/* <span style={{ paddingLeft: '0.6rem' }}>{lang === 'en' ? 'České menu' : 'English menu'}</span> */}
         </div>
         {grouped.length > 0 && grouped.map((cat: MenuCategory) => (<div className={styles.menu} key={`menu_category_${cat}`}>
           <h2 className={styles.menu_group_heading}>
@@ -51,37 +50,49 @@ export default function Home({ data }: { data: MenuItem[] }) {
           </h2>
           <div className={styles.menu_group}>
             {cat.items.map((item: MenuItem) => (
-              <div className={styles.menu_item} key={`menu_item_${item.id}`}>
-                <div className={styles.top_section}>
-
-                  <Image className={styles.menu_item_image} src={`/Produkty/${item.img}`}
-                    alt={`${item.en_name} - ${item.cz_name}`}
-                    width={1000}
-                    height={1000}
-                    priority />
-                  {item.isVegan && <span className={styles.vegan}>{lang === 'en' ? 'Vegetarian' : 'Vegetarianánské'}</span>}
+              <div className={styles.menu_item_with_option} key={`menu_item_${item.id}`}>
+                <div className={styles.menu_item}>
+                  <div className={styles.top_section}>
+                    <Image className={styles.menu_item_image} src={`/Produkty/${item.img}`}
+                      alt={`${item.en_name} - ${item.cz_name}`}
+                      width={1000}
+                      height={1000}
+                      priority />
+                    {item.isVegan && <span className={styles.vegan}>{lang === 'en' ? 'Vegetarian' : 'Vegetarianánské'}</span>}
+                  </div>
+                  <div className={styles.menu_item_text}>
+                    <h2 className={styles.menu_item_heading}>
+                      <div className={styles.menu_item_heading_name}>
+                        <span className={styles.menu_item_name}> <span className={styles.order_nummber}>{item.number}.</span> {` ${lang === 'en' ? item.en_name : item.cz_name}`}</span>
+                        <span className={styles.menu_item_name_sub}>{lang === 'en' ? item.cz_name : item.en_name}</span>
+                      </div>
+                      <div>
+                        <span className={styles.menu_item_price}>
+                          {!item.options && (
+                            <>
+                              <span className={styles.menu_item_price_amount}>{item.price}</span>
+                              <span className={styles.menu_item_price_currency}>CZK</span>
+                            </>
+                          )}
+                        </span>
+                      </div>
+                    </h2>
+                  </div>
                 </div>
-                {/* <h3 className={styles.order_nummber}>#{item.number}</h3> */}
-                <div className={styles.menu_item_text}>
-                  <h2 className={styles.menu_item_heading}>
-                    <div className={styles.menu_item_heading_name}>
-                      <span className={styles.menu_item_name}>{lang === 'en' ? item.number + ". " + item.en_name : item.number + ". " + item.cz_name}</span>
-                      <span className={styles.menu_item_name_sub}>{lang === 'en' ? item.cz_name : item.en_name}</span>
-                      {/* <span className={styles.menu_item_name_sub}>{item.en_name}</span> */}
-                    </div>
-                    <div>
-                      <span className={styles.menu_item_price}>
 
-                        <span className={styles.menu_item_price_amount}>{item.price}</span>
-                        <span className={styles.menu_item_price_currency}>CZK</span>
-                      </span>
-                      {/* <h3 className={styles.order_nummber_under_price}>{item.number}</h3> */}
-                    </div>
-                  </h2>
-                  {/* {item.isVegan && <span className={styles.vegan_no_image}>{lang === 'en' ? 'Vegetarian' : 'Vegetariánské'}</span>}
-                  <p className={styles.menu_item_description}>{lang === 'en' ? item.en_description : item.cz_description}</p> */}
-
-                </div>
+                {item.options &&
+                  <div className={styles.menu_item_option_wrapp}>
+                    {item.options.map((option: MenuItemOption) => (<>
+                      <div className={styles.menu_item_option}>
+                        <span className={styles.menu_item_option_name}> {lang === 'en' ? option.en_name : option.cz_name}</span>
+                        <span className={styles.menu_item_option_price}>
+                          <span className={styles.menu_item_option_price_amount}>{option.price}</span>
+                          <span className={styles.menu_item_option_price_currency}>CZK</span>
+                        </span>
+                      </div>
+                    </>))}
+                  </div>
+                }
               </div>
             ))}
           </div>

@@ -7,6 +7,7 @@ export enum Categories {
   'Dezerty',
   'Nápoje'
 }
+
 export enum Categories_en {
   'Hummus Section',
   'Sandwiches',
@@ -15,6 +16,12 @@ export enum Categories_en {
   'Extras',
   'Desserts',
   'Beverages'
+}
+
+export type MenuItemOption = {
+  en_name: string;
+  cz_name: string;
+  price: string;
 }
 
 export type MenuItem = {
@@ -28,6 +35,7 @@ export type MenuItem = {
   en_name: string;
   img: string;
   isVegan: boolean;
+  options?: Array<MenuItemOption>;
 }
 
 export type MenuCategory = {
