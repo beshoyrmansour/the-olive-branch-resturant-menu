@@ -119,6 +119,7 @@
   justify-items: center;
   align-items: center;
   display: flex;
+  color: #009736;
 }
 
 
@@ -129,14 +130,14 @@
 .menu_item_option_price_currency {
   margin-left: 4px;
   font-size: smaller;
-  font-weight: bold;
-  color: #009736;
+  font-weight: lighter;
+  /* color: #009736; */
 }
 
 
 .order_nummber {
   margin: 3px;
-  color: #00541e;
+  /* color: #00541e; */
 }
 
 .menu_item_text {
