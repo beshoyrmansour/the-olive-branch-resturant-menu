@@ -184,7 +184,19 @@
     "price": "450",
     "cz_name": "Arajes",
     "en_name": "Arayes",
-    "img": "Arajes plnene masem.jpg"
+    "img": "Arajes plnene masem.jpg",
+    "options":[
+      {
+        "en_name":"2 pieces",
+        "cz_name":"2 kusy",
+        "price":"140"
+      },
+      {
+        "en_name":"4 pieces",
+        "cz_name":"4 kusy",
+        "price":"250"
+      }
+    ]
   },
   {
     "id": "017",
@@ -348,17 +360,6 @@
     "id": "031",
     "number": "31",
     "category": "5",
-    "en_description": "kunafa",
-    "cz_description": "kunafa",
-    "price": "90",
-    "cz_name": "kunafa",
-    "en_name": "kunafa",
-    "img": "Nazah.jpg"
-  },
-  {
-    "id": "032",
-    "number": "32",
-    "category": "5",
     "en_description": "Basbosa",
     "cz_description": "Basbosa",
     "price": "50",
@@ -367,8 +368,8 @@
     "img": "Basbusa.jpg"
   },
   {
-    "id": "033",
-    "number": "33",
+    "id": "032",
+    "number": "32",
     "category": "6",
     "en_description": "Cocacola / Fanta",
     "cz_description": "Cocacola / Fanta",
@@ -378,8 +379,8 @@
     "img": "Nazah.jpg"
   },
   {
-    "id": "034",
-    "number": "34",
+    "id": "033",
+    "number": "33",
     "category": "6",
     "en_description": "Relax Juice",
     "cz_description": "Relax džus",
@@ -389,8 +390,8 @@
     "img": "Nazah.jpg"
   },
   {
-    "id": "035",
-    "number": "35",
+    "id": "034",
+    "number": "34",
     "category": "6",
     "en_description": "Sparkling or still water",
     "cz_description": "Perlivá nebo neperlivá voda",
@@ -400,8 +401,8 @@
     "img": "Nazah.jpg"
   },
   {
-    "id": "036",
-    "number": "36",
+    "id": "035",
+    "number": "35",
     "category": "6",
     "en_description": "Mattoni",
     "cz_description": "Mattoni",
@@ -411,41 +412,35 @@
     "img": "Nazah.jpg"
   },
   {
-    "id": "037",
-    "number": "37",
+    "id": "036",
+    "number": "36",
     "category": "6",
     "en_description": "Tea for 1 person",
     "cz_description": "Čaj pro 1 osobu",
     "price": "50",
-    "cz_name": "Čaj (1 osobu)",
-    "en_name": "Tea (1 Person)",
-    "img": "Caj.jpg"
+    "cz_name": "Čaj ",
+    "en_name": "Tea ",
+    "img": "Caj.jpg",
+    "options":[
+      {
+        "en_name":"1 person",
+        "cz_name":"1 osobu",
+        "price":"50"
+      },
+      {
+        "en_name":"2 people",
+        "cz_name":"2 osoby",
+        "price":"80"
+      },      {
+        "en_name":"4 people",
+        "cz_name":"4 osoby",
+        "price":"120"
+      }
+    ]
   },
   {
-    "id": "038",
-    "number": "38",
-    "category": "6",
-    "en_description": "Tea for 2 people",
-    "cz_description": "Čaj pro 2 osoby",
-    "price": "80",
-    "cz_name": "Čaj (2 osoby)",
-    "en_name": "Tea (2 People)",
-    "img": "Caj.jpg"
-  },
-  {
-    "id": "039",
-    "number": "39",
-    "category": "6",
-    "en_description": "Tea for 4 people",
-    "cz_description": "Čaj pro 4 osoby",
-    "price": "120",
-    "cz_name": "Čaj (4 osoby)",
-    "en_name": "Tea (4 People)",
-    "img": "Caj.jpg"
-  },
-  {
-    "id": "040",
-    "number": "40",
+    "id": "037",
+    "number": "37",
     "category": "6",
     "en_description": "Ajran",
     "cz_description": "Ajran",
