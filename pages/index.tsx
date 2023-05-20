@@ -92,10 +92,8 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       <div className={styles.top_section}>
                         <Image
                           style={{
-                            display:
-                              item.img === "xxx" ? "none" : "block",
+                            display: item.img === "xxx" ? "none" : "block",
                           }}
-                          
                           className={styles.menu_item_image}
                           src={`/Produkty/${item.img}`}
                           alt={
