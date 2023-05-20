@@ -92,9 +92,10 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       <div className={styles.top_section}>
                         <Image
                           style={{
-                            visibility:
-                              item.img === "xxx" ? "hidden" : "visible",
+                            display:
+                              item.img === "xxx" ? "none" : "block",
                           }}
+                          
                           className={styles.menu_item_image}
                           src={`/Produkty/${item.img}`}
                           alt={
@@ -307,9 +308,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Sunday:" : "Neděle:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">
-                        {lang === "en" ? "Closed:" : "Zavřeno"}
-                      </span>
+                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
                     </td>
                   </tr>
                 </tbody>
