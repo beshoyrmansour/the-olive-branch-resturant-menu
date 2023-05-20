@@ -34,14 +34,14 @@ export default function Home({ data }: { data: MenuItem[] }) {
       </Head>
       <main className={styles.container}>
         <header>
-          <Image className={styles.logo} src={`/logo_h.svg`} width='1000' height='130' alt='Plastinian Resturant logo' />
+          <Image className={styles.logo} src={`/logo_h.svg`} width='1000' height='130' alt='Palestinian Restaurant logo' />
         </header>
         <div className={styles.langSelector} onClick={() => {
           setLang(prev => prev === 'en' ? 'cz' : 'en')
         }}>
           {lang == 'en' ?
-            <img src={'./czech-republic.png'} width={30} height={30} alt='change nemu language' />
-            : <img src={'./united-kingdom.png'} width={30} height={30} alt='change nemu language' />
+            <img src={'./czech-republic.png'} width={30} height={30} alt='change menu language' />
+            : <img src={'./united-kingdom.png'} width={30} height={30} alt='change menu language' />
           }
         </div>
         {grouped.length > 0 && grouped.map((cat: MenuCategory) => (<div className={styles.menu} key={`menu_category_${cat}`}>
