@@ -103,7 +103,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
       <footer className={styles.footer}>
         <div className={styles.footer_top}>
           <div className={styles.footer_top_section}>
-            <h3>Find <span>us</span></h3>
+          <h3>{lang === 'en' ? "Find" : "Nalézt"} <span>{lang === 'en' ? "us" : "nám"}</span></h3>
             <div className={styles.social}>
               <a target='_blank' href='https://wolt.com/en/cze/prague/restaurant/grill-restaurant' className={styles.wolt_icon}>W</a>
               <a target='_blank' href='https://m.facebook.com/profile.php?id=100080996603475' className="fa fa-facebook"></a>
@@ -126,52 +126,52 @@ export default function Home({ data }: { data: MenuItem[] }) {
           </div>
           <div className={styles.footer_top_section}>
             <div className={styles.footer_top_section}>
-              <h3>Call <span>us</span></h3>
+            <h3>{lang === 'en' ? "Call" : "Zavolejte"} <span>{lang === 'en' ? "us" : "nám"}</span></h3>
               <a href='tel:+420602342820'>+420 602 342 820</a>
             </div>
             <div className={styles.footer_top_section}>
-              <h3>Business <span>hours</span></h3>
+              <h3>{lang === 'en' ? "Working" : "Pracovní"} <span>{lang === 'en' ? "hours:" : "doba"}</span></h3>
               <table itemProp="openingHours"><tbody>
                 <tr>
-                  <th className="x2TOCf">Mon:</th>
+                  <th className="x2TOCf">{lang === 'en' ? "Monday:" : "Pondělí:"}</th>
                   <td className="o0m3Qb">
                     <span className="WF8WNe">10:00 AM – 10:00 PM</span>
                   </td>
                 </tr>
                 <tr>
-                  <th className="x2TOCf">Tue:</th>
+                  <th className="x2TOCf">{lang === 'en' ? "Tuesday:" : "Úterý:"}</th>
                   <td className="o0m3Qb">
                     <span className="WF8WNe">10:00 AM – 10:00 PM</span>
                   </td>
                 </tr>
                 <tr>
-                  <th className="x2TOCf">Wed:</th>
+                  <th className="x2TOCf">{lang === 'en' ? "Wednesday:" : "Středa:"}</th>
                   <td className="o0m3Qb">
                     <span className="WF8WNe">10:00 AM – 10:00 PM</span>
                   </td>
                 </tr>
                 <tr>
-                  <th className="x2TOCf">Thu:</th>
+                  <th className="x2TOCf">{lang === 'en' ? "Thursday:" : "Čtvrtek:"}</th>
                   <td className="o0m3Qb">
                     <span className="WF8WNe">10:00 AM – 10:00 PM</span>
                   </td>
                 </tr>
                 <tr>
-                  <th className="x2TOCf">Fri:</th>
+                  <th className="x2TOCf">{lang === 'en' ? "Friday:" : "Pátek:"}</th>
                   <td className="o0m3Qb">
                     <span className="WF8WNe">10:00 AM – 10:00 PM</span>
                   </td>
                 </tr>
                 <tr>
-                  <th className="x2TOCf">Sat:</th>
+                  <th className="x2TOCf">{lang === 'en' ? "Saturday:" : "Sobota:"}</th>
                   <td className="o0m3Qb">
                     <span className="WF8WNe">10:00 AM – 10:00 PM</span>
                   </td>
                 </tr>
                 <tr>
-                  <th className="x2TOCf">Sun:</th>
+                  <th className="x2TOCf">{lang === 'en' ? "Sunday:" : "Neděle:"}</th>
                   <td className="o0m3Qb">
-                    <span className="WF8WNe">Closed</span>
+                    <span className="WF8WNe">{lang === 'en' ? "Closed:" : "Zavřeno"}</span>
                   </td>
                 </tr>
               </tbody>
