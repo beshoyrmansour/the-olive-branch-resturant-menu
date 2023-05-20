@@ -179,7 +179,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
           </div>
         </div>
         <div className={styles.footer_bottom}>
-          <Image className={styles.logo} src={`/logo_h.svg`} width='100' height='130' alt='Palestinian Resturant logo' />
+          <Image className={styles.logo} src={`/logo_h.svg`} width='100' height='130' alt='Palestinian Restaurant logo' />
 
           <div className={styles.copyright}>
             Copyright © 2023 Palestinian restaurant - All rights reserved <br /> Designed By: <a target='_blank' href='http://digitalizers.co/'>Digitalizers agency</a>
