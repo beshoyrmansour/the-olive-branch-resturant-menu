@@ -77,6 +77,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                         </span>
                       </div>
                     </h2>
+                    <p className={styles.menu_item_description}>{lang === 'en' ? item.en_description : item.cz_description}</p>
                   </div>
                 </div>
 
