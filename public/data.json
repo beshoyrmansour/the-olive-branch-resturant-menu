@@ -226,9 +226,9 @@
     "number": "19",
     "category": "3",
     "en_description": "2 lamb skewers, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables, arabic bread",
-    "cz_description": "2 Hovězí jehněčí špízy, hranolky, hommos, baba ganuš, turecký salát, nakládaná a čerstvá zelenina, arabský chléb",
+    "cz_description": "2 jehněčí špízy, hranolky, hommos, baba ganuš, turecký salát, nakládaná a čerstvá zelenina, arabský chléb",
     "price": "350",
-    "cz_name": "Grilované hovězí jehněčí menu",
+    "cz_name": "Grilované jehněčí menu",
     "en_name": "Grilled Meat Meal",
     "img": "Jehneci spiz.jpg"
   },
@@ -372,8 +372,8 @@
     "id": "032",
     "number": "32",
     "category": "6",
-    "en_description": "Tea for 1 person",
-    "cz_description": "Čaj pro 1 osobu",
+    "en_description": "",
+    "cz_description": "",
     "price": "50",
     "cz_name": "Čaj ",
     "en_name": "Tea ",
@@ -415,7 +415,7 @@
     "price": "45",
     "cz_name": "Cocacola / Fanta",
     "en_name": "Cocacola / Fanta",
-    "img": "Nazah.jpg"
+    "img": "xxx"
   },
   {
     "id": "035",
@@ -426,7 +426,7 @@
     "price": "45",
     "cz_name": "Relax džus",
     "en_name": "Relax Juice",
-    "img": "Nazah.jpg"
+    "img": "xxx"
   },
   {
     "id": "036",
@@ -437,7 +437,7 @@
     "price": "45",
     "cz_name": "Voda",
     "en_name": "Water",
-    "img": "Nazah.jpg"
+    "img": "xxx"
   },
   {
     "id": "037",
@@ -448,6 +448,6 @@
     "price": "55",
     "cz_name": "Mattoni",
     "en_name": "Mattoni",
-    "img": "Nazah.jpg"
+    "img": "xxx"
   }
 ]
