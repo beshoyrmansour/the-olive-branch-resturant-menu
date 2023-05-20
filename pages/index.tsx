@@ -93,9 +93,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                         <Image
                           style={{
                             visibility:
-                              item.img === "xxx"
-                                ? "hidden"
-                                : "visible",
+                              item.img === "xxx" ? "hidden" : "visible",
                           }}
                           className={styles.menu_item_image}
                           src={`/Produkty/${item.img}`}
