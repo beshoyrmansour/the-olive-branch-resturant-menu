@@ -98,7 +98,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                           src={`/Produkty/${item.img}`}
                           alt={
                             item.img === "xxx"
-                              ? " "
+                              ? "  "
                               : item.en_name + "-" + item.cz_name
                           }
                           width={1000}
