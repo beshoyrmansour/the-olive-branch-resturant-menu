@@ -372,50 +372,6 @@
     "id": "032",
     "number": "32",
     "category": "6",
-    "en_description": "Cocacola / Fanta",
-    "cz_description": "Cocacola / Fanta",
-    "price": "45",
-    "cz_name": "Cocacola / Fanta",
-    "en_name": "Cocacola / Fanta",
-    "img": "Nazah.jpg"
-  },
-  {
-    "id": "033",
-    "number": "33",
-    "category": "6",
-    "en_description": "Relax Juice",
-    "cz_description": "Relax džus",
-    "price": "45",
-    "cz_name": "Relax džus",
-    "en_name": "Relax Juice",
-    "img": "Nazah.jpg"
-  },
-  {
-    "id": "034",
-    "number": "34",
-    "category": "6",
-    "en_description": "Sparkling or still water",
-    "cz_description": "Perlivá nebo neperlivá voda",
-    "price": "45",
-    "cz_name": "Voda",
-    "en_name": "Water",
-    "img": "Nazah.jpg"
-  },
-  {
-    "id": "035",
-    "number": "35",
-    "category": "6",
-    "en_description": "Mattoni",
-    "cz_description": "Mattoni",
-    "price": "55",
-    "cz_name": "Mattoni",
-    "en_name": "Mattoni",
-    "img": "Nazah.jpg"
-  },
-  {
-    "id": "036",
-    "number": "36",
-    "category": "6",
     "en_description": "Tea for 1 person",
     "cz_description": "Čaj pro 1 osobu",
     "price": "50",
@@ -440,8 +396,8 @@
     ]
   },
   {
-    "id": "037",
-    "number": "37",
+    "id": "033",
+    "number": "33",
     "category": "6",
     "en_description": "Ayran",
     "cz_description": "Ajran",
@@ -449,5 +405,49 @@
     "cz_name": "Ajran",
     "en_name": "Ayran",
     "img": "Ajran.jpg"
+  },
+  {
+    "id": "034",
+    "number": "34",
+    "category": "6",
+    "en_description": "Cocacola / Fanta",
+    "cz_description": "Cocacola / Fanta",
+    "price": "45",
+    "cz_name": "Cocacola / Fanta",
+    "en_name": "Cocacola / Fanta",
+    "img": "Nazah.jpg"
+  },
+  {
+    "id": "035",
+    "number": "35",
+    "category": "6",
+    "en_description": "Relax Juice",
+    "cz_description": "Relax džus",
+    "price": "45",
+    "cz_name": "Relax džus",
+    "en_name": "Relax Juice",
+    "img": "Nazah.jpg"
+  },
+  {
+    "id": "036",
+    "number": "36",
+    "category": "6",
+    "en_description": "Sparkling or still water",
+    "cz_description": "Perlivá nebo neperlivá voda",
+    "price": "45",
+    "cz_name": "Voda",
+    "en_name": "Water",
+    "img": "Nazah.jpg"
+  },
+  {
+    "id": "037",
+    "number": "37",
+    "category": "6",
+    "en_description": "Mattoni",
+    "cz_description": "Mattoni",
+    "price": "55",
+    "cz_name": "Mattoni",
+    "en_name": "Mattoni",
+    "img": "Nazah.jpg"
   }
 ]
