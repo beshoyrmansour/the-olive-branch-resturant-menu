@@ -24,8 +24,8 @@ export default function Home({ data }: { data: MenuItem[] }) {
   return (
     <>
       <Head>
-        <title>Palastinian Resturant</title>
-        <meta name="description" content="Palastinian resturant menu" />
+        <title>Palestinian Restaurant</title>
+        <meta name="description" content="Palestinian restaurant menu" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
