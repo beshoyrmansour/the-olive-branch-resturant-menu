@@ -307,9 +307,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Sunday:" : "Neděle:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">
-                        {lang === "en" ? "Closed:" : "Zavřeno"}
-                      </span>
+                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
                     </td>
                   </tr>
                 </tbody>
