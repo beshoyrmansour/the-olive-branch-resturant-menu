@@ -8,7 +8,7 @@
     "price": "120",
     "cz_name": "Hommos s arabským chlebem",
     "en_name": "Hummus with arabic bread",
-    "img": "Humus musabaha.jpg",
+    "img": "Humus.jpg",
     "isVegan": true
   },
   {
@@ -32,7 +32,7 @@
     "price": "195",
     "cz_name": "Hommos falafel",
     "en_name": "Hummus falafel",
-    "img": "Humus musabaha.jpg",
+    "img": "Humus falafel 2.jpg",
     "isVegan": true
   },
   {
@@ -56,7 +56,7 @@
     "price": "190",
     "cz_name": "Hommos se smaženými vejci",
     "en_name": "Hummus with fried eggs",
-    "img": "Humus s kurecim.jpg",
+    "img": "Humus vejce.jpg",
     "isVegan": true
   },
   {
@@ -104,7 +104,7 @@
     "price": "235",
     "cz_name": "Hommos s kuřecí šawarmou menu",
     "en_name": "Hummus chicken shawarma Meal",
-    "img": "Humus s kurecim.jpg",
+    "img": "Humus s kureci shwarmou menu.jpg",
     "isVegan": false
   },
   {
@@ -116,7 +116,7 @@
     "price": "170",
     "cz_name": "Falafel v arabském chlebu",
     "en_name": "Falafel Sandwich",
-    "img": "Humus falafel.jpg",
+    "img": "Falafel v chlebu.jpg",
     "isVegan": true
   },
   {
@@ -128,7 +128,7 @@
     "price": "185",
     "cz_name": "kuřecí Šawarma v arabském chlebu",
     "en_name": "Chicken shawarma sandwich",
-    "img": "Humus s kurecim.jpg"
+    "img": "Shawerma Sandwitchs.jpg"
   },
   {
     "id": "012",
@@ -139,7 +139,7 @@
     "price": "190",
     "cz_name": "Falafel Wrap",
     "en_name": "Falafel Wrap",
-    "img": "Humus falafel.jpg",
+    "img": "Tortila s falafelem.jpg",
     "isVegan": true
   },
   {
@@ -151,7 +151,7 @@
     "price": "200",
     "cz_name": "kuřecí Šawarma wrap",
     "en_name": "Chicken shawarma Warp",
-    "img": "Humus falafel.jpg"
+    "img": "Kureci shwarma wrap.jpg"
   },
   {
     "id": "014",
@@ -178,28 +178,30 @@
   {
     "id": "016",
     "number": "16",
-    "category": "2",
-    "en_description": "10 Types of Palestinian appetizers with arabic bread",
-    "cz_description": "10 Druhů Palestinský chuťovek , arabský chléb",
+    "category": "3",
+    "en_description": "Grilled arabic bread stuffed with ground beef",
+    "cz_description": "Grilovaný arabský chléb plněný mletým hovězím masem.",
     "price": "450",
-    "cz_name": "Maza",
-    "en_name": "Maza",
-    "img": "Nazah.jpg"
+    "cz_name": "Arajes",
+    "en_name": "Arayes",
+    "img": "Arajes plnene masem.jpg",
+    "options":[
+      {
+        "en_name":"2 pieces",
+        "cz_name":"2 kusy",
+        "price":"140"
+      },
+      {
+        "en_name":"4 pieces",
+        "cz_name":"4 kusy",
+        "price":"250"
+      }
+    ]
   },
+  
   {
     "id": "017",
     "number": "17",
-    "category": "3",
-    "en_description": "Chicken breast, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables, arabic bread",
-    "cz_description": "Kuřecí prsa, hranolky, hommos, baba ganuš, turecký salát, nakládaná a čerstvá zelenina, arabský chléb",
-    "price": "250",
-    "cz_name": "Grilovaná kuřecí prsa menu",
-    "en_name": "Grilled Chicken Breast Meal",
-    "img": "kureci steak.jpg"
-  },
-  {
-    "id": "018",
-    "number": "18",
     "category": "3",
     "en_description": "2 Chicken skewers, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables, arabic bread",
     "cz_description": "2 Kuřecí špízy, hranolky, hommos, baba ganuš, turecký salát, nakládaná a čerstvá zelenina, arabský chléb",
@@ -209,8 +211,8 @@
     "img": "Sistau.jpg"
   },
   {
-    "id": "019",
-    "number": "19",
+    "id": "018",
+    "number": "18",
     "category": "3",
     "en_description": "Beef kabab, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables, arabic bread",
     "cz_description": "Hovězí kabab, hranolky, hommos, baba ganuš, turecký salát, nakládaná a čerstvá zelenina, arabský chléb",
@@ -220,19 +222,19 @@
     "img": "kebab.jpg"
   },
   {
-    "id": "020",
-    "number": "20",
+    "id": "019",
+    "number": "19",
     "category": "3",
     "en_description": "2 lamb skewers, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables, arabic bread",
-    "cz_description": "2 Hovězí jehněčí špízy, hranolky, hommos, baba ganuš, turecký salát, nakládaná a čerstvá zelenina, arabský chléb",
+    "cz_description": "2 jehněčí špízy, hranolky, hommos, baba ganuš, turecký salát, nakládaná a čerstvá zelenina, arabský chléb",
     "price": "350",
-    "cz_name": "Grilované hovězí jehněčí menu",
+    "cz_name": "Grilované jehněčí menu",
     "en_name": "Grilled Meat Meal",
     "img": "Jehneci spiz.jpg"
   },
   {
-    "id": "021",
-    "number": "21",
+    "id": "20",
+    "number": "20",
     "category": "3",
     "en_description": "Three types of grilled Meat, grilled tomatoes, grilled onions, pickles, fresh vegetables, French fries, arabic bread",
     "cz_description": "Tři druhy grilováného Masa, grilovaná rajčata, grilovaná cibule, nakládaná a čerstvá zelenina, Hranolky, arabský chléb",
@@ -242,8 +244,8 @@
     "img": "Mix grill.jpg"
   },
   {
-    "id": "022",
-    "number": "22",
+    "id": "021",
+    "number": "21",
     "category": "3",
     "en_description": "Three types of grilled Meat, grilled tomatoes, grilled onions, pickles, fresh vegetables, French fries, arabic bread",
     "cz_description": "Tři druhy grilováného Masa, grilovaná rajčata, grilovaná cibule, nakládaná a čerstvá zelenina, Hranolky, arabský chléb",
@@ -253,8 +255,8 @@
     "img": "Mix grill.jpg"
   },
   {
-    "id": "023",
-    "number": "23",
+    "id": "022",
+    "number": "22",
     "category": "3",
     "en_description": "Three types of grilled Meat, grilled tomatoes, grilled onions, pickles, fresh vegetables, French fries, arabic bread, Maza, Hummus, Fatush Salad",
     "cz_description": "Tři druhy grilováného Masa, grilovaná rajčata, grilovaná cibule, nakládaná a čerstvá zelenina, Hranolky, arabský chléb, Maza, Hommos, Salát fatúš",
@@ -262,6 +264,17 @@
     "cz_name": "Mix Grill (4 osoby)",
     "en_name": "Mix Grill (4 people)",
     "img": "Mix grill.jpg"
+  },
+  {
+    "id": "023",
+    "number": "23",
+    "category": "3",
+    "en_description": "10 Types of Palestinian appetizers with arabic bread",
+    "cz_description": "10 Druhů Palestinský chuťovek , arabský chléb",
+    "price": "450",
+    "cz_name": "Maza",
+    "en_name": "Maza",
+    "img": "Nazah.jpg"
   },
   {
     "id": "024",
@@ -296,7 +309,7 @@
     "price": "90",
     "cz_name": "Hommos",
     "en_name": "Hummus",
-    "img": "Nazah.jpg",
+    "img": "humus only.jpg",
     "isVegan": true
   },
   {
@@ -308,7 +321,7 @@
     "price": "70",
     "cz_name": "Hranolky",
     "en_name": "Fries",
-    "img": "Nazah.jpg",
+    "img": "fries.jpg",
     "isVegan": true
   },
   {
@@ -320,7 +333,7 @@
     "price": "125",
     "cz_name": "Baba ganuš",
     "en_name": "Baba ganoush",
-    "img": "Nazah.jpg"
+    "img": "baba ghanoug.jpg"
   },
   {
     "id": "029",
@@ -331,116 +344,110 @@
     "price": "70",
     "cz_name": "Baklava",
     "en_name": "Baklawa",
-    "img": "Nazah.jpg"
+    "img": "Baklava.jpg"
   },
   {
     "id": "030",
     "number": "30",
     "category": "5",
-    "en_description": "Goulash",
-    "cz_description": "Guláš",
+    "en_description": "kulash",
+    "cz_description": "Kulaž",
     "price": "70",
-    "cz_name": "Guláš",
-    "en_name": "Goulash",
-    "img": "Nazah.jpg"
+    "cz_name": "Kulaž",
+    "en_name": "kulash",
+    "img": "Kulaz.jpg"
   },
   {
     "id": "031",
     "number": "31",
-    "category": "5",
-    "en_description": "kunafa",
-    "cz_description": "kunafa",
-    "price": "90",
-    "cz_name": "kunafa",
-    "en_name": "kunafa",
-    "img": "Nazah.jpg"
-  },
-  {
-    "id": "032",
-    "number": "32",
     "category": "5",
     "en_description": "Basbosa",
     "cz_description": "Basbosa",
     "price": "50",
     "cz_name": "Basbosa",
     "en_name": "Basbosa",
-    "img": "Nazah.jpg"
+    "img": "Basbusa.jpg"
+  },
+  {
+    "id": "032",
+    "number": "32",
+    "category": "6",
+    "en_description": "",
+    "cz_description": "",
+    "price": "50",
+    "cz_name": "Čaj ",
+    "en_name": "Tea ",
+    "img": "Caj.jpg",
+    "options":[
+      {
+        "en_name":"1 person",
+        "cz_name":"1 osobu",
+        "price":"50"
+      },
+      {
+        "en_name":"2 people",
+        "cz_name":"2 osoby",
+        "price":"80"
+      },      {
+        "en_name":"4 people",
+        "cz_name":"4 osoby",
+        "price":"120"
+      }
+    ]
   },
   {
     "id": "033",
     "number": "33",
+    "category": "6",
+    "en_description": "Ayran",
+    "cz_description": "Ajran",
+    "price": "45 ",
+    "cz_name": "Ajran",
+    "en_name": "Ayran",
+    "img": "Ajran.jpg"
+  },
+  {
+    "id": "034",
+    "number": "34",
     "category": "6",
     "en_description": "Cocacola / Fanta",
     "cz_description": "Cocacola / Fanta",
     "price": "45",
     "cz_name": "Cocacola / Fanta",
     "en_name": "Cocacola / Fanta",
-    "img": "Nazah.jpg"
+    "img": "xxx"
   },
   {
-    "id": "034",
-    "number": "34",
+    "id": "035",
+    "number": "35",
     "category": "6",
     "en_description": "Relax Juice",
     "cz_description": "Relax džus",
     "price": "45",
     "cz_name": "Relax džus",
     "en_name": "Relax Juice",
-    "img": "Nazah.jpg"
+    "img": "xxx"
   },
   {
-    "id": "035",
-    "number": "35",
+    "id": "036",
+    "number": "36",
     "category": "6",
     "en_description": "Sparkling or still water",
     "cz_description": "Perlivá nebo neperlivá voda",
     "price": "45",
     "cz_name": "Voda",
     "en_name": "Water",
-    "img": "Nazah.jpg"
+    "img": "xxx"
   },
   {
-    "id": "036",
-    "number": "36",
+    "id": "037",
+    "number": "37",
     "category": "6",
     "en_description": "Mattoni",
     "cz_description": "Mattoni",
     "price": "55",
     "cz_name": "Mattoni",
     "en_name": "Mattoni",
-    "img": "Nazah.jpg"
-  },
-  {
-    "id": "037",
-    "number": "37",
-    "category": "6",
-    "en_description": "Tea for 1 person",
-    "cz_description": "Čaj pro 1 osobu",
-    "price": "50",
-    "cz_name": "Čaj (1 osobu)",
-    "en_name": "Tea (1 Person)",
-    "img": "Nazah.jpg"
-  },
-  {
-    "id": "038",
-    "number": "38",
-    "category": "6",
-    "en_description": "Tea for 2 people",
-    "cz_description": "Čaj pro 2 osoby",
-    "price": "80",
-    "cz_name": "Čaj (2 osoby)",
-    "en_name": "Tea (2 People)",
-    "img": "Nazah.jpg"
-  },
-  {
-    "id": "039",
-    "number": "39",
-    "category": "6",
-    "en_description": "Tea for 4 people",
-    "cz_description": "Čaj pro 4 osoby",
-    "price": "120",
-    "cz_name": "Čaj (4 osoby)",
-    "en_name": "Tea (4 People)",
-    "img": "Nazah.jpg"
+    "img": "xxx"
   }
 ]
