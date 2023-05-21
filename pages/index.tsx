@@ -107,7 +107,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                         />
                         {item.isVegan && (
                           <span className={styles.vegan}>
-                            {lang === "en" ? "Vegetarian" : "Vegetarianánské"}
+                            {lang === "en" ? "Vegetarian" : "Vegetariánské"}
                           </span>
                         )}
                       </div>

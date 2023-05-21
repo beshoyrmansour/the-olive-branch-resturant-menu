@@ -274,7 +274,8 @@
     "price": "450",
     "cz_name": "Maza",
     "en_name": "Maza",
-    "img": "Nazah.jpg"
+    "img": "Nazah.jpg",
+    "isVegan": true
   },
   {
     "id": "024",
