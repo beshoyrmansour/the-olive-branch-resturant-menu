@@ -153,7 +153,6 @@ export default function Home({ data }: { data: MenuItem[] }) {
                         </p>
                       </div>
                     </div>
-
                     {item.options && (
                       <div className={styles.menu_item_option_wrapp}>
                         {item.options.map((option: MenuItemOption) => (
