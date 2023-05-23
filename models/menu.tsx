@@ -41,4 +41,5 @@ export type MenuItem = {
 export type MenuCategory = {
   category: Categories;
   items: MenuItem[];
+    
 }
