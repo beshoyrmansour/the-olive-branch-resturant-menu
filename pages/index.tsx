@@ -21,7 +21,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
   useEffect(() => {
     if (data.length) setGrouped(groupArrayByCategory(data));
 
-    return () => {};
+    return () => { };
   }, [data]);
 
   // console.log({ data, grouped });
@@ -119,9 +119,8 @@ export default function Home({ data }: { data: MenuItem[] }) {
                               <span className={styles.order_nummber}>
                                 {item.number}.
                               </span>{" "}
-                              {` ${
-                                lang === "en" ? item.en_name : item.cz_name
-                              }`}
+                              {` ${lang === "en" ? item.en_name : item.cz_name
+                                }`}
                             </span>
                             <span className={styles.menu_item_name_sub}>
                               {lang === "en" ? item.cz_name : item.en_name}
@@ -200,13 +199,6 @@ export default function Home({ data }: { data: MenuItem[] }) {
               <span>{lang === "en" ? "us" : "nám"}</span>
             </h3>
             <div className={styles.social}>
-              <a
-                target="_blank"
-                href="https://wolt.com/en/cze/prague/restaurant/grill-restaurant"
-                className={styles.wolt_icon}
-              >
-                W
-              </a>
               <a
                 target="_blank"
                 href="https://m.facebook.com/profile.php?id=100080996603475"
