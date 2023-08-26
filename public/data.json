@@ -415,23 +415,23 @@
     "en_description": "",
     "cz_description": "",
     "price": "50",
-    "cz_name": "Kava ",
+    "cz_name": "Arabská káva ",
     "en_name": "Arabic Coffee ",
     "img": "xxx",
     "options":[
       {
         "en_name":"Small",
-        "cz_name":"Malý",
-        "price":"50"
+        "cz_name":"Malá",
+        "price":"80"
       },
       {
         "en_name":"Medium",
         "cz_name":"Střední",
-        "price":"80"
+        "price":"120"
       },      {
         "en_name":"Large",
-        "cz_name":"Velký",
-        "price":"120"
+        "cz_name":"Velká",
+        "price":"160"
       }
     ]
   },
