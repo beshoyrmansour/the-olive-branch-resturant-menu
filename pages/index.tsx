@@ -154,7 +154,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                         </p>
                         {item.allergy &&
                           <div className={styles.allergy_wrapper}>
-                            <h4 className={styles.allergy_title} >{lang === "en" ? 'Allergies' : 'Alergie'}</h4>
+                            <h4 className={styles.allergy_title} >{lang === "en" ? 'Allergies' : 'Alergeny'}</h4>
                             <p className={styles.allergy}>
                               {item.allergy.map(v => <AllargyItem key={`allergy_${item.id}_${v}`} value={v} lang={lang as 'en' | 'cz'} />)}
                             </p>
