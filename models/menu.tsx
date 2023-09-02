@@ -1,5 +1,5 @@
 export enum Categories {
-  'Talíře s hommosem',
+  'Talíře s hummusem',
   'Plněné placky a tortilly',
   'Naše specialita',
   'Něco z našeho grilu',
