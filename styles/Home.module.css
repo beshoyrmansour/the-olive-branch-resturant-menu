@@ -72,6 +72,26 @@
   min-width: 160px;
 }
 
+.allergy_title {
+color: #808080;
+padding-right: 0.4rem;
+font-weight: 400;
+}
+
+.allergy_wrapper{
+  display: flex;
+  width: 100%;
+}
+.allergy {
+  /* position: absolute; */
+width: auto;
+  /* border-radius: 0px 0px 8px 8px; */
+  /* width: calc(160px - 1.5rem); */
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .vegan {
   position: absolute;
   left: 0;
@@ -432,6 +452,11 @@
 
   .menu_item_description {
     /* text-align: center; */
+  }
+
+  .allergy {
+    margin-bottom: 1rem;
+    width: auto;
   }
 
   .vegan {

@@ -36,9 +36,10 @@ export type MenuItem = {
   img: string;
   isVegan: boolean;
   options?: Array<MenuItemOption>;
+  allergy: Array<number>
 }
 
 export type MenuCategory = {
   category: Categories;
-  items: MenuItem[];  
+  items: MenuItem[];
 }

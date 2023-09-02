@@ -1,6 +1,10 @@
 [
   {
     "id": "001",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "1",
     "category": "0",
     "en_description": "Hummus and Arabic bread",
@@ -13,6 +17,10 @@
   },
   {
     "id": "002",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "2",
     "category": "0",
     "en_description": "Hummus, chickpeas, olive oil, pickles, fresh vegetables and Arabic bread",
@@ -25,6 +33,10 @@
   },
   {
     "id": "003",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "3",
     "category": "0",
     "en_description": "Hummus, falafel, olive oil and Arabic bread",
@@ -37,6 +49,10 @@
   },
   {
     "id": "004",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "4",
     "category": "0",
     "en_description": "Fava beans, olive oil, pickles, fresh vegetables and Arabic bread",
@@ -49,6 +65,10 @@
   },
   {
     "id": "005",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "5",
     "category": "0",
     "en_description": "Hummus, fried eggs in olive oil, Arabic bread",
@@ -61,6 +81,10 @@
   },
   {
     "id": "006",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "6",
     "category": "0",
     "en_description": "Hummus, chicken shawarma and Arabic bread",
@@ -73,6 +97,10 @@
   },
   {
     "id": "007",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "7",
     "category": "0",
     "en_description": "Hummus, ground beef and Arabic bread",
@@ -85,6 +113,10 @@
   },
   {
     "id": "008",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "8",
     "category": "0",
     "en_description": "Hummus, falafel, pickles, fresh vegetables and Arabic bread",
@@ -97,6 +129,10 @@
   },
   {
     "id": "009",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "9",
     "category": "0",
     "en_description": "Hummus, chicken shawarma, pickles, fresh vegetables and Arabic bread",
@@ -109,6 +145,10 @@
   },
   {
     "id": "010",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "10",
     "category": "1",
     "en_description": "Arabic bread, falafel, hummus, fresh vegetables and tahini",
@@ -121,6 +161,10 @@
   },
   {
     "id": "011",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "11",
     "category": "1",
     "en_description": "Arabic bread, chicken shawarma, hummus, fresh vegetables and tahini",
@@ -132,6 +176,10 @@
   },
   {
     "id": "012",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "12",
     "category": "1",
     "en_description": "Tortilla bread, falafel,hummus, fresh vegetables, and tahini",
@@ -144,6 +192,10 @@
   },
   {
     "id": "013",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "13",
     "category": "1",
     "en_description": "Tortilla bread, chicken shawarma,hummus, fresh vegetables, and tahini",
@@ -155,6 +207,10 @@
   },
   {
     "id": "014",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "14",
     "category": "2",
     "en_description": "Saj bread coated with olive oil, chicken, onions, almonds, sumac spice",
@@ -166,6 +222,10 @@
   },
   {
     "id": "015",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "15",
     "category": "2",
     "en_description": "Saj bread coated with olive oil, chicken, onions, almonds, sumac spice",
@@ -177,6 +237,10 @@
   },
   {
     "id": "016",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "16",
     "category": "3",
     "en_description": "Grilled Arabic bread stuffed with ground beef",
@@ -185,22 +249,25 @@
     "cz_name": "Arajes",
     "en_name": "Arayes",
     "img": "Arajes plnene masem.jpg",
-    "options":[
+    "options": [
       {
-        "en_name":"2 pieces",
-        "cz_name":"2 kusy",
-        "price":"120"
+        "en_name": "2 pieces",
+        "cz_name": "2 kusy",
+        "price": "120"
       },
       {
-        "en_name":"4 pieces",
-        "cz_name":"4 kusy",
-        "price":"200"
+        "en_name": "4 pieces",
+        "cz_name": "4 kusy",
+        "price": "200"
       }
     ]
   },
-  
   {
     "id": "017",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "17",
     "category": "3",
     "en_description": "2 Chicken skewers, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables, Arabic bread",
@@ -212,6 +279,10 @@
   },
   {
     "id": "018",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "18",
     "category": "3",
     "en_description": "Beef kabab, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables, Arabic bread",
@@ -223,6 +294,10 @@
   },
   {
     "id": "019",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "19",
     "category": "3",
     "en_description": "2 lamb skewers, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables, Arabic bread",
@@ -234,6 +309,10 @@
   },
   {
     "id": "20",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "20",
     "category": "3",
     "en_description": "Three types of grilled meat (350 g), grilled tomatoes, grilled onions, pickles, fresh vegetables, french fries, Arabic bread",
@@ -245,6 +324,10 @@
   },
   {
     "id": "021",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "21",
     "category": "3",
     "en_description": "Three types of grilled meat (700 g), grilled tomatoes, grilled onions, pickles, fresh vegetables, french fries, Arabic bread",
@@ -256,6 +339,10 @@
   },
   {
     "id": "022",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "22",
     "category": "3",
     "en_description": "Three types of grilled meat (1400 g), grilled tomatoes, grilled onions, pickles, fresh vegetables, french fries, Arabic bread",
@@ -267,6 +354,10 @@
   },
   {
     "id": "023",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "23",
     "category": "3",
     "en_description": "10 types of Palestinian appetizers",
@@ -279,6 +370,10 @@
   },
   {
     "id": "024",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "24",
     "category": "4",
     "en_description": "Cucumbers, tomatoes, onions, parsley, pieces of fried Arabic bread",
@@ -291,6 +386,10 @@
   },
   {
     "id": "025",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "25",
     "category": "4",
     "en_description": "Burgul, chickpeas",
@@ -303,6 +402,10 @@
   },
   {
     "id": "026",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "26",
     "category": "4",
     "en_description": "",
@@ -315,6 +418,10 @@
   },
   {
     "id": "027",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "27",
     "category": "4",
     "en_description": "",
@@ -327,6 +434,10 @@
   },
   {
     "id": "028",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "28",
     "category": "4",
     "en_description": "",
@@ -339,6 +450,10 @@
   },
   {
     "id": "029",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "29",
     "category": "5",
     "en_description": "",
@@ -350,6 +465,10 @@
   },
   {
     "id": "030",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "30",
     "category": "5",
     "en_description": "",
@@ -361,6 +480,10 @@
   },
   {
     "id": "031",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "31",
     "category": "5",
     "en_description": "",
@@ -370,9 +493,12 @@
     "en_name": "Basbosa",
     "img": "Basbusa.jpg"
   },
-  
   {
     "id": "032",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "32",
     "category": "6",
     "en_description": "",
@@ -384,6 +510,10 @@
   },
   {
     "id": "033",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "33",
     "category": "6",
     "en_description": "",
@@ -392,25 +522,30 @@
     "cz_name": "Čaj ",
     "en_name": "Tea ",
     "img": "Caj.jpg",
-    "options":[
+    "options": [
       {
-        "en_name":"Small",
-        "cz_name":"Malý",
-        "price":"50"
+        "en_name": "Small",
+        "cz_name": "Malý",
+        "price": "50"
       },
       {
-        "en_name":"Medium",
-        "cz_name":"Střední",
-        "price":"80"
-      },      {
-        "en_name":"Large",
-        "cz_name":"Velký",
-        "price":"120"
+        "en_name": "Medium",
+        "cz_name": "Střední",
+        "price": "80"
+      },
+      {
+        "en_name": "Large",
+        "cz_name": "Velký",
+        "price": "120"
       }
     ]
   },
   {
     "id": "034",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "34",
     "category": "6",
     "en_description": "",
@@ -419,25 +554,30 @@
     "cz_name": "Arabská káva ",
     "en_name": "Arabic Coffee ",
     "img": "xxx",
-    "options":[
+    "options": [
       {
-        "en_name":"Small",
-        "cz_name":"Malá",
-        "price":"80"
+        "en_name": "Small",
+        "cz_name": "Malá",
+        "price": "80"
       },
       {
-        "en_name":"Medium",
-        "cz_name":"Střední",
-        "price":"120"
-      },      {
-        "en_name":"Large",
-        "cz_name":"Velká",
-        "price":"160"
+        "en_name": "Medium",
+        "cz_name": "Střední",
+        "price": "120"
+      },
+      {
+        "en_name": "Large",
+        "cz_name": "Velká",
+        "price": "160"
       }
     ]
   },
   {
     "id": "035",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "35",
     "category": "6",
     "en_description": "",
@@ -449,6 +589,10 @@
   },
   {
     "id": "036",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "36",
     "category": "6",
     "en_description": "",
@@ -460,6 +604,10 @@
   },
   {
     "id": "037",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "37",
     "category": "6",
     "en_description": "Sparkling or still water",
@@ -471,6 +619,10 @@
   },
   {
     "id": "038",
+    "allergy": [
+      1,
+      11
+    ],
     "number": "38",
     "category": "6",
     "en_description": "",

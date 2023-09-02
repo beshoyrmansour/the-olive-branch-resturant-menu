@@ -12,6 +12,7 @@ import {
   MenuItemOption,
 } from "@/models/menu";
 import { it } from "node:test";
+import AllargyItem from "@/components/AllargyItem";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -110,6 +111,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                             {lang === "en" ? "Vegetarian" : "Vegetariánské"}
                           </span>
                         )}
+
                       </div>
                       <div className={styles.menu_item_text}>
                         <h2 className={styles.menu_item_heading}>
@@ -150,6 +152,14 @@ export default function Home({ data }: { data: MenuItem[] }) {
                             ? item.en_description
                             : item.cz_description}
                         </p>
+                        {item.allergy &&
+                          <div className={styles.allergy_wrapper}>
+                            <h4 className={styles.allergy_title} >{lang === "en" ? 'Allergies' : 'Alergie'}</h4>
+                            <p className={styles.allergy}>
+                              {item.allergy.map(v => <AllargyItem value={v} lang={lang as 'en' | 'cz'} />)}
+                            </p>
+                          </div>
+                        }
                       </div>
                     </div>
                     {item.options && (
