@@ -259,7 +259,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Monday:" : "Pondělí:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
+                      <span className="WF8WNe">10:00 - 22:00</span>
                     </td>
                   </tr>
                   <tr>
@@ -267,7 +267,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Tuesday:" : "Úterý:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
+                      <span className="WF8WNe">10:00 - 22:00</span>
                     </td>
                   </tr>
                   <tr>
@@ -275,7 +275,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Wednesday:" : "Středa:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
+                      <span className="WF8WNe">10:00 - 22:00</span>
                     </td>
                   </tr>
                   <tr>
@@ -283,7 +283,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Thursday:" : "Čtvrtek:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
+                      <span className="WF8WNe">10:00 - 22:00</span>
                     </td>
                   </tr>
                   <tr>
@@ -291,7 +291,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Friday:" : "Pátek:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
+                      <span className="WF8WNe">10:00 - 22:00</span>
                     </td>
                   </tr>
                   <tr>
@@ -299,7 +299,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Saturday:" : "Sobota:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
+                      <span className="WF8WNe">10:00 - 22:00</span>
                     </td>
                   </tr>
                   <tr>
@@ -307,7 +307,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Sunday:" : "Neděle:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
+                      <span className="WF8WNe">10:00 - 22:00</span>
                     </td>
                   </tr>
                 </tbody>
