@@ -22,7 +22,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
   useEffect(() => {
     if (data.length) setGrouped(groupArrayByCategory(data));
 
-    return () => { };
+    return () => {};
   }, [data]);
 
   // console.log({ data, grouped });
@@ -111,7 +111,6 @@ export default function Home({ data }: { data: MenuItem[] }) {
                             {lang === "en" ? "Vegetarian" : "Vegetariánské"}
                           </span>
                         )}
-
                       </div>
                       <div className={styles.menu_item_text}>
                         <h2 className={styles.menu_item_heading}>
@@ -121,8 +120,9 @@ export default function Home({ data }: { data: MenuItem[] }) {
                               <span className={styles.order_nummber}>
                                 {item.number}.
                               </span>{" "}
-                              {` ${lang === "en" ? item.en_name : item.cz_name
-                                }`}
+                              {` ${
+                                lang === "en" ? item.en_name : item.cz_name
+                              }`}
                             </span>
                             <span className={styles.menu_item_name_sub}>
                               {lang === "en" ? item.cz_name : item.en_name}
@@ -152,14 +152,26 @@ export default function Home({ data }: { data: MenuItem[] }) {
                             ? item.en_description
                             : item.cz_description}
                         </p>
-                        {item.allergy &&
+                        {item.allergy && (
                           <div className={styles.allergy_wrapper}>
-                            <h4 className={styles.allergy_title} >{ item.allergy.length==0?'':lang === "en" ? 'Allergies' : 'Alergeny'}</h4>
+                            <h4 className={styles.allergy_title}>
+                              {item.allergy.length == 0
+                                ? ""
+                                : lang === "en"
+                                ? "Allergies"
+                                : "Alergeny"}
+                            </h4>
                             <p className={styles.allergy}>
-                              {item.allergy.map(v => <AllargyItem key={`allergy_${item.id}_${v}`} value={v} lang={lang as 'en' | 'cz'} />)}
+                              {item.allergy.map((v) => (
+                                <AllargyItem
+                                  key={`allergy_${item.id}_${v}`}
+                                  value={v}
+                                  lang={lang as "en" | "cz"}
+                                />
+                              ))}
                             </p>
                           </div>
-                        }
+                        )}
                       </div>
                     </div>
                     {item.options && (
