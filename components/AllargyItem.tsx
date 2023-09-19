@@ -24,10 +24,7 @@ export default AllargyItem;
 const AllargiesText: Record<number, Record<"en" | "cz", string>> = {
   1: { en: "Cereals containing gluten", cz: "Obiloviny obsahující lepek" },
   3: { en: "Eggs and egg products", cz: "Vejce a výrobky z nich" },
-  5: {
-    en: "Groundnut kernels (peanuts)",
-    cz: "Jádra podzemnice olejné (arašídy)",
-  },
+  5: { en: "Groundnut kernels (peanuts)",cz: "Jádra podzemnice olejné (arašídy)"},
   7: { en: "Milk and milk products", cz: "Mléko a výrobky z něj" },
   8: { en: "Nuts", cz: "Skořápkové plody" },
   11: { en: "Sesame seeds ", cz: "Sezamová semena" },
