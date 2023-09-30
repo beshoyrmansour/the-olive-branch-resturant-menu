@@ -228,7 +228,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
               ></a>
               <a
                 target="_blank"
-                href="https://www.instagram.com/mr.falafelprague/?hl=en"
+                href="https://www.instagram.com/palestinian_restaurant_prague/"
                 className="fa fa-instagram"
               ></a>
             </div>
