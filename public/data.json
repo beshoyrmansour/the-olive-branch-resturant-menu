@@ -402,12 +402,12 @@
     "options": [
       {
         "en_name": "Small",
-        "cz_name": "Malý",
+        "cz_name": "Malá",
         "price": "140"
       },
       {
         "en_name": "Large",
-        "cz_name": "Velký",
+        "cz_name": "Velká",
         "price": "240"
       }
     ]
