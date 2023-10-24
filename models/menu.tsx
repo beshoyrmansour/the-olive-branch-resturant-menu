@@ -7,7 +7,6 @@ export enum Categories {
   'Dezerty',
   'Nápoje'
 }
-
 export enum Categories_en {
   'Hummus Section',
   'Sandwiches',
