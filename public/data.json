@@ -6,7 +6,7 @@
     "category": "0",
     "en_description": "Hummus and Arabic bread",
     "cz_description": "Hummus, arabský chléb",
-    "price": "120",
+    "price": "135",
     "cz_name": "Hummus s arabským chlebem",
     "en_name": "Hummus with Arabic bread",
     "img": "Humus.jpg",
@@ -19,7 +19,7 @@
     "category": "0",
     "en_description": "Hummus, chickpeas, olive oil, pickles, fresh vegetables and Arabic bread",
     "cz_description": "Hummus, vařená cizrna, olivový olej, nakládaná a čerstvá zelenina, arabský chléb",
-    "price": "190",
+    "price": "210",
     "cz_name": "Hummus musabaha",
     "en_name": "Hummus Musabaha",
     "img": "Humus musabaha.jpg",
@@ -45,7 +45,7 @@
     "category": "0",
     "en_description": "Fava beans, olive oil, pickles, fresh vegetables and Arabic bread",
     "cz_description": "Vařené fava fazole, olivový olej, nakládaná a čerstvá zelenina, arabský chléb",
-    "price": "190",
+    "price": "210",
     "cz_name": "Foul mdamas menu",
     "en_name": "Foul Mdamas Meal",
     "img": "Foul mdmas.jpg",
@@ -58,7 +58,7 @@
     "category": "0",
     "en_description": "Hummus, fried eggs in olive oil, Arabic bread",
     "cz_description": "Hummus, smažená vejce na olivovém oleji, arabský chléb",
-    "price": "190",
+    "price": "210",
     "cz_name": "Hummus se smaženými vejci",
     "en_name": "Hummus with fried eggs",
     "img": "Humus vejce.jpg",
@@ -71,7 +71,7 @@
     "category": "0",
     "en_description": "Hummus, chicken shawarma and Arabic bread",
     "cz_description": "Hummus, kuřecí shawarma, arabský chléb",
-    "price": "210",
+    "price": "225",
     "cz_name": "Hummus s kuřecí šawarmou",
     "en_name": "Hummus with Chicken Shawarma",
     "img": "Humus s kurecim.jpg",
@@ -84,7 +84,7 @@
     "category": "0",
     "en_description": "Hummus, ground beef and Arabic bread",
     "cz_description": "Hummus, mleté hovězí maso, arabský chléb",
-    "price": "235",
+    "price": "245",
     "cz_name": "Hummus s hovězím masem",
     "en_name": "Hummus with Ground Beef",
     "img": "Humus s hovezim.jpg",
@@ -97,7 +97,7 @@
     "category": "0",
     "en_description": "Hummus, falafel, pickles, fresh vegetables and Arabic bread",
     "cz_description": "Hummus, falafel, nakládaná a čerstvá zelenina, arabský chléb",
-    "price": "210",
+    "price": "225",
     "cz_name": "Hummus falafel menu",
     "en_name": "Hummus Falafel Meal",
     "img": "Humus falafel.jpg",
@@ -110,7 +110,7 @@
     "category": "0",
     "en_description": "Hummus, chicken shawarma, pickles, fresh vegetables and Arabic bread",
     "cz_description": "Hummus, kuřecí šawarmou, nakládaná a čerstvá zelenina, arabský chléb",
-    "price": "235",
+    "price": "249",
     "cz_name": "Hummus s kuřecí šawarmou menu",
     "en_name": "Hummus Chicken Shawarma Meal",
     "img": "Humus s kureci shwarmou menu.jpg",
@@ -123,7 +123,7 @@
     "category": "1",
     "en_description": "Arabic bread, falafel, hummus, fresh vegetables and tahini",
     "cz_description": "Arabský chléb, falafel, hummus, mix zeleniny, tehina",
-    "price": "170",
+    "price": "175",
     "cz_name": "Falafel v arabském chlebu",
     "en_name": "Falafel Sandwich",
     "img": "Falafel v chlebu.jpg",
@@ -136,7 +136,7 @@
     "category": "1",
     "en_description": "Arabic bread, chicken shawarma, hummus, fresh vegetables and tahini",
     "cz_description": "Arabský chléb, kuřecí šawarma, hummus, mix zeleniny, tehina",
-    "price": "185",
+    "price": "195",
     "cz_name": "Kuřecí šawarma v arabském chlebu",
     "en_name": "Chicken Shawarma Sandwich",
     "img": "Shawerma Sandwitchs.jpg"
@@ -148,7 +148,7 @@
     "category": "1",
     "en_description": "Tortilla bread, falafel,hummus, fresh vegetables, and tahini",
     "cz_description": "Tortilla, falafel, hummus, mix zeleniny, tehina",
-    "price": "190",
+    "price": "199",
     "cz_name": "Falafel wrap",
     "en_name": "Falafel Wrap",
     "img": "Tortila s falafelem.jpg",
@@ -161,7 +161,7 @@
     "category": "1",
     "en_description": "Tortilla bread, chicken shawarma,hummus, fresh vegetables, and tahini",
     "cz_description": "Tortilla, kuřecí šawarma, hummus, mix zeleniny, tehina",
-    "price": "200",
+    "price": "210",
     "cz_name": "Kuřecí šawarma wrap",
     "en_name": "Chicken Shawarma Wrap",
     "img": "Kureci shwarma wrap.jpg"
@@ -173,7 +173,7 @@
     "category": "2",
     "en_description": "Saj bread coated with olive oil, chicken, onions, almonds, sumac spice",
     "cz_description": "Domácí tortilla, cibule s olivovým olejem, kuřecí maso, pražené mandle, koření sumak",
-    "price": "270",
+    "price": "290",
     "cz_name": "Palestinský musakhan",
     "en_name": "Palestinian Musakhan",
     "img": "Musakhan.jpg"
@@ -185,7 +185,7 @@
     "category": "2",
     "en_description": "Saj bread coated with olive oil, chicken, onions, almonds, sumac spice",
     "cz_description": "Obalená domácí tortilla, cibule s olivovým olejem, kuřecí maso, pražené mandle, koření sumak",
-    "price": "230",
+    "price": "245",
     "cz_name": "Palestinský musakhan laffa",
     "en_name": "Palestinian Musakhan Laffa",
     "img": "Musakhan lafa.jpg"
@@ -205,12 +205,12 @@
       {
         "en_name": "2 pieces",
         "cz_name": "2 kusy",
-        "price": "120"
+        "price": "130"
       },
       {
         "en_name": "4 pieces",
         "cz_name": "4 kusy",
-        "price": "200"
+        "price": "220"
       }
     ]
   },
@@ -233,7 +233,7 @@
     "category": "3",
     "en_description": "Beef kabab, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables",
     "cz_description": "Hovězí kabab, hranolky, hummus, baba ganuš, turecký salát, nakládaná a čerstvá zelenina",
-    "price": "290",
+    "price": "310",
     "cz_name": "Šiškabab menu",
     "en_name": "Shishkabab Meal",
     "img": "kebab.jpg"
@@ -245,7 +245,7 @@
     "category": "3",
     "en_description": "2 lamb skewers, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables",
     "cz_description": "2 jehněčí špízy, hranolky, hummus, baba ganuš, turecký salát, nakládaná a čerstvá zelenina",
-    "price": "350",
+    "price": "370",
     "cz_name": "Grilované jehněčí menu",
     "en_name": "Grilled Lamb Meal",
     "img": "Jehneci spiz.jpg"
@@ -257,7 +257,7 @@
     "category": "3",
     "en_description": "Three types of grilled meat (350 g), turkish salad, maza, fresh vegetables, french fries",
     "cz_description": "Tři druhy grilovaného masa (350 g), turecký salát, maza, nakládaná a čerstvá zelenina, hranolky",
-    "price": "450",
+    "price": "490",
     "cz_name": "Mix Grill (1 osoba)",
     "en_name": "Mix Grill (1 person)",
     "img": "Mix grill.jpg"
@@ -269,7 +269,7 @@
     "category": "3",
     "en_description": "Three types of grilled meat (700 g), turkish salad, maza, fresh vegetables, french fries",
     "cz_description": "Tři druhy grilovaného masa (700 g), turecký salát, maza, nakládaná a čerstvá zelenina, hranolky",
-    "price": "850",
+    "price": "900",
     "cz_name": "Mix Grill (2 osoby)",
     "en_name": "Mix Grill (2 people)",
     "img": "Mix grill.jpg"
@@ -281,7 +281,7 @@
     "category": "3",
     "en_description": "Three types of grilled meat (1400 g), turkish salad, maza, fresh vegetables, french fries",
     "cz_description": "Tři druhy grilovaného masa (1400 g), turecký salát, maza, nakládaná a čerstvá zelenina, hranolky",
-    "price": "1600",
+    "price": "1900",
     "cz_name": "Mix Grill (3-4 osoby)",
     "en_name": "Mix Grill (3-4 people)",
     "img": "Mix grill.jpg"
@@ -293,7 +293,7 @@
     "category": "3",
     "en_description": "Your selection from several types of Palestinian appetizers, Arabic bread",
     "cz_description": "Na výběr z několika druhů palestinských chuťovek, arabský chléb",
-    "price": "450",
+    "price": "540",
     "cz_name": "Maza",
     "en_name": "Maza",
     "img": "Nazah.jpg",
@@ -302,12 +302,12 @@
       {
         "en_name": "1 plate",
         "cz_name": "1 miska",
-        "price": "55"
+        "price": "60"
       },
       {
         "en_name": "10 plates",
         "cz_name": "10 misek",
-        "price": "450"
+        "price": "540"
       }
     ]
   },
@@ -318,7 +318,7 @@
     "category": "4",
     "en_description": "Cucumbers, tomatoes, onions, parsley, pieces of fried Arabic bread",
     "cz_description": "Okurky, rajčata, cibule, petržel, kousky smaženého arabského chléba",
-    "price": "120",
+    "price": "140",
     "cz_name": "Salát fatúš",
     "en_name": "Fatush Salad",
     "img": "Salat fatus.jpg",
@@ -344,7 +344,7 @@
     "category": "4",
     "en_description": "",
     "cz_description": "",
-    "price": "90",
+    "price": "99",
     "cz_name": "Hummus",
     "en_name": "Hummus",
     "img": "humus only.jpg",
@@ -357,7 +357,7 @@
     "category": "4",
     "en_description": "",
     "cz_description": "",
-    "price": "70",
+    "price": "75",
     "cz_name": "Hranolky",
     "en_name": "Fries",
     "img": "fries.jpg",
@@ -370,7 +370,7 @@
     "category": "4",
     "en_description": "",
     "cz_description": "",
-    "price": "125",
+    "price": "145",
     "cz_name": "Baba ganuš",
     "en_name": "Baba ganoush",
     "img": "baba ghanoug.jpg",
@@ -419,9 +419,9 @@
     "category": "4",
     "en_description": "",
     "cz_description": "",
-    "price": "20",
-    "cz_name": "Arabský chléb",
-    "en_name": "Arabic Bread",
+    "price": "70",
+    "cz_name": "Rýže",
+    "en_name": "Rice",
     "img": "xxx"
   },
   {
@@ -431,7 +431,7 @@
     "category": "4",
     "en_description": "",
     "cz_description": "",
-    "price": "70",
+    "price": "79",
     "cz_name": "Nakládaná zelenina",
     "en_name": "Pickled Vegetables",
     "img": "xxx"
@@ -467,7 +467,7 @@
     "category": "5",
     "en_description": "",
     "cz_description": "",
-    "price": "50",
+    "price": "60",
     "cz_name": "Basbosa",
     "en_name": "Basbosa",
     "img": "Basbusa.jpg"
