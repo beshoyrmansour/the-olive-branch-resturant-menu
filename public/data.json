@@ -9,7 +9,7 @@
     "category": "0",
     "en_description": "Hummus and Arabic bread",
     "cz_description": "Hummus, arabský chléb",
-    "price": "120",
+    "price": "135",
     "cz_name": "Hummus s arabským chlebem",
     "en_name": "Hummus with Arabic bread",
     "img": "Humus.jpg",
@@ -25,7 +25,7 @@
     "category": "0",
     "en_description": "Hummus, chickpeas, olive oil, pickles, fresh vegetables and Arabic bread",
     "cz_description": "Hummus, vařená cizrna, olivový olej, nakládaná a čerstvá zelenina, arabský chléb",
-    "price": "190",
+    "price": "210",
     "cz_name": "Hummus musabaha",
     "en_name": "Hummus Musabaha",
     "img": "Humus musabaha.jpg",
@@ -51,13 +51,14 @@
     "id": "004",
     "allergy": [
       1,
-      11
+      11,
+      13
     ],
     "number": "4",
     "category": "0",
     "en_description": "Fava beans, olive oil, pickles, fresh vegetables and Arabic bread",
     "cz_description": "Vařené fava fazole, olivový olej, nakládaná a čerstvá zelenina, arabský chléb",
-    "price": "190",
+    "price": "210",
     "cz_name": "Foul mdamas menu",
     "en_name": "Foul Mdamas Meal",
     "img": "Foul mdmas.jpg",
@@ -67,13 +68,14 @@
     "id": "005",
     "allergy": [
       1,
+      3,
       11
     ],
     "number": "5",
     "category": "0",
     "en_description": "Hummus, fried eggs in olive oil, Arabic bread",
     "cz_description": "Hummus, smažená vejce na olivovém oleji, arabský chléb",
-    "price": "190",
+    "price": "210",
     "cz_name": "Hummus se smaženými vejci",
     "en_name": "Hummus with fried eggs",
     "img": "Humus vejce.jpg",
@@ -89,7 +91,7 @@
     "category": "0",
     "en_description": "Hummus, chicken shawarma and Arabic bread",
     "cz_description": "Hummus, kuřecí shawarma, arabský chléb",
-    "price": "210",
+    "price": "225",
     "cz_name": "Hummus s kuřecí šawarmou",
     "en_name": "Hummus with Chicken Shawarma",
     "img": "Humus s kurecim.jpg",
@@ -105,7 +107,7 @@
     "category": "0",
     "en_description": "Hummus, ground beef and Arabic bread",
     "cz_description": "Hummus, mleté hovězí maso, arabský chléb",
-    "price": "235",
+    "price": "245",
     "cz_name": "Hummus s hovězím masem",
     "en_name": "Hummus with Ground Beef",
     "img": "Humus s hovezim.jpg",
@@ -121,7 +123,7 @@
     "category": "0",
     "en_description": "Hummus, falafel, pickles, fresh vegetables and Arabic bread",
     "cz_description": "Hummus, falafel, nakládaná a čerstvá zelenina, arabský chléb",
-    "price": "210",
+    "price": "225",
     "cz_name": "Hummus falafel menu",
     "en_name": "Hummus Falafel Meal",
     "img": "Humus falafel.jpg",
@@ -137,7 +139,7 @@
     "category": "0",
     "en_description": "Hummus, chicken shawarma, pickles, fresh vegetables and Arabic bread",
     "cz_description": "Hummus, kuřecí šawarmou, nakládaná a čerstvá zelenina, arabský chléb",
-    "price": "235",
+    "price": "249",
     "cz_name": "Hummus s kuřecí šawarmou menu",
     "en_name": "Hummus Chicken Shawarma Meal",
     "img": "Humus s kureci shwarmou menu.jpg",
@@ -153,7 +155,7 @@
     "category": "1",
     "en_description": "Arabic bread, falafel, hummus, fresh vegetables and tahini",
     "cz_description": "Arabský chléb, falafel, hummus, mix zeleniny, tehina",
-    "price": "170",
+    "price": "175",
     "cz_name": "Falafel v arabském chlebu",
     "en_name": "Falafel Sandwich",
     "img": "Falafel v chlebu.jpg",
@@ -169,7 +171,7 @@
     "category": "1",
     "en_description": "Arabic bread, chicken shawarma, hummus, fresh vegetables and tahini",
     "cz_description": "Arabský chléb, kuřecí šawarma, hummus, mix zeleniny, tehina",
-    "price": "185",
+    "price": "195",
     "cz_name": "Kuřecí šawarma v arabském chlebu",
     "en_name": "Chicken Shawarma Sandwich",
     "img": "Shawerma Sandwitchs.jpg"
@@ -184,7 +186,7 @@
     "category": "1",
     "en_description": "Tortilla bread, falafel,hummus, fresh vegetables, and tahini",
     "cz_description": "Tortilla, falafel, hummus, mix zeleniny, tehina",
-    "price": "190",
+    "price": "199",
     "cz_name": "Falafel wrap",
     "en_name": "Falafel Wrap",
     "img": "Tortila s falafelem.jpg",
@@ -200,7 +202,7 @@
     "category": "1",
     "en_description": "Tortilla bread, chicken shawarma,hummus, fresh vegetables, and tahini",
     "cz_description": "Tortilla, kuřecí šawarma, hummus, mix zeleniny, tehina",
-    "price": "200",
+    "price": "210",
     "cz_name": "Kuřecí šawarma wrap",
     "en_name": "Chicken Shawarma Wrap",
     "img": "Kureci shwarma wrap.jpg"
@@ -208,14 +210,13 @@
   {
     "id": "014",
     "allergy": [
-      1,
-      11
+      1
     ],
     "number": "14",
     "category": "2",
     "en_description": "Saj bread coated with olive oil, chicken, onions, almonds, sumac spice",
     "cz_description": "Domácí tortilla, cibule s olivovým olejem, kuřecí maso, pražené mandle, koření sumak",
-    "price": "270",
+    "price": "290",
     "cz_name": "Palestinský musakhan",
     "en_name": "Palestinian Musakhan",
     "img": "Musakhan.jpg"
@@ -223,14 +224,13 @@
   {
     "id": "015",
     "allergy": [
-      1,
-      11
+      1
     ],
     "number": "15",
     "category": "2",
     "en_description": "Saj bread coated with olive oil, chicken, onions, almonds, sumac spice",
     "cz_description": "Obalená domácí tortilla, cibule s olivovým olejem, kuřecí maso, pražené mandle, koření sumak",
-    "price": "230",
+    "price": "245",
     "cz_name": "Palestinský musakhan laffa",
     "en_name": "Palestinian Musakhan Laffa",
     "img": "Musakhan lafa.jpg"
@@ -238,8 +238,7 @@
   {
     "id": "016",
     "allergy": [
-      1,
-      11
+      1
     ],
     "number": "16",
     "category": "3",
@@ -253,25 +252,24 @@
       {
         "en_name": "2 pieces",
         "cz_name": "2 kusy",
-        "price": "120"
+        "price": "130"
       },
       {
         "en_name": "4 pieces",
         "cz_name": "4 kusy",
-        "price": "200"
+        "price": "220"
       }
     ]
   },
   {
     "id": "017",
     "allergy": [
-      1,
       11
     ],
     "number": "17",
     "category": "3",
-    "en_description": "2 Chicken skewers, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables, Arabic bread",
-    "cz_description": "2 Kuřecí špízy, hranolky, hummus, baba ganuš, turecký salát, nakládaná a čerstvá zelenina, arabský chléb",
+    "en_description": "2 Chicken skewers, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables",
+    "cz_description": "2 Kuřecí špízy, hranolky, hummus, baba ganuš, turecký salát, nakládaná a čerstvá zelenina",
     "price": "270",
     "cz_name": "Šištauk menu",
     "en_name": "Shishtauk Meal",
@@ -280,14 +278,13 @@
   {
     "id": "018",
     "allergy": [
-      1,
       11
     ],
     "number": "18",
     "category": "3",
-    "en_description": "Beef kabab, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables, Arabic bread",
-    "cz_description": "Hovězí kabab, hranolky, hummus, baba ganuš, turecký salát, nakládaná a čerstvá zelenina, arabský chléb",
-    "price": "290",
+    "en_description": "Beef kabab, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables",
+    "cz_description": "Hovězí kabab, hranolky, hummus, baba ganuš, turecký salát, nakládaná a čerstvá zelenina",
+    "price": "310",
     "cz_name": "Šiškabab menu",
     "en_name": "Shishkabab Meal",
     "img": "kebab.jpg"
@@ -295,14 +292,13 @@
   {
     "id": "019",
     "allergy": [
-      1,
       11
     ],
     "number": "19",
     "category": "3",
-    "en_description": "2 lamb skewers, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables, Arabic bread",
-    "cz_description": "2 jehněčí špízy, hranolky, hummus, baba ganuš, turecký salát, nakládaná a čerstvá zelenina, arabský chléb",
-    "price": "350",
+    "en_description": "2 lamb skewers, fries, hummus, baba ganoush, turkish salad, pickles and fresh vegetables",
+    "cz_description": "2 jehněčí špízy, hranolky, hummus, baba ganuš, turecký salát, nakládaná a čerstvá zelenina",
+    "price": "370",
     "cz_name": "Grilované jehněčí menu",
     "en_name": "Grilled Lamb Meal",
     "img": "Jehneci spiz.jpg"
@@ -310,14 +306,13 @@
   {
     "id": "20",
     "allergy": [
-      1,
       11
     ],
     "number": "20",
     "category": "3",
-    "en_description": "Three types of grilled meat (350 g), grilled tomatoes, grilled onions, pickles, fresh vegetables, french fries, Arabic bread",
-    "cz_description": "Tři druhy grilováného masa (350 g), grilovaná rajčata, grilovaná cibule, nakládaná a čerstvá zelenina, hranolky, arabský chléb",
-    "price": "450",
+    "en_description": "Three types of grilled meat (350 g), turkish salad, maza, fresh vegetables, french fries",
+    "cz_description": "Tři druhy grilovaného masa (350 g), turecký salát, maza, nakládaná a čerstvá zelenina, hranolky",
+    "price": "490",
     "cz_name": "Mix Grill (1 osoba)",
     "en_name": "Mix Grill (1 person)",
     "img": "Mix grill.jpg"
@@ -325,14 +320,13 @@
   {
     "id": "021",
     "allergy": [
-      1,
       11
     ],
     "number": "21",
     "category": "3",
-    "en_description": "Three types of grilled meat (700 g), grilled tomatoes, grilled onions, pickles, fresh vegetables, french fries, Arabic bread",
-    "cz_description": "Tři druhy grilováného masa (700 g), grilovaná rajčata, grilovaná cibule, nakládaná a čerstvá zelenina, hranolky, arabský chléb",
-    "price": "850",
+    "en_description": "Three types of grilled meat (700 g), turkish salad, maza, fresh vegetables, french fries",
+    "cz_description": "Tři druhy grilovaného masa (700 g), turecký salát, maza, nakládaná a čerstvá zelenina, hranolky",
+    "price": "900",
     "cz_name": "Mix Grill (2 osoby)",
     "en_name": "Mix Grill (2 people)",
     "img": "Mix grill.jpg"
@@ -340,14 +334,13 @@
   {
     "id": "022",
     "allergy": [
-      1,
       11
     ],
     "number": "22",
     "category": "3",
-    "en_description": "Three types of grilled meat (1400 g), grilled tomatoes, grilled onions, pickles, fresh vegetables, french fries, Arabic bread",
-    "cz_description": "Tři druhy grilováného masa (1400 g), grilovaná rajčata, grilovaná cibule, nakládaná a čerstvá zelenina, hranolky, arabský chléb",
-    "price": "1600",
+    "en_description": "Three types of grilled meat (1400 g), turkish salad, maza, fresh vegetables, french fries",
+    "cz_description": "Tři druhy grilovaného masa (1400 g), turecký salát, maza, nakládaná a čerstvá zelenina, hranolky",
+    "price": "1900",
     "cz_name": "Mix Grill (3-4 osoby)",
     "en_name": "Mix Grill (3-4 people)",
     "img": "Mix grill.jpg"
@@ -356,29 +349,42 @@
     "id": "023",
     "allergy": [
       1,
+      7,
+      8,
       11
     ],
     "number": "23",
     "category": "3",
-    "en_description": "10 types of Palestinian appetizers",
-    "cz_description": "10 druhů palestinských chuťovek",
-    "price": "450",
+    "en_description": "Your selection from several types of Palestinian appetizers, Arabic bread",
+    "cz_description": "Na výběr z několika druhů palestinských chuťovek, arabský chléb",
+    "price": "540",
     "cz_name": "Maza",
     "en_name": "Maza",
     "img": "Nazah.jpg",
-    "isVegan": true
+    "isVegan": true,
+    "options": [
+      {
+        "en_name": "1 plate",
+        "cz_name": "1 miska",
+        "price": "60"
+      },
+      {
+        "en_name": "10 plates",
+        "cz_name": "10 misek",
+        "price": "540"
+      }
+    ]
   },
   {
     "id": "024",
     "allergy": [
-      1,
-      11
+      1
     ],
     "number": "24",
     "category": "4",
     "en_description": "Cucumbers, tomatoes, onions, parsley, pieces of fried Arabic bread",
     "cz_description": "Okurky, rajčata, cibule, petržel, kousky smaženého arabského chléba",
-    "price": "120",
+    "price": "140",
     "cz_name": "Salát fatúš",
     "en_name": "Fatush Salad",
     "img": "Salat fatus.jpg",
@@ -387,8 +393,7 @@
   {
     "id": "025",
     "allergy": [
-      1,
-      11
+      1
     ],
     "number": "25",
     "category": "4",
@@ -403,14 +408,13 @@
   {
     "id": "026",
     "allergy": [
-      1,
       11
     ],
     "number": "26",
     "category": "4",
     "en_description": "",
     "cz_description": "",
-    "price": "90",
+    "price": "99",
     "cz_name": "Hummus",
     "en_name": "Hummus",
     "img": "humus only.jpg",
@@ -418,15 +422,12 @@
   },
   {
     "id": "027",
-    "allergy": [
-      1,
-      11
-    ],
+    "allergy": [],
     "number": "27",
     "category": "4",
     "en_description": "",
     "cz_description": "",
-    "price": "70",
+    "price": "75",
     "cz_name": "Hranolky",
     "en_name": "Fries",
     "img": "fries.jpg",
@@ -435,14 +436,13 @@
   {
     "id": "028",
     "allergy": [
-      1,
       11
     ],
     "number": "28",
     "category": "4",
     "en_description": "",
     "cz_description": "",
-    "price": "125",
+    "price": "145",
     "cz_name": "Baba ganuš",
     "en_name": "Baba ganoush",
     "img": "baba ghanoug.jpg",
@@ -450,11 +450,74 @@
   },
   {
     "id": "029",
-    "allergy": [
-      1,
-      11
-    ],
+    "allergy": [],
     "number": "29",
+    "category": "4",
+    "en_description": "",
+    "cz_description": "",
+    "price": "90",
+    "cz_name": "Falafel (6 ks)",
+    "en_name": "Falafel (6 pcs)",
+    "img": "xxx"
+  },
+  {
+    "id": "030",
+    "number": "30",
+    "allergy": [
+      3
+    ],
+    "category": "4",
+    "en_description": "",
+    "cz_description": "",
+    "price": "140",
+    "cz_name": "Omeleta",
+    "en_name": "Omlet",
+    "img": "xxx",
+    "options": [
+      {
+        "en_name": "Small",
+        "cz_name": "Malá",
+        "price": "140"
+      },
+      {
+        "en_name": "Large",
+        "cz_name": "Velká",
+        "price": "240"
+      }
+    ]
+  },
+  {
+    "id": "031",
+    "allergy": [
+      1
+    ],
+    "number": "31",
+    "category": "4",
+    "en_description": "",
+    "cz_description": "",
+    "price": "70",
+    "cz_name": "Rýže",
+    "en_name": "Rice",
+    "img": "xxx"
+  },
+  {
+    "id": "32",
+    "allergy": [],
+    "number": "32",
+    "category": "4",
+    "en_description": "",
+    "cz_description": "",
+    "price": "79",
+    "cz_name": "Nakládaná zelenina",
+    "en_name": "Pickled Vegetables",
+    "img": "xxx"
+  },
+  {
+    "id": "033",
+    "allergy": [
+      1
+    ],
+    "number": "33",
     "category": "5",
     "en_description": "",
     "cz_description": "",
@@ -464,12 +527,12 @@
     "img": "Baklava.jpg"
   },
   {
-    "id": "030",
+    "id": "034",
     "allergy": [
       1,
-      11
+      7
     ],
-    "number": "30",
+    "number": "34",
     "category": "5",
     "en_description": "",
     "cz_description": "",
@@ -479,27 +542,26 @@
     "img": "Kulaz.jpg"
   },
   {
-    "id": "031",
+    "id": "035",
     "allergy": [
       1,
-      11
+      7
     ],
-    "number": "31",
+    "number": "35",
     "category": "5",
     "en_description": "",
     "cz_description": "",
-    "price": "50",
+    "price": "60",
     "cz_name": "Basbosa",
     "en_name": "Basbosa",
     "img": "Basbusa.jpg"
   },
   {
-    "id": "032",
+    "id": "036",
     "allergy": [
-      1,
-      11
+      7
     ],
-    "number": "32",
+    "number": "36",
     "category": "6",
     "en_description": "",
     "cz_description": "",
@@ -509,16 +571,13 @@
     "img": "Ajran.jpg"
   },
   {
-    "id": "033",
-    "allergy": [
-      1,
-      11
-    ],
-    "number": "33",
+    "id": "037",
+    "number": "37",
+    "allergy": [],
     "category": "6",
     "en_description": "",
     "cz_description": "",
-    "price": "50",
+    "price": "80",
     "cz_name": "Čaj ",
     "en_name": "Tea ",
     "img": "Caj.jpg",
@@ -541,12 +600,9 @@
     ]
   },
   {
-    "id": "034",
-    "allergy": [
-      1,
-      11
-    ],
-    "number": "34",
+    "id": "038",
+    "allergy": [],
+    "number": "38",
     "category": "6",
     "en_description": "",
     "cz_description": "",
@@ -573,12 +629,9 @@
     ]
   },
   {
-    "id": "035",
-    "allergy": [
-      1,
-      11
-    ],
-    "number": "35",
+    "id": "039",
+    "allergy": [],
+    "number": "39",
     "category": "6",
     "en_description": "",
     "cz_description": "",
@@ -588,12 +641,9 @@
     "img": "xxx"
   },
   {
-    "id": "036",
-    "allergy": [
-      1,
-      11
-    ],
-    "number": "36",
+    "id": "040",
+    "allergy": [],
+    "number": "40",
     "category": "6",
     "en_description": "",
     "cz_description": "",
@@ -603,12 +653,9 @@
     "img": "xxx"
   },
   {
-    "id": "037",
-    "allergy": [
-      1,
-      11
-    ],
-    "number": "37",
+    "id": "041",
+    "allergy": [],
+    "number": "41",
     "category": "6",
     "en_description": "Sparkling or still water",
     "cz_description": "Perlivá nebo neperlivá voda",
@@ -618,12 +665,9 @@
     "img": "xxx"
   },
   {
-    "id": "038",
-    "allergy": [
-      1,
-      11
-    ],
-    "number": "38",
+    "id": "042",
+    "allergy": [],
+    "number": "42",
     "category": "6",
     "en_description": "",
     "cz_description": "",

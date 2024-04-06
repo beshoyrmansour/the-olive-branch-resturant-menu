@@ -22,7 +22,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
   useEffect(() => {
     if (data.length) setGrouped(groupArrayByCategory(data));
 
-    return () => { };
+    return () => {};
   }, [data]);
 
   // console.log({ data, grouped });
@@ -111,7 +111,6 @@ export default function Home({ data }: { data: MenuItem[] }) {
                             {lang === "en" ? "Vegetarian" : "Vegetariánské"}
                           </span>
                         )}
-
                       </div>
                       <div className={styles.menu_item_text}>
                         <h2 className={styles.menu_item_heading}>
@@ -121,8 +120,9 @@ export default function Home({ data }: { data: MenuItem[] }) {
                               <span className={styles.order_nummber}>
                                 {item.number}.
                               </span>{" "}
-                              {` ${lang === "en" ? item.en_name : item.cz_name
-                                }`}
+                              {` ${
+                                lang === "en" ? item.en_name : item.cz_name
+                              }`}
                             </span>
                             <span className={styles.menu_item_name_sub}>
                               {lang === "en" ? item.cz_name : item.en_name}
@@ -152,14 +152,26 @@ export default function Home({ data }: { data: MenuItem[] }) {
                             ? item.en_description
                             : item.cz_description}
                         </p>
-                        {item.allergy &&
+                        {item.allergy && (
                           <div className={styles.allergy_wrapper}>
-                            <h4 className={styles.allergy_title} >{lang === "en" ? 'Allergies' : 'Alergie'}</h4>
+                            <h4 className={styles.allergy_title}>
+                              {item.allergy.length == 0
+                                ? ""
+                                : lang === "en"
+                                ? "Allergies"
+                                : "Alergeny"}
+                            </h4>
                             <p className={styles.allergy}>
-                              {item.allergy.map(v => <AllargyItem key={`allergy_${item.id}_${v}`} value={v} lang={lang as 'en' | 'cz'} />)}
+                              {item.allergy.map((v) => (
+                                <AllargyItem
+                                  key={`allergy_${item.id}_${v}`}
+                                  value={v}
+                                  lang={lang as "en" | "cz"}
+                                />
+                              ))}
                             </p>
                           </div>
-                        }
+                        )}
                       </div>
                     </div>
                     {item.options && (
@@ -205,8 +217,8 @@ export default function Home({ data }: { data: MenuItem[] }) {
         <div className={styles.footer_top}>
           <div className={styles.footer_top_section}>
             <h3>
-              {lang === "en" ? "Find" : "Nalézt"}{" "}
-              <span>{lang === "en" ? "us" : "nám"}</span>
+              {lang === "en" ? "Find" : "Kde nás"}{" "}
+              <span>{lang === "en" ? "us" : "najdete"}</span>
             </h3>
             <div className={styles.social}>
               <a
@@ -216,7 +228,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
               ></a>
               <a
                 target="_blank"
-                href="https://www.instagram.com/mr.falafelprague/?hl=en"
+                href="https://www.instagram.com/palestinian_restaurant_prague/"
                 className="fa fa-instagram"
               ></a>
             </div>
@@ -249,7 +261,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
             </div>
             <div className={styles.footer_top_section}>
               <h3>
-                {lang === "en" ? "Working" : "Pracovní"}{" "}
+                {lang === "en" ? "Working" : "Otevírací"}{" "}
                 <span>{lang === "en" ? "hours:" : "doba"}</span>
               </h3>
               <table itemProp="openingHours">
@@ -259,7 +271,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Monday:" : "Pondělí:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
+                      <span className="WF8WNe">10:00 - 22:00</span>
                     </td>
                   </tr>
                   <tr>
@@ -267,7 +279,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Tuesday:" : "Úterý:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
+                      <span className="WF8WNe">10:00 - 22:00</span>
                     </td>
                   </tr>
                   <tr>
@@ -275,7 +287,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Wednesday:" : "Středa:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
+                      <span className="WF8WNe">10:00 - 22:00</span>
                     </td>
                   </tr>
                   <tr>
@@ -283,7 +295,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Thursday:" : "Čtvrtek:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
+                      <span className="WF8WNe">10:00 - 22:00</span>
                     </td>
                   </tr>
                   <tr>
@@ -291,7 +303,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Friday:" : "Pátek:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
+                      <span className="WF8WNe">10:00 - 22:00</span>
                     </td>
                   </tr>
                   <tr>
@@ -299,7 +311,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Saturday:" : "Sobota:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
+                      <span className="WF8WNe">10:00 - 22:00</span>
                     </td>
                   </tr>
                   <tr>
@@ -307,7 +319,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                       {lang === "en" ? "Sunday:" : "Neděle:"}
                     </th>
                     <td className="o0m3Qb">
-                      <span className="WF8WNe">10:00 AM – 10:00 PM</span>
+                      <span className="WF8WNe">10:00 - 22:00</span>
                     </td>
                   </tr>
                 </tbody>
