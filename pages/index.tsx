@@ -13,7 +13,6 @@ import {
 } from "@/models/menu";
 import { it } from "node:test";
 import AllargyItem from "@/components/AllargyItem";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ data }: { data: MenuItem[] }) {
@@ -22,7 +21,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
   useEffect(() => {
     if (data.length) setGrouped(groupArrayByCategory(data));
 
-    return () => {};
+    return () => { };
   }, [data]);
 
   // console.log({ data, grouped });
@@ -120,9 +119,8 @@ export default function Home({ data }: { data: MenuItem[] }) {
                               <span className={styles.order_nummber}>
                                 {item.number}.
                               </span>{" "}
-                              {` ${
-                                lang === "en" ? item.en_name : item.cz_name
-                              }`}
+                              {` ${lang === "en" ? item.en_name : item.cz_name
+                                }`}
                             </span>
                             <span className={styles.menu_item_name_sub}>
                               {lang === "en" ? item.cz_name : item.en_name}
@@ -158,8 +156,8 @@ export default function Home({ data }: { data: MenuItem[] }) {
                               {item.allergy.length == 0
                                 ? ""
                                 : lang === "en"
-                                ? "Allergies"
-                                : "Alergeny"}
+                                  ? "Allergies"
+                                  : "Alergeny"}
                             </h4>
                             <p className={styles.allergy}>
                               {item.allergy.map((v) => (
