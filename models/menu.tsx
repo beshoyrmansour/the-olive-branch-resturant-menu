@@ -17,13 +17,13 @@ export enum Categories {
   "Nápoje",
 }
 export enum Categories_en {
-  "Talíře s hummusem" ="Hummus Section",
-  "Plněné placky a tortilly" ="Sandwiches",
-  "Naše specialita" ="Our Specials",
-  "Něco z našeho grilu" ="Our grill",
-  "Přílohy" ="Extras",
-  "Dezerty" ="Desserts",
-  "Nápoje" ="Beverages",
+  "Hummus Section",
+  "Sandwiches",
+  "Our Specials",
+  "Our grill",
+  "Extras",
+  "Desserts",
+  "Beverages",
 }
 
 export type MenuItemOption = {
