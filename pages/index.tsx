@@ -59,15 +59,15 @@ export default function Home({ data }: { data: MenuItem[] }) {
           }}
         >
           {lang == "en" ? (
-            <img
-              src={"./czech-republic.png"}
+            <Image
+              src={"/czech-republic.png"}
               width={30}
               height={30}
               alt="change menu language"
             />
           ) : (
-            <img
-              src={"./united-kingdom.png"}
+            <Image
+              src={"/united-kingdom.png"}
               width={30}
               height={30}
               alt="change menu language"
@@ -347,18 +347,31 @@ export default function Home({ data }: { data: MenuItem[] }) {
 // This gets called on every request
 export async function getStaticProps() {
   // Fetch data from external API
+  // const base_url = checkEnvironment();
   const base_url = checkEnvironment();
+  // const base_url = "http://localhost:3000";
   const newUrl =
     base_url.charAt(base_url.length - 1) === "/"
       ? `${base_url}data.json`
       : `${base_url}/data.json`;
-  const res = await fetch(newUrl, {
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-  });
-  const data = await res.json();
-  // Pass data to the page via props
-  return { props: { data } };
+
+  try {
+    const res = await fetch(newUrl, {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
+
+    const data = await res.json();
+    // Pass data to the page via props
+    return { props: { data } };
+  } catch (error) {
+    console.error("Failed to fetch data:", error);
+    return { props: { data: [] } }; // Return empty data on error
+  }
 }
