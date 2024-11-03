@@ -5,7 +5,7 @@ export const checkEnvironment = () => {
     // process.env.NEXT_PUBLIC_URL?process.env.NEXT_PUBLIC_URL:
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
-      : "https://palestinianrestaurant.com";
+      : "https://theolivebranchprague.com";
   return base_url;
 };
 

@@ -21,15 +21,15 @@ export default function Home({ data }: { data: MenuItem[] }) {
   useEffect(() => {
     if (data.length) setGrouped(groupArrayByCategory(data));
 
-    return () => { };
+    return () => {};
   }, [data]);
 
   // console.log({ data, grouped });
   return (
     <>
       <Head>
-        <title>Palestinian Restaurant</title>
-        <meta name="description" content="Palestinian restaurant menu" />
+        <title>The Olive Branch Prague</title>
+        <meta name="description" content="The Olive Branch Prague menu" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link
@@ -49,7 +49,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
             src={`/logo_h.svg`}
             width="1000"
             height="130"
-            alt="Palestinian Restaurant logo"
+            alt="The Olive Branch Prague logo"
           />
         </header>
         <div
@@ -119,8 +119,9 @@ export default function Home({ data }: { data: MenuItem[] }) {
                               <span className={styles.order_nummber}>
                                 {item.number}.
                               </span>{" "}
-                              {` ${lang === "en" ? item.en_name : item.cz_name
-                                }`}
+                              {` ${
+                                lang === "en" ? item.en_name : item.cz_name
+                              }`}
                             </span>
                             <span className={styles.menu_item_name_sub}>
                               {lang === "en" ? item.cz_name : item.en_name}
@@ -156,8 +157,8 @@ export default function Home({ data }: { data: MenuItem[] }) {
                               {item.allergy.length == 0
                                 ? ""
                                 : lang === "en"
-                                  ? "Allergies"
-                                  : "Alergeny"}
+                                ? "Allergies"
+                                : "Alergeny"}
                             </h4>
                             <p className={styles.allergy}>
                               {item.allergy.map((v) => (
@@ -175,32 +176,33 @@ export default function Home({ data }: { data: MenuItem[] }) {
                     {item.options && (
                       <div className={styles.menu_item_option_wrapp}>
                         {item.options.map((option: MenuItemOption) => (
-                          <>
-                            <div className={styles.menu_item_option}>
-                              <span className={styles.menu_item_option_name}>
-                                {" "}
-                                {lang === "en"
-                                  ? option.en_name
-                                  : option.cz_name}
+                          <div
+                            id={option.en_name}
+                            key={`menu_item_option_${option.en_name.replaceAll(
+                              " ",
+                              "_"
+                            )}_${item.id}`}
+                            className={styles.menu_item_option}
+                          >
+                            <span className={styles.menu_item_option_name}>
+                              {" "}
+                              {lang === "en" ? option.en_name : option.cz_name}
+                            </span>
+                            <span className={styles.menu_item_option_price}>
+                              <span
+                                className={styles.menu_item_option_price_amount}
+                              >
+                                {option.price}
                               </span>
-                              <span className={styles.menu_item_option_price}>
-                                <span
-                                  className={
-                                    styles.menu_item_option_price_amount
-                                  }
-                                >
-                                  {option.price}
-                                </span>
-                                <span
-                                  className={
-                                    styles.menu_item_option_price_currency
-                                  }
-                                >
-                                  CZK
-                                </span>
+                              <span
+                                className={
+                                  styles.menu_item_option_price_currency
+                                }
+                              >
+                                CZK
                               </span>
-                            </div>
-                          </>
+                            </span>
+                          </div>
                         ))}
                       </div>
                     )}
@@ -218,25 +220,14 @@ export default function Home({ data }: { data: MenuItem[] }) {
               {lang === "en" ? "Find" : "Kde nás"}{" "}
               <span>{lang === "en" ? "us" : "najdete"}</span>
             </h3>
-            <div className={styles.social}>
-              <a
-                target="_blank"
-                href="https://m.facebook.com/profile.php?id=100080996603475"
-                className="fa fa-facebook"
-              ></a>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/palestinian_restaurant_prague/"
-                className="fa fa-instagram"
-              ></a>
-            </div>
             <a href="https://maps.app.goo.gl/Lj9YspNJBbt3D8318?g_st=ic">
-              {" "}
-              <span>Spálená 90/17, 110 00 Nové Město, Czechia</span>
+              <span>Plzeňská 560/29, Smíchov</span>
+              <span>150 00 Praha</span>
+              <span>Česká republik</span>
               {/* <div className={styles.map}
                 title="Map showing business location."></div> */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d687.0243070229683!2d14.419349692681253!3d50.07944708762389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95aeb20f33f9%3A0x39e0e5ab0d4b3374!2sMr.%20Falafel!5e0!3m2!1sen!2seg!4v1680509042141!5m2!1sen!2seg"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.7505302980962!2d14.3961401!3d50.072233499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94550cc0f239%3A0xbb87860121452efd!2zUGx6ZcWIc2vDoSA1NjAvMjksIDE1MCAwMCBQcmFoYSA1LVNtw61jaG92LCBDemVjaGlh!5e0!3m2!1sen!2seg!4v1730654293898!5m2!1sen!2seg"
                 width="100%"
                 height="250"
                 style={{
@@ -255,7 +246,7 @@ export default function Home({ data }: { data: MenuItem[] }) {
                 {lang === "en" ? "Call" : "Zavolejte"}{" "}
                 <span>{lang === "en" ? "us" : "nám"}</span>
               </h3>
-              <a href="tel:+420602342820">+420 602 342 820</a>
+              <a href="tel:+420606333713">+420 606 333 713</a>
             </div>
             <div className={styles.footer_top_section}>
               <h3>
@@ -331,12 +322,12 @@ export default function Home({ data }: { data: MenuItem[] }) {
             src={`/logo_h.svg`}
             width="100"
             height="130"
-            alt="Palestinian Restaurant logo"
+            alt="The Olive Branch Prague logo"
           />
 
           <div className={styles.copyright}>
-            Copyright © 2023 Palestinian restaurant - All rights reserved <br />{" "}
-            Designed By:{" "}
+            Copyright © 2024 The Olive Branch Prague - All rights reserved{" "}
+            <br /> Designed By:{" "}
             <a target="_blank" href="http://digitalizers.co/">
               Digitalizers agency
             </a>
