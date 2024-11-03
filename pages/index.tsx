@@ -356,12 +356,7 @@ export async function getStaticProps() {
       : `${base_url}/data.json`;
 
   try {
-    const res = await fetch(newUrl, {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    });
+    const res = await fetch(newUrl);
 
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
