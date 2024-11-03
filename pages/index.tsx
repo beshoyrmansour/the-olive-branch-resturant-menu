@@ -350,13 +350,9 @@ export async function getStaticProps() {
   // const base_url = checkEnvironment();
   const base_url = checkEnvironment();
   // const base_url = "http://localhost:3000";
-  const newUrl =
-    base_url.charAt(base_url.length - 1) === "/"
-      ? `${base_url}data.json`
-      : `${base_url}/data.json`;
 
   try {
-    const res = await fetch(newUrl);
+    const res = await fetch('/data.json');
 
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
