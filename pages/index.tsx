@@ -11,18 +11,20 @@ import {
   MenuItem,
   MenuItemOption,
 } from "@/models/menu";
-import { it } from "node:test";
 import AllargyItem from "@/components/AllargyItem";
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({ data }: { data: MenuItem[] }) {
+export default function Home(){
   const [lang, setLang] = useState("cz");
   const [grouped, setGrouped] = useState<Array<MenuCategory>>([]);
   useEffect(() => {
-    if (data.length) setGrouped(groupArrayByCategory(data));
-
-    return () => {};
-  }, [data]);
+    const fetchData = async () => {
+      const res = await fetch('/data.json');
+      const data: MenuItem[] = await res.json();
+      if (data.length) setGrouped(groupArrayByCategory(data));
+    };
+    fetchData();
+  }, []);
 
   // console.log({ data, grouped });
   return (
@@ -79,8 +81,8 @@ export default function Home({ data }: { data: MenuItem[] }) {
             <div className={styles.menu} key={`menu_category_${cat}`}>
               <h2 className={styles.menu_group_heading}>
                 {lang === "en"
-                  ? Categories_en[cat.category]
-                  : Categories[cat.category]}
+                  ? Categories_en[cat.category as unknown as keyof typeof Categories_en]
+                  : Categories[cat.category as unknown as keyof typeof Categories]}
               </h2>
               <div className={styles.menu_group}>
                 {cat.items.map((item: MenuItem) => (
