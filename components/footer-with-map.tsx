@@ -1,0 +1,83 @@
+"use client";
+
+import { useLanguage } from "@/components/language-provider";
+import { RestaurantLogo } from "@/components/restaurant-logo";
+import { RestaurantName } from "@/components/RestaurantName";
+import OpenHours from "./open-hours";
+
+export function FooterWithMap() {
+  const { t } = useLanguage();
+
+  return (
+    <footer className="border-t bg-secondary/50">
+      <div className="container py-8 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center gap-2 mb-4">
+              <RestaurantLogo variant="small" />
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-lg font-raleway-medium text-olive">
+                {t("contactUs", {
+                  en: "Contact Us",
+                  cs: "Kontaktujte nás",
+                  ar: "اتصل بنا",
+                })}
+              </h3>
+              <p className="text-muted-foreground">
+                {t("address", {
+                  en: "Olivová 123, Prague 110 00, Czech Republic",
+                  cs: "Olivová 123, Praha 110 00, Česká republika",
+                  ar: "أوليفوفا ١٢٣، براغ ١١٠ ٠٠، جمهورية التشيك",
+                })}
+              </p>
+              <p className="text-muted-foreground">
+                {t("phone", { en: "Phone", cs: "Telefon", ar: "هاتف" })}: +420
+                123 456 789
+              </p>
+              <p className="text-muted-foreground">
+                {t("email", {
+                  en: "Email",
+                  cs: "Email",
+                  ar: "البريد الإلكتروني",
+                })}
+                : info@oliverestaurant.cz
+              </p>
+            </div>
+            <OpenHours titleStyle="text-lg font-raleway-medium text-olive" />
+          </div>
+
+          <div className="h-[300px] md:h-full rounded-2xl overflow-hidden glossy-card">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.1026576682!2d14.423505776977402!3d50.08021491484648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94ea69e1a1a1%3A0x7c93c3e3e6414e1c!2sOlivova%2C%20110%2000%20Nov%C3%A9%20M%C4%9Bsto%2C%20Czechia!5e0!3m2!1sen!2sus!4v1715358005000!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title={`${t("restaurantName", {
+                en: "The Olive Branch Restaurant Location",
+                cs: "Restaurace Olivová Větev - Poloha",
+                ar: "موقع مطعم غصن الزيتون",
+              })}`}
+              className="rounded-2xl"
+            ></iframe>
+          </div>
+        </div>
+
+        <div className="mt-8 pt-6 border-t border-muted">
+          <p className="text-center text-sm text-muted-foreground">
+            © {new Date().getFullYear()} <RestaurantName />.{" "}
+            {t("allRightsReserved", {
+              en: "All rights reserved",
+              cs: "Všechna práva vyhrazena",
+              ar: "جميع الحقوق محفوظة",
+            })}
+            .
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
