@@ -347,8 +347,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 1,
     "name": {
       "en": "Ground Lentil Soup",
-      "cs": "1-Čočková polévka",
-      "ar": "1- شوربة العدس"
+      "cs": "Čočková polévka",
+      "ar": "شوربة العدس"
     },
     "description": {
       "en": "Lentils, Onions, Carrots",
@@ -367,8 +367,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 1,
     "name": {
       "en": "Chicken and Vegetables Soup",
-      "cs": "2-Kuřecí vývar",
-      "ar": "2- شوربة الخضار مع الدجاج"
+      "cs": "Kuřecí vývar",
+      "ar": "شوربة الخضار مع الدجاج"
     },
     "description": {
       "en": "Chicken, Carrots, Peas, Potatoes, Garlic, Onions, Coriander",
@@ -387,8 +387,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 2,
     "name": {
       "en": "Tabbouleh",
-      "cs": "1-Tabbúleh",
-      "ar": "1- تبولة"
+      "cs": "Tabbúleh",
+      "ar": "تبولة"
     },
     "description": {
       "en": "Parsley, Mint, Onions, Tomatoes, Bulgur, Olive oil, Lemon juice",
@@ -407,8 +407,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 2,
     "name": {
       "en": "Fattoush",
-      "cs": "2-Fattúš",
-      "ar": "2- فتوش"
+      "cs": "Fattúš",
+      "ar": "فتوش"
     },
     "description": {
       "en": "Lettuce, Tomatoes, Cucumbers, Radishes, Onions, Bell peppers, Mint, Parsley, Sumac, Croutons, Olive oil, Lemon juice",
@@ -427,8 +427,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 2,
     "name": {
       "en": "Vegetables With Cheese",
-      "cs": "3-Salát se sýrem",
-      "ar": "3- خضار مع جبنة"
+      "cs": "Salát se sýrem",
+      "ar": "خضار مع جبنة"
     },
     "description": {
       "en": "Tomatoes, Cucumbers, Bell peppers, Radishes, Onions, Olives, Cheese, Olive oil, Lemon juice",
@@ -447,8 +447,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 2,
     "name": {
       "en": "Falahia",
-      "cs": "4-Falahija",
-      "ar": "4- فلاحية"
+      "cs": "Falahija",
+      "ar": "فلاحية"
     },
     "description": {
       "en": "Tomatoes, Onions, Green chillies, Olive oil, Lemon juice",
@@ -467,8 +467,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 2,
     "name": {
       "en": "Turkish Salad",
-      "cs": "5-Turecký salát",
-      "ar": "5- تركية"
+      "cs": "Turecký salát",
+      "ar": "تركية"
     },
     "description": {
       "en": "Tomatoes, Tomato paste, Onions, Parsley, Chilli, Vinegar, Cumin, Olive oil",
@@ -487,8 +487,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 2,
     "name": {
       "en": "Corn Salad",
-      "cs": "6-Kukuřičný salát",
-      "ar": "6- سلطة الذرة"
+      "cs": "Kukuřičný salát",
+      "ar": "سلطة الذرة"
     },
     "description": {
       "en": "Corn, Bell peppers, Pickled cucumbers",
@@ -507,8 +507,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 2,
     "name": {
       "en": "The Olive Branch Salad",
-      "cs": "7-The Olive Branch salát",
-      "ar": "7- أوليڤ برانش"
+      "cs": "The Olive Branch salát",
+      "ar": "أوليڤ برانش"
     },
     "description": {
       "en": "Nuts, Parsley, Basil, Dill, Raisins, Pomegranate molasses, Olive oil, Lemon juice",
@@ -527,8 +527,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 3,
     "name": {
       "en": "Hummus",
-      "cs": "1-Hummus",
-      "ar": "1- حمص"
+      "cs": "Hummus",
+      "ar": "حمص"
     },
     "description": {
       "en": "Chickpeas, Tahini, Lemon juice, Olive oil",
@@ -547,8 +547,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 3,
     "name": {
       "en": "Hummus With Meat",
-      "cs": "2-Hummus s jehněčím masem",
-      "ar": "2- حمص مع لحمة"
+      "cs": "Hummus s jehněčím masem",
+      "ar": "حمص مع لحمة"
     },
     "description": {
       "en": "chickpeas, tahini, lemon juice, lamb meat nuts, olive oil",
@@ -567,8 +567,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 3,
     "name": {
       "en": "Baba Ghanoush",
-      "cs": "3-Baba ghanúš",
-      "ar": "3- متبل"
+      "cs": "Baba ghanúš",
+      "ar": "متبل"
     },
     "description": {
       "en": "Grilled Eggplants, Garlic, Tahini, Lemon juice, Olive oil",
@@ -587,8 +587,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 3,
     "name": {
       "en": "Eggplants With Garlic",
-      "cs": "4-Smažený lilenk s česnekem",
-      "ar": "4- باذنجان بثوم"
+      "cs": "Smažený lilenk s česnekem",
+      "ar": "باذنجان بثوم"
     },
     "description": {
       "en": "Fried Eggplant, Garlic, Red chilli sauce, Parsley, Lemon juice",
@@ -607,8 +607,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 3,
     "name": {
       "en": "Labneh",
-      "cs": "5-Labneh",
-      "ar": "5- لبنة"
+      "cs": "Labneh",
+      "ar": "لبنة"
     },
     "description": {
       "en": "Labneh, Mint, Garlic, Olive oil",
@@ -627,8 +627,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 3,
     "name": {
       "en": "Stuffed Grape Leaves",
-      "cs": "6-Plněné vinné listy",
-      "ar": "6- ورق عنب"
+      "cs": "Plněné vinné listy",
+      "ar": "ورق عنب"
     },
     "description": {
       "en": "Vine leaves, Tomatoes, Rice, Onions, Parsley, Olive oil",
@@ -647,8 +647,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 3,
     "name": {
       "en": "Muhammara",
-      "cs": "7-Muhammara",
-      "ar": "7- محمرة"
+      "cs": "Muhammara",
+      "ar": "محمرة"
     },
     "description": {
       "en": "Nuts, Bell peppers, Chilli, Olive oil",
@@ -667,8 +667,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 3,
     "name": {
       "en": "Pickles and Olives",
-      "cs": "8-Nakládaná zelenina a olivy",
-      "ar": "8- مخلالات و زيتون"
+      "cs": "Nakládaná zelenina a olivy",
+      "ar": "مخلالات و زيتون"
     },
     "description": {
       "en": "",
@@ -687,8 +687,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 4,
     "name": {
       "en": "Falafel",
-      "cs": "1-Falafel",
-      "ar": "1- فلافل"
+      "cs": "Falafel",
+      "ar": "فلافل"
     },
     "description": {
       "en": "Chickpeas, Parsley, Onions, Garlic, Green peppers, Tahini",
@@ -707,8 +707,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 4,
     "name": {
       "en": "Kibbeh",
-      "cs": "2-Kibbeh",
-      "ar": "2- كبة مقلية"
+      "cs": "Kibbeh",
+      "ar": "كبة مقلية"
     },
     "description": {
       "en": "bulgur, lamb and veal meat, onions, pine",
@@ -727,8 +727,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 4,
     "name": {
       "en": "Grilled Chicken Wings",
-      "cs": "3 - Grilovaná kuřecí křidélka",
-      "ar": "3- جوانح الدجاج المشوية"
+      "cs": "Grilovaná kuřecí křidélka",
+      "ar": "جوانح الدجاج المشوية"
     },
     "description": {
       "en": "Chicken wings, Garlic, Special seasoning, Garlic sauce",
@@ -747,8 +747,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 4,
     "name": {
       "en": "Meat Arayes",
-      "cs": "4-Arayes s masem",
-      "ar": "4- عرايس لحمة"
+      "cs": "Arayes s masem",
+      "ar": "عرايس لحمة"
     },
     "description": {
       "en": "Pitta bread, lamb and veal meat, onions, parsley",
@@ -767,8 +767,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 4,
     "name": {
       "en": "Cheese Arayes",
-      "cs": "5-Arayes se sýrem",
-      "ar": "5- عرايس جبنة"
+      "cs": "Arayes se sýrem",
+      "ar": "عرايس جبنة"
     },
     "description": {
       "en": "Pitta bread, White cheese, Tomatoes, Thyme",
@@ -787,8 +787,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 4,
     "name": {
       "en": "Meat Pie",
-      "cs": "6-Fatajer s masem",
-      "ar": "6- فطاير لحمة"
+      "cs": "Fatajer s masem",
+      "ar": "فطاير لحمة"
     },
     "description": {
       "en": "Lamb meat, Onions, Parsley, Nuts",
@@ -807,8 +807,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 4,
     "name": {
       "en": "Cheese Pie",
-      "cs": "7-Fatajer se sýrem",
-      "ar": "7- فطاير جبنة"
+      "cs": "Fatajer se sýrem",
+      "ar": "فطاير جبنة"
     },
     "description": {
       "en": "White cheese, Mint",
@@ -827,8 +827,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 4,
     "name": {
       "en": "Spinach Pie",
-      "cs": "8-Fatajer se špenátem",
-      "ar": "8- فطاير سبانخ"
+      "cs": "Fatajer se špenátem",
+      "ar": "فطاير سبانخ"
     },
     "description": {
       "en": "Spinach, Onions, Garlic, Lemon juice",
@@ -847,8 +847,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 4,
     "name": {
       "en": "Appetisers Platter",
-      "cs": "9-Výběr z nejlepších předkrmů",
-      "ar": "9- صحن مقبلات مشكل"
+      "cs": "Výběr z nejlepších předkrmů",
+      "ar": "صحن مقبلات مشكل"
     },
     "description": {
       "en": "Chickpeas, Baba Ghanoush, Stuffed Grape Leaves, Kibbeh, Falafel, Tabbouleh, Meat Pie, Cheese Pie, Spinach pie",
@@ -867,8 +867,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 5,
     "name": {
       "en": "Mansaf",
-      "cs": "1-Mansaf",
-      "ar": "1- منسف"
+      "cs": "Mansaf",
+      "ar": "منسف"
     },
     "description": {
       "en": "Lamb and Veal meat /Chicken, Rice, Nuts, Parsley, Mansaf soup",
@@ -887,8 +887,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 5,
     "name": {
       "en": "Qidreh",
-      "cs": "2- Qidreh",
-      "ar": "2- قدرة"
+      "cs": "Qidreh",
+      "ar": "قدرة"
     },
     "description": {
       "en": "Lamb and Veal meat/ Chicken, Rice, Garlic, Chickpeas, Onions, Nuts",
@@ -907,8 +907,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 5,
     "name": {
       "en": "Musakhan",
-      "cs": "3- Musakhan",
-      "ar": "3- مسخن"
+      "cs": "Musakhan",
+      "ar": "مسخن"
     },
     "description": {
       "en": "Bread, Chicken, Onions, Sumac, Olive oil, Nuts",
@@ -927,8 +927,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 5,
     "name": {
       "en": "kufta",
-      "cs": "4- Kufta",
-      "ar": "4- كفتة"
+      "cs": "Kufta",
+      "ar": "كفتة"
     },
     "description": {
       "en": "Lamb and Veal meat, Parsley, Onions, Tomatoes, French fries/ Rice/ Freekah",
@@ -947,8 +947,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 5,
     "name": {
       "en": "kufta With Tahini",
-      "cs": "5-Kufta s tahini",
-      "ar": "5- كفتة بطحينة"
+      "cs": "Kufta s tahini",
+      "ar": "كفتة بطحينة"
     },
     "description": {
       "en": "Lamb and Veal meat, Parsley, Onions, tahini, French fries/ Rice/ Freekah",
@@ -967,8 +967,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 6,
     "name": {
       "en": "Shish Taouk",
-      "cs": "1-Shish Taouk",
-      "ar": "1- شيش طاووق"
+      "cs": "Shish Taouk",
+      "ar": "شيش طاووق"
     },
     "description": {
       "en": "Grilled Chicken breast on skewers, Garlic, Special seasoning, French fries/ Rice/ Freekah/ Grilled vegetables, Garlic sauce",
@@ -987,8 +987,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 6,
     "name": {
       "en": "Chicken Mosahab",
-      "cs": "2-Kuřecí Mosahab",
-      "ar": "2- دجاج مسحب"
+      "cs": "Kuřecí Mosahab",
+      "ar": "دجاج مسحب"
     },
     "description": {
       "en": "Half a chicken, French fries/ Rice/ Freekah/ Grilled vegetables, Garlic sauce",
@@ -1007,8 +1007,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 6,
     "name": {
       "en": "Grilled Chicken Thighs",
-      "cs": "3 - Grilovaná kuřecí stehna",
-      "ar": "3- فخد دجاج مسحب"
+      "cs": "Grilovaná kuřecí stehna",
+      "ar": "فخد دجاج مسحب"
     },
     "description": {
       "en": "Chicken thighs mosahab, French fries/ Rice/ Freekah/ Grilled vegetables, Garlic sauce",
@@ -1027,8 +1027,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 6,
     "name": {
       "en": "Shish Kebab",
-      "cs": "4- Shish Kebab",
-      "ar": "4- شيش كباب"
+      "cs": "Shish Kebab",
+      "ar": "شيش كباب"
     },
     "description": {
       "en": "Grilled cubes of lamb and veal meat on skewers, Onions, Parsley, French fries/ Rice/ Freekah/ Grilled vegetables, Tahini",
@@ -1047,8 +1047,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 6,
     "name": {
       "en": "Sliced Lamb Meat",
-      "cs": "5 - Plátky jehněčího masa",
-      "ar": "5- شرائح خروف"
+      "cs": "Plátky jehněčího masa",
+      "ar": "شرائح خروف"
     },
     "description": {
       "en": "Lamb meat, French fries/ Rice/ Freekah/ Grilled vegetables",
@@ -1067,8 +1067,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 6,
     "name": {
       "en": "Lamb Ribs",
-      "cs": "6 - Grilovaná jehněčí žebra",
-      "ar": "6- ريش خروف"
+      "cs": "Grilovaná jehněčí žebra",
+      "ar": "ريش خروف"
     },
     "description": {
       "en": "Lamb ribs, French fries/ Rice/ Freekah/ Grilled vegetables",
@@ -1087,8 +1087,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 6,
     "name": {
       "en": "Mixed Grills For One Person",
-      "cs": "7 - Mixed gril pro 1 osobu",
-      "ar": "7- مشاوي مشكل لشخص"
+      "cs": "Mixed gril pro 1 osobu",
+      "ar": "مشاوي مشكل لشخص"
     },
     "description": {
       "en": "Grilled chicken on skewers, Grilled cubes of meat on skewers, Sliced lamb meat, French fries/ Rice/ Freekah/ Grilled vegetables, Garlic sauce",
@@ -1107,8 +1107,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 6,
     "name": {
       "en": "Mixed Grills For Two People",
-      "cs": "8 - Mixed gril pro 2 osoby",
-      "ar": "8- مشاوي مشكل لشخصين"
+      "cs": "Mixed gril pro 2 osoby",
+      "ar": "مشاوي مشكل لشخصين"
     },
     "description": {
       "en": "Grilled chicken on skewers, Grilled cubes of meat on skewers, Chicken slices, Lamb ribs, Chicken wings, French fries/ Rice/ Freekah/ Grilled vegetables, Garlic sauce, Tahini",
@@ -1127,8 +1127,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 6,
     "name": {
       "en": "Mixed Grills For Three People",
-      "cs": "9 - Mixed gril pro 3 osoby",
-      "ar": "9- مشاوي مشكل لثلاث أشخاص"
+      "cs": "Mixed gril pro 3 osoby",
+      "ar": "مشاوي مشكل لثلاث أشخاص"
     },
     "description": {
       "en": "",
@@ -1147,8 +1147,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 7,
     "name": {
       "en": "Salmon",
-      "cs": "1-Losos",
-      "ar": "1- سلمون"
+      "cs": "Losos",
+      "ar": "سلمون"
     },
     "description": {
       "en": "Salmon, Rosemary, Butter, Lemon, French fries/ Rice/ Freekah/ Mixed vegetables",
@@ -1167,8 +1167,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 7,
     "name": {
       "en": "Silver Sea-bream",
-      "cs": "2-Mořský vlk",
-      "ar": "2- سمكة الدنيس"
+      "cs": "Mořský vlk",
+      "ar": "سمكة الدنيس"
     },
     "description": {
       "en": "Silver seabream, Garlic, Coriander, Lemon, Rice/ Freekah/ Mixed vegetables",
@@ -1187,8 +1187,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 7,
     "name": {
       "en": "Shrimp Bowl",
-      "cs": "3 - Krevetová miska",
-      "ar": "3- زبدية الجمبري"
+      "cs": "Krevetová miska",
+      "ar": "زبدية الجمبري"
     },
     "description": {
       "en": "Shrimps, Tomatoes, Chilli, Onions, Garlic, Lemon juice",
@@ -1207,8 +1207,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 7,
     "name": {
       "en": "Shrimp With Butter and Garlic",
-      "cs": "4 - Krevety na másle a česneku",
-      "ar": "4- جمبري مع الزبدة و الثوم"
+      "cs": "Krevety na másle a česneku",
+      "ar": "جمبري مع الزبدة و الثوم"
     },
     "description": {
       "en": "Shrimps, Butter, Garlic, Rice/ Freekah/ Mixed vegetables",
@@ -1227,8 +1227,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 8,
     "name": {
       "en": "French Fries",
-      "cs": "1 - Hranolky",
-      "ar": "1- بطاطس مقلية"
+      "cs": "Hranolky",
+      "ar": "بطاطس مقلية"
     },
     "description": {
       "en": "",
@@ -1247,8 +1247,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 8,
     "name": {
       "en": "Rice",
-      "cs": "2 - Rýže",
-      "ar": "2- أرز"
+      "cs": "Rýže",
+      "ar": "أرز"
     },
     "description": {
       "en": "",
@@ -1267,8 +1267,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 8,
     "name": {
       "en": "Freekah",
-      "cs": "3 - Freekah",
-      "ar": "3- فريكة"
+      "cs": "Freekah",
+      "ar": "فريكة"
     },
     "description": {
       "en": "",
@@ -1287,8 +1287,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 8,
     "name": {
       "en": "Grilled Vegetables",
-      "cs": "4 - Grilovaná zelenina",
-      "ar": "4- خضار مشوية"
+      "cs": "Grilovaná zelenina",
+      "ar": "خضار مشوية"
     },
     "description": {
       "en": "",
@@ -1307,8 +1307,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 9,
     "name": {
       "en": "Baklava",
-      "cs": "1- Baklava",
-      "ar": "1- بقلاوة"
+      "cs": "Baklava",
+      "ar": "بقلاوة"
     },
     "description": {
       "en": "Phyllo dough, Butter, Pistachios/ Walnuts, Sugar syrup",
@@ -1327,8 +1327,8 @@ export const mainMenu: MenuItem[] = [
     "categoryId": 9,
     "name": {
       "en": "Knafeh",
-      "cs": "2- Knafeh",
-      "ar": "2- كنافة"
+      "cs": "Knafeh",
+      "ar": "كنافة"
     },
     "description": {
       "en": "Kadayif spun pastry dough, Akkawi cheese, Butter, Sugar syrup",
