@@ -52,14 +52,15 @@ export const allergies: Allergy[] = [
 ];
 
 export const categories: Category[] = [
-  { id: 1, name: { en: "Starters", cs: "Předkrmy", ar: "المقبلات" } },
-  {
-    id: 2,
-    name: { en: "Main Course", cs: "Hlavní Chod", ar: "الطبق الرئيسي" },
-  },
-  { id: 3, name: { en: "Desserts", cs: "Dezerty", ar: "الحلويات" } },
-  { id: 4, name: { en: "Drinks", cs: "Nápoje", ar: "المشروبات" } },
-  { id: 5, name: { en: "Soups", cs: "Polévky", ar: "الحساء" } },
+  { id: 1, name: { en: "Soups", cs: "Polévky:", ar: "الشوربات" } },
+  { id: 2, name: { en: "Salads", cs: "Saláty", ar: "السلطات" }},
+  { id: 3, name: { en: "Cold Appetizers", cs: "Studené předkrmy", ar: "المقبلات الباردة" } },
+  { id: 4, name: { en: "Hot Appetizers", cs: "Teplé předkrmy", ar: "المقبلات الساخنة" } },
+  { id: 5, name: { en: "Main Course", cs: "Hlavní jídla:", ar: "الأطباق الرئيسية" } },
+  { id: 6, name: { en: "Grills", cs: "Z našeho grilu", ar: "المشاوي" } },
+  { id: 7, name: { en: "Seafood dishes", cs: "Ryby a mořské plody", ar: "الأسماك" } },
+  { id: 8, name: { en: "Extras", cs: "Přílohy", ar: "الإضافات الجانبية" } },
+  { id: 9, name: { en: "Desserts", cs:"Dezerty", ar: "الحلويات"} },
 ];
 
 export const weekDays: WeekDay[] = [
@@ -340,236 +341,1007 @@ export const lunchMenu: MenuItem[] = [
 ];
 
 export const mainMenu: MenuItem[] = [
-  // Starters
   {
-    id: 1,
-    number: "S1",
-    categoryId: 1,
-    name: {
-      en: "Caprese Salad",
-      cs: "Caprese Salát",
-      ar: "سلطة كابريزي",
+    "id": 1,
+    "number": "A1",
+    "categoryId": 1,
+    "name": {
+      "en": "Ground Lentil Soup",
+      "cs": "1-Čočková polévka",
+      "ar": "1- شوربة العدس"
     },
-    description: {
-      en: "Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze",
-      cs: "Čerstvá mozzarella, rajčata a bazalka s balzamikovou glazurou",
-      ar: "جبنة موزاريلا طازجة وطماطم وريحان مع صلصة البلسميك",
+    "description": {
+      "en": "Lentils, Onions, Carrots",
+      "cs": "čočka, cibule, mrkev",
+      "ar": "عدس، بصل، جزر"
     },
-    price: 110,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [4],
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
   {
-    id: 2,
-    number: "S2",
-    categoryId: 1,
-    name: {
-      en: "Garlic Bread",
-      cs: "Česnekový Chléb",
-      ar: "خبز بالثوم",
+    "id": 2,
+    "number": "A2",
+    "categoryId": 1,
+    "name": {
+      "en": "Chicken and Vegetables Soup",
+      "cs": "2-Kuřecí vývar",
+      "ar": "2- شوربة الخضار مع الدجاج"
     },
-    description: {
-      en: "Freshly baked bread with garlic butter and herbs",
-      cs: "Čerstvě upečený chléb s česnekovým máslem a bylinkami",
-      ar: "خبز طازج مع زبدة الثوم والأعشاب",
+    "description": {
+      "en": "Chicken, Carrots, Peas, Potatoes, Garlic, Onions, Coriander",
+      "cs": "kuřecí maso, mrkev, hrášek, brambory, česnek, cibule, koriandr",
+      "ar": "دجاج، جزر، بازيلاء، بطاطس، ثوم، بصل، كزبرة"
     },
-    price: 75,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [1, 4],
-  },
-
-  // Soups
-  {
-    id: 3,
-    number: "SO1",
-    categoryId: 5,
-    name: {
-      en: "French Onion Soup",
-      cs: "Francouzská Cibulačka",
-      ar: "حساء البصل الفرنسي",
-    },
-    description: {
-      en: "Traditional onion soup topped with cheese and croutons",
-      cs: "Tradiční cibulová polévka se sýrem a krutony",
-      ar: "حساء البصل التقليدي مع الجبن والخبز المحمص",
-    },
-    price: 85,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [1, 4],
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
   {
-    id: 4,
-    number: "SO2",
-    categoryId: 5,
-    name: {
-      en: "Chicken Noodle Soup",
-      cs: "Kuřecí Polévka s Nudlemi",
-      ar: "شوربة الدجاج بالمعكرونة",
+    "id": 3,
+    "number": "B1",
+    "categoryId": 2,
+    "name": {
+      "en": "Tabbouleh",
+      "cs": "1-Tabbúleh",
+      "ar": "1- تبولة"
     },
-    description: {
-      en: "Homemade chicken soup with vegetables and noodles",
-      cs: "Domácí kuřecí polévka se zeleninou a nudlemi",
-      ar: "شوربة دجاج محلية الصنع مع خضروات ومعكرونة",
+    "description": {
+      "en": "Parsley, Mint, Onions, Tomatoes, Bulgur, Olive oil, Lemon juice",
+      "cs": "petržel, máta, cibule, rajčata, bulgur, olivový olej, citronová šťáva",
+      "ar": "بقدونس، نعناع، بصل، بندورة، برغل، زيت زيتون، حامض"
     },
-    price: 80,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [1],
-  },
-
-  // Main Courses
-  {
-    id: 5,
-    number: "M1",
-    categoryId: 2,
-    name: {
-      en: "Beef Tenderloin Steak",
-      cs: "Hovězí Steak z Pravé Svíčkové",
-      ar: "ستيك لحم البقر",
-    },
-    description: {
-      en: "Premium beef tenderloin grilled to your preference, served with roasted vegetables and mashed potatoes",
-      cs: "Prvotřídní hovězí svíčková grilovaná podle vašeho přání, podávaná s pečenou zeleninou a bramborovou kaší",
-      ar: "شريحة لحم بقري فاخرة مشوية حسب تفضيلك، تقدم مع خضروات محمرة وبطاطس مهروسة",
-    },
-    price: 320,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [4],
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
   {
-    id: 6,
-    number: "M2",
-    categoryId: 2,
-    name: {
-      en: "Grilled Salmon",
-      cs: "Grilovaný Losos",
-      ar: "سمك السلمون المشوي",
+    "id": 4,
+    "number": "B2",
+    "categoryId": 2,
+    "name": {
+      "en": "Fattoush",
+      "cs": "2-Fattúš",
+      "ar": "2- فتوش"
     },
-    description: {
-      en: "Fresh salmon fillet grilled with lemon and herbs, served with steamed vegetables",
-      cs: "Čerstvý filet z lososa grilovaný s citronem a bylinkami, podávaný s dušenou zeleninou",
-      ar: "فيليه سمك السلمون الطازج المشوي مع الليمون والأعشاب، يقدم مع خضروات مطهوة على البخار",
+    "description": {
+      "en": "Lettuce, Tomatoes, Cucumbers, Radishes, Onions, Bell peppers, Mint, Parsley, Sumac, Croutons, Olive oil, Lemon juice",
+      "cs": "hlávkový salát, rajčata, okurky, ředkvičky, cibule, paprika, máta, petržel, sumak, krutony, olivový olej, citronová šťáva",
+      "ar": "خس، بندورة، خيار، فجل، بصل، فلفل حلو، نعناع، بقدونس، سماق، خبز محمص، زيت زيتون، حامض"
     },
-    price: 260,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [3],
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
   {
-    id: 7,
-    number: "M3",
-    categoryId: 2,
-    name: {
-      en: "Vegetable Curry",
-      cs: "Zeleninové Kari",
-      ar: "كاري الخضار",
+    "id": 5,
+    "number": "B3",
+    "categoryId": 2,
+    "name": {
+      "en": "Vegetables With Cheese",
+      "cs": "3-Salát se sýrem",
+      "ar": "3- خضار مع جبنة"
     },
-    description: {
-      en: "Mixed vegetables in a rich curry sauce, served with basmati rice",
-      cs: "Míchaná zelenina v bohaté kari omáčce, podávaná s rýží basmati",
-      ar: "خضروات مشكلة في صلصة كاري غنية، تقدم مع أرز بسمتي",
+    "description": {
+      "en": "Tomatoes, Cucumbers, Bell peppers, Radishes, Onions, Olives, Cheese, Olive oil, Lemon juice",
+      "cs": "rajčata, okurky, papriky, ředkvičky, cibule, olivy, sýr, olivový olej, citronová šťáva",
+      "ar": "بندورة، خيار، فلفل حلو، فجل، بصل، زيتون، جبنة، زيت زيتون، حامض"
     },
-    price: 180,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: true,
-    isAvailable: true,
-    allergies: [],
-  },
-
-  // Desserts
-  {
-    id: 8,
-    number: "D1",
-    categoryId: 3,
-    name: {
-      en: "Chocolate Fondant",
-      cs: "Čokoládový Fondán",
-      ar: "فوندان الشوكولاتة",
-    },
-    description: {
-      en: "Warm chocolate cake with a molten center, served with vanilla ice cream",
-      cs: "Teplý čokoládový dort s tekutým středem, podávaný s vanilkovou zmrzlinou",
-      ar: "كعكة شوكولاتة دافئة ذات مركز سائل، تقدم مع آيس كريم الفانيليا",
-    },
-    price: 95,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [1, 2, 4],
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
   {
-    id: 9,
-    number: "D2",
-    categoryId: 3,
-    name: {
-      en: "Fruit Sorbet",
-      cs: "Ovocný Sorbet",
-      ar: "سوربيه الفواكه",
+    "id": 6,
+    "number": "B4",
+    "categoryId": 2,
+    "name": {
+      "en": "Falahia",
+      "cs": "4-Falahija",
+      "ar": "4- فلاحية"
     },
-    description: {
-      en: "Refreshing fruit sorbet made with seasonal fruits",
-      cs: "Osvěžující ovocný sorbet vyrobený ze sezónního ovoce",
-      ar: "سوربيه فواكه منعش مصنوع من الفواكه الموسمية",
+    "description": {
+      "en": "Tomatoes, Onions, Green chillies, Olive oil, Lemon juice",
+      "cs": "rajčata, cibule, zelené chilli papričky, olivový olej, citronová šťáva",
+      "ar": "بندورة، بصل، شطة خضرة، زيت زيتون، حامض"
     },
-    price: 75,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: true,
-    isAvailable: true,
-    allergies: [],
-  },
-
-  // Drinks
-  {
-    id: 10,
-    number: "DR1",
-    categoryId: 4,
-    name: {
-      en: "Fresh Orange Juice",
-      cs: "Čerstvý Pomerančový Džus",
-      ar: "عصير برتقال طازج",
-    },
-    description: {
-      en: "Freshly squeezed orange juice",
-      cs: "Čerstvě vymačkaný pomerančový džus",
-      ar: "عصير برتقال طازج معصور",
-    },
-    price: 65,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: true,
-    isAvailable: true,
-    allergies: [],
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
   {
-    id: 11,
-    number: "DR2",
-    categoryId: 4,
-    name: {
-      en: "House Wine",
-      cs: "Domácí Víno",
-      ar: "نبيذ المنزل",
+    "id": 7,
+    "number": "B5",
+    "categoryId": 2,
+    "name": {
+      "en": "Turkish Salad",
+      "cs": "5-Turecký salát",
+      "ar": "5- تركية"
     },
-    description: {
-      en: "Glass of our selected house wine (red or white)",
-      cs: "Sklenka našeho vybraného domácího vína (červené nebo bílé)",
-      ar: "كأس من نبيذ المنزل المختار (أحمر أو أبيض)",
+    "description": {
+      "en": "Tomatoes, Tomato paste, Onions, Parsley, Chilli, Vinegar, Cumin, Olive oil",
+      "cs": "rajčata, rajčatový protlak, cibule, petržel, chilli, ocet, kmín, olivový olej",
+      "ar": "بندورة، صلصة بندورة، بصل، بقدونس، شطة، خل، كمون، زيت زيتون"
     },
-    price: 85,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: true,
-    isAvailable: true,
-    allergies: [],
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
-];
+  {
+    "id": 8,
+    "number": "B6",
+    "categoryId": 2,
+    "name": {
+      "en": "Corn Salad",
+      "cs": "6-Kukuřičný salát",
+      "ar": "6- سلطة الذرة"
+    },
+    "description": {
+      "en": "Corn, Bell peppers, Pickled cucumbers",
+      "cs": "kukuřice, paprika, nakládané okurky",
+      "ar": "ذرة، فلفل حلو، خيار مخلل"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 9,
+    "number": "B7",
+    "categoryId": 2,
+    "name": {
+      "en": "The Olive Branch Salad",
+      "cs": "7-The Olive Branch salát",
+      "ar": "7- أوليڤ برانش"
+    },
+    "description": {
+      "en": "Nuts, Parsley, Basil, Dill, Raisins, Pomegranate molasses, Olive oil, Lemon juice",
+      "cs": "ořechy, petržel, bazalka, kopr, rozinky, melasa z granátových jablek, olivový olej, citronová šťáva",
+      "ar": "مكسرات، بقدونس، ريحان، شبت، زبيب، دبس الرمان، زيت زيتون، حامض"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 10,
+    "number": "C1",
+    "categoryId": 3,
+    "name": {
+      "en": "Hummus",
+      "cs": "1-Hummus",
+      "ar": "1- حمص"
+    },
+    "description": {
+      "en": "Chickpeas, Tahini, Lemon juice, Olive oil",
+      "cs": "cizrna, tahini, citronová šťáva, olivový olej",
+      "ar": "حمص، طحينة، عصير ليمون، زيت زيتون"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 11,
+    "number": "C2",
+    "categoryId": 3,
+    "name": {
+      "en": "Hummus With Meat",
+      "cs": "2-Hummus s jehněčím masem",
+      "ar": "2- حمص مع لحمة"
+    },
+    "description": {
+      "en": "chickpeas, tahini, lemon juice, lamb meat nuts, olive oil",
+      "cs": "cizrna, tahini, citronová šťáva, jehněčí maso, ořechy, olivový olej",
+      "ar": "حمص، طحينة، عصير ليمون، لحمة خروف، مكسرات، زيت زيتون"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 12,
+    "number": "C3",
+    "categoryId": 3,
+    "name": {
+      "en": "Baba Ghanoush",
+      "cs": "3-Baba ghanúš",
+      "ar": "3- متبل"
+    },
+    "description": {
+      "en": "Grilled Eggplants, Garlic, Tahini, Lemon juice, Olive oil",
+      "cs": "grilovaný lilek, česnek, tahini, citronová šťáva, olivový olej",
+      "ar": "باذنجان مشوي، ثوم، طحينة، عصير ليمون، زيت زيتون"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 13,
+    "number": "C4",
+    "categoryId": 3,
+    "name": {
+      "en": "Eggplants With Garlic",
+      "cs": "4-Smažený lilenk s česnekem",
+      "ar": "4- باذنجان بثوم"
+    },
+    "description": {
+      "en": "Fried Eggplant, Garlic, Red chilli sauce, Parsley, Lemon juice",
+      "cs": "smažený lilek, česnek, červená chilli omáčka, petržel, citronová šťáva",
+      "ar": "باذنجان مقلي، ثوم ، شطة، بقدونس، عصير ليمون"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 14,
+    "number": "C5",
+    "categoryId": 3,
+    "name": {
+      "en": "Labneh",
+      "cs": "5-Labneh",
+      "ar": "5- لبنة"
+    },
+    "description": {
+      "en": "Labneh, Mint, Garlic, Olive oil",
+      "cs": "labneh, máta, česnek, olivový olej",
+      "ar": "لبنة، نعناع، ثوم، زيت زيتون"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 15,
+    "number": "C6",
+    "categoryId": 3,
+    "name": {
+      "en": "Stuffed Grape Leaves",
+      "cs": "6-Plněné vinné listy",
+      "ar": "6- ورق عنب"
+    },
+    "description": {
+      "en": "Vine leaves, Tomatoes, Rice, Onions, Parsley, Olive oil",
+      "cs": "vinné listy, rajčata, rýže, cibule, petržel, olivový olej",
+      "ar": "ورق العنب، بندورة، أرز، بصل، بقدونس، زيت زيتون"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 16,
+    "number": "C7",
+    "categoryId": 3,
+    "name": {
+      "en": "Muhammara",
+      "cs": "7-Muhammara",
+      "ar": "7- محمرة"
+    },
+    "description": {
+      "en": "Nuts, Bell peppers, Chilli, Olive oil",
+      "cs": "ořechy, paprika, chilli, olivový olej",
+      "ar": "مكسرات، فلفل حلوة، شطة، زيت زيتون"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 17,
+    "number": "C8",
+    "categoryId": 3,
+    "name": {
+      "en": "Pickles and Olives",
+      "cs": "8-Nakládaná zelenina a olivy",
+      "ar": "8- مخلالات و زيتون"
+    },
+    "description": {
+      "en": "",
+      "cs": "",
+      "ar": ""
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 18,
+    "number": "D1",
+    "categoryId": 4,
+    "name": {
+      "en": "Falafel",
+      "cs": "1-Falafel",
+      "ar": "1- فلافل"
+    },
+    "description": {
+      "en": "Chickpeas, Parsley, Onions, Garlic, Green peppers, Tahini",
+      "cs": "cizrna, petržel, cibule, česnek, zelená paprika, tahini",
+      "ar": "حمص، بقدونس، بصل، ثوم، فلفل أخضر، طحينة"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 19,
+    "number": "D2",
+    "categoryId": 4,
+    "name": {
+      "en": "Kibbeh",
+      "cs": "2-Kibbeh",
+      "ar": "2- كبة مقلية"
+    },
+    "description": {
+      "en": "bulgur, lamb and veal meat, onions, pine",
+      "cs": "bulgur, jehněčí a telecí maso, cibule, pinie",
+      "ar": "برغل، لحم خروف و عجل، بصل، صنوبر"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 20,
+    "number": "D3",
+    "categoryId": 4,
+    "name": {
+      "en": "Grilled Chicken Wings",
+      "cs": "3 - Grilovaná kuřecí křidélka",
+      "ar": "3- جوانح الدجاج المشوية"
+    },
+    "description": {
+      "en": "Chicken wings, Garlic, Special seasoning, Garlic sauce",
+      "cs": "kuřecí křídla, česnek, speciální koření, česneková omáčka",
+      "ar": "جوانح، ثوم ، توابل خاصة، ثومية"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 21,
+    "number": "D4",
+    "categoryId": 4,
+    "name": {
+      "en": "Meat Arayes",
+      "cs": "4-Arayes s masem",
+      "ar": "4- عرايس لحمة"
+    },
+    "description": {
+      "en": "Pitta bread, lamb and veal meat, onions, parsley",
+      "cs": "pitta chléb, jehněčí a telecí maso, cibule, petržel",
+      "ar": "خبز عربي، لحم خروف و عجل، بصل، بقدونس"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 22,
+    "number": "D5",
+    "categoryId": 4,
+    "name": {
+      "en": "Cheese Arayes",
+      "cs": "5-Arayes se sýrem",
+      "ar": "5- عرايس جبنة"
+    },
+    "description": {
+      "en": "Pitta bread, White cheese, Tomatoes, Thyme",
+      "cs": "pitta chléb, bílý sýr, rajčata, tymián",
+      "ar": "خبز عربي، جبنة بيضاء، بندورة، زعتر"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 23,
+    "number": "D6",
+    "categoryId": 4,
+    "name": {
+      "en": "Meat Pie",
+      "cs": "6-Fatajer s masem",
+      "ar": "6- فطاير لحمة"
+    },
+    "description": {
+      "en": "Lamb meat, Onions, Parsley, Nuts",
+      "cs": "těsto plněné jehněčím masem, cibule, petržel, ořechy",
+      "ar": "لحمة عجل، بصل، بقدونس، مكسرات)'"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 24,
+    "number": "D7",
+    "categoryId": 4,
+    "name": {
+      "en": "Cheese Pie",
+      "cs": "7-Fatajer se sýrem",
+      "ar": "7- فطاير جبنة"
+    },
+    "description": {
+      "en": "White cheese, Mint",
+      "cs": "těsto plněné sýrem s mátou",
+      "ar": "جبنة بيضاء، نعناع"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 25,
+    "number": "D8",
+    "categoryId": 4,
+    "name": {
+      "en": "Spinach Pie",
+      "cs": "8-Fatajer se špenátem",
+      "ar": "8- فطاير سبانخ"
+    },
+    "description": {
+      "en": "Spinach, Onions, Garlic, Lemon juice",
+      "cs": "těsto plněné špenátem, cibule, česnek, citronová šťáva",
+      "ar": "سبانخ، بصل، ثوم، عصير ليمون"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 26,
+    "number": "D9",
+    "categoryId": 4,
+    "name": {
+      "en": "Appetisers Platter",
+      "cs": "9-Výběr z nejlepších předkrmů",
+      "ar": "9- صحن مقبلات مشكل"
+    },
+    "description": {
+      "en": "Chickpeas, Baba Ghanoush, Stuffed Grape Leaves, Kibbeh, Falafel, Tabbouleh, Meat Pie, Cheese Pie, Spinach pie",
+      "cs": "Cizrna, Baba ghanúš, plněné vinné listy, kibbeh, falafel, tabbouleh, fatajer s masem, sýrem a špenátem",
+      "ar": "حمص، متبل، ورق عنب، كبة، فلافل، تبولة، فطاير لحمة و جبنة و سبانخ"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 27,
+    "number": "E1",
+    "categoryId": 5,
+    "name": {
+      "en": "Mansaf",
+      "cs": "1-Mansaf",
+      "ar": "1- منسف"
+    },
+    "description": {
+      "en": "Lamb and Veal meat /Chicken, Rice, Nuts, Parsley, Mansaf soup",
+      "cs": "jehněčí a telecí maso / kuřecí maso, rýže, ořechy, petržel, polévka mansaf",
+      "ar": "لحم خروف و عجل/ دجاج، أرز، مكسرات، بقدونس، شوربة منسف"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 28,
+    "number": "E2",
+    "categoryId": 5,
+    "name": {
+      "en": "Qidreh",
+      "cs": "2- Qidreh",
+      "ar": "2- قدرة"
+    },
+    "description": {
+      "en": "Lamb and Veal meat/ Chicken, Rice, Garlic, Chickpeas, Onions, Nuts",
+      "cs": "jehněčí a telecí maso/kuřecí maso, rýže, česnek, cizrna, cibule, ořechy",
+      "ar": "لحم خروف و عجل/ دجاج، أرز، ثوم، حمص، بصل، مكسرات"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 29,
+    "number": "E3",
+    "categoryId": 5,
+    "name": {
+      "en": "Musakhan",
+      "cs": "3- Musakhan",
+      "ar": "3- مسخن"
+    },
+    "description": {
+      "en": "Bread, Chicken, Onions, Sumac, Olive oil, Nuts",
+      "cs": "chléb, kuřecí maso, cibule, sumak, olivový olej, ořechy",
+      "ar": "خبز، دجاج، بصل، سماق، زيت زيتون، مكسرات"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 30,
+    "number": "E4",
+    "categoryId": 5,
+    "name": {
+      "en": "kufta",
+      "cs": "4- Kufta",
+      "ar": "4- كفتة"
+    },
+    "description": {
+      "en": "Lamb and Veal meat, Parsley, Onions, Tomatoes, French fries/ Rice/ Freekah",
+      "cs": "jehněčí a telecí maso, petržel, cibule, rajčata, hranolky/rýže/freeka",
+      "ar": "لحم خروف و عجل، بقدونس، بصل، بندورة، بطاطس مقلية/ أرز/ فريكة"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 31,
+    "number": "E5",
+    "categoryId": 5,
+    "name": {
+      "en": "kufta With Tahini",
+      "cs": "5-Kufta s tahini",
+      "ar": "5- كفتة بطحينة"
+    },
+    "description": {
+      "en": "Lamb and Veal meat, Parsley, Onions, tahini, French fries/ Rice/ Freekah",
+      "cs": "jehněčí a telecí maso, petržel, cibule, tahini, hranolky/rýže/freeka",
+      "ar": "لحم خروف و عجل، بقدونس ، بصل، طحينة، بطاطس مقلية/ أرز/ فريكة"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 32,
+    "number": "F1",
+    "categoryId": 6,
+    "name": {
+      "en": "Shish Taouk",
+      "cs": "1-Shish Taouk",
+      "ar": "1- شيش طاووق"
+    },
+    "description": {
+      "en": "Grilled Chicken breast on skewers, Garlic, Special seasoning, French fries/ Rice/ Freekah/ Grilled vegetables, Garlic sauce",
+      "cs": "grilovaná kuřecí prsa na špízu, česnek, speciální koření, hranolky/ rýže/ freekah/ grilovaná zelenina, česneková omáčka",
+      "ar": "صدور دجاج، ثوم، توابل خاصة، بطاطس مقلية/ أرز/ فريكة/ خضار مشوية، ثومية"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 33,
+    "number": "F2",
+    "categoryId": 6,
+    "name": {
+      "en": "Chicken Mosahab",
+      "cs": "2-Kuřecí Mosahab",
+      "ar": "2- دجاج مسحب"
+    },
+    "description": {
+      "en": "Half a chicken, French fries/ Rice/ Freekah/ Grilled vegetables, Garlic sauce",
+      "cs": "půlka kuřete, hranolky/ rýže/ volská oka/ grilovaná zelenina, česneková omáčka",
+      "ar": "نصف دجاجة، بطاطس مقلية/ أرز/ فريكة/ خضار مشوية، ثومية"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 34,
+    "number": "F3",
+    "categoryId": 6,
+    "name": {
+      "en": "Grilled Chicken Thighs",
+      "cs": "3 - Grilovaná kuřecí stehna",
+      "ar": "3- فخد دجاج مسحب"
+    },
+    "description": {
+      "en": "Chicken thighs mosahab, French fries/ Rice/ Freekah/ Grilled vegetables, Garlic sauce",
+      "cs": "kuřecí stehna mosahab, hranolky/ rýže/ freekah/ grilovaná zelenina, česneková omáčka",
+      "ar": "فخد دجاج، بطاطس مقلية/ أرز/ فريكة/ خضار مشوية، ثومية"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 35,
+    "number": "F4",
+    "categoryId": 6,
+    "name": {
+      "en": "Shish Kebab",
+      "cs": "4- Shish Kebab",
+      "ar": "4- شيش كباب"
+    },
+    "description": {
+      "en": "Grilled cubes of lamb and veal meat on skewers, Onions, Parsley, French fries/ Rice/ Freekah/ Grilled vegetables, Tahini",
+      "cs": "grilované jehněčí a telecí maso na špízu, cibule, petržel, hranolky/ rýže/ freekah/ grilovaná zelenina, tahini",
+      "ar": "لحم خروف و عجل، بصل، بقدونس، بطاطس مقلية/ أرز/ فريكة/ خضار مشوية، طحينة"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 36,
+    "number": "F5",
+    "categoryId": 6,
+    "name": {
+      "en": "Sliced Lamb Meat",
+      "cs": "5 - Plátky jehněčího masa",
+      "ar": "5- شرائح خروف"
+    },
+    "description": {
+      "en": "Lamb meat, French fries/ Rice/ Freekah/ Grilled vegetables",
+      "cs": "jehněčí maso, hranolky/ rýže/ freekah/ grilovaná zelenina",
+      "ar": "لحم خروف، بطاطس مقلية/ أرز/ فريكة/ خضار مشوية"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 37,
+    "number": "F6",
+    "categoryId": 6,
+    "name": {
+      "en": "Lamb Ribs",
+      "cs": "6 - Grilovaná jehněčí žebra",
+      "ar": "6- ريش خروف"
+    },
+    "description": {
+      "en": "Lamb ribs, French fries/ Rice/ Freekah/ Grilled vegetables",
+      "cs": "jehněčí žebírka, hranolky/ rýže/ freekah/ grilovaná zelenina",
+      "ar": "ريش خروف، بطاطس مقلية/ أرز/ فريكة/ خضار مشوية"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 38,
+    "number": "F7",
+    "categoryId": 6,
+    "name": {
+      "en": "Mixed Grills For One Person",
+      "cs": "7 - Mixed gril pro 1 osobu",
+      "ar": "7- مشاوي مشكل لشخص"
+    },
+    "description": {
+      "en": "Grilled chicken on skewers, Grilled cubes of meat on skewers, Sliced lamb meat, French fries/ Rice/ Freekah/ Grilled vegetables, Garlic sauce",
+      "cs": "grilované kuřecí na špejlích, grilované kostky masa na špejlích, plátky jehněčího masa, hranolky/ rýže/ freekah/ grilovaná zelenina, česneková omáčka",
+      "ar": "شيش طاووق، شيش كباب، شرائح خروف، بطاطس مقلية/ أرز/فريكة/ خضار مشوية، ثومية"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 39,
+    "number": "F8",
+    "categoryId": 6,
+    "name": {
+      "en": "Mixed Grills For Two People",
+      "cs": "8 - Mixed gril pro 2 osoby",
+      "ar": "8- مشاوي مشكل لشخصين"
+    },
+    "description": {
+      "en": "Grilled chicken on skewers, Grilled cubes of meat on skewers, Chicken slices, Lamb ribs, Chicken wings, French fries/ Rice/ Freekah/ Grilled vegetables, Garlic sauce, Tahini",
+      "cs": "grilované kuřecí maso na špízu, grilované kostky masa na špízu, kuřecí plátky, jehněčí žebra, kuřecí křídla, hranolky/ rýže/ freekah/ grilovaná zelenina, česneková omáčka, tahini",
+      "ar": "شيش طاوو، شيش كباب، شرائح خرف، ريش خروف، جوانح دجاج ، بطاطس مقلية/ أرز/ فريكة/ خضار مشوي، ثومية، طحينة"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 40,
+    "number": "F9",
+    "categoryId": 6,
+    "name": {
+      "en": "Mixed Grills For Three People",
+      "cs": "9 - Mixed gril pro 3 osoby",
+      "ar": "9- مشاوي مشكل لثلاث أشخاص"
+    },
+    "description": {
+      "en": "",
+      "cs": "",
+      "ar": ""
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 41,
+    "number": "G1",
+    "categoryId": 7,
+    "name": {
+      "en": "Salmon",
+      "cs": "1-Losos",
+      "ar": "1- سلمون"
+    },
+    "description": {
+      "en": "Salmon, Rosemary, Butter, Lemon, French fries/ Rice/ Freekah/ Mixed vegetables",
+      "cs": "losos, rozmarýn, máslo, citron, hranolky/ rýže/ freekah / zeleninová směs",
+      "ar": "سلمون، إكليل الجبل ، زبدة، ليمون، بطاطس مقلية/ أرز/ فريكة/ خضار مشكل"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 42,
+    "number": "G2",
+    "categoryId": 7,
+    "name": {
+      "en": "Silver Sea-bream",
+      "cs": "2-Mořský vlk",
+      "ar": "2- سمكة الدنيس"
+    },
+    "description": {
+      "en": "Silver seabream, Garlic, Coriander, Lemon, Rice/ Freekah/ Mixed vegetables",
+      "cs": "mořský vlk, česnek, koriandr, citron, rýže / freekah / zeleninový směs",
+      "ar": "دنيس، ثوم، كزبرة، ليمون، أرز/ فريكة/ خضار مشوية"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 43,
+    "number": "G3",
+    "categoryId": 7,
+    "name": {
+      "en": "Shrimp Bowl",
+      "cs": "3 - Krevetová miska",
+      "ar": "3- زبدية الجمبري"
+    },
+    "description": {
+      "en": "Shrimps, Tomatoes, Chilli, Onions, Garlic, Lemon juice",
+      "cs": "krevety, rajčata, chilli, cibule, česnek, citronová šťáva",
+      "ar": "جمبري، بندورة، شطة، بصل ، ثوم، عصير ليمون"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 44,
+    "number": "G4",
+    "categoryId": 7,
+    "name": {
+      "en": "Shrimp With Butter and Garlic",
+      "cs": "4 - Krevety na másle a česneku",
+      "ar": "4- جمبري مع الزبدة و الثوم"
+    },
+    "description": {
+      "en": "Shrimps, Butter, Garlic, Rice/ Freekah/ Mixed vegetables",
+      "cs": "krevety, máslo, česnek, rýže / freekah / zeleninový směs",
+      "ar": "جمبري، زبدة، ثوم، أرز، فريكة، خضار مشكل"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 45,
+    "number": "H1",
+    "categoryId": 8,
+    "name": {
+      "en": "French Fries",
+      "cs": "1 - Hranolky",
+      "ar": "1- بطاطس مقلية"
+    },
+    "description": {
+      "en": "",
+      "cs": "",
+      "ar": ""
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 46,
+    "number": "H2",
+    "categoryId": 8,
+    "name": {
+      "en": "Rice",
+      "cs": "2 - Rýže",
+      "ar": "2- أرز"
+    },
+    "description": {
+      "en": "",
+      "cs": "",
+      "ar": ""
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 47,
+    "number": "H3",
+    "categoryId": 8,
+    "name": {
+      "en": "Freekah",
+      "cs": "3 - Freekah",
+      "ar": "3- فريكة"
+    },
+    "description": {
+      "en": "",
+      "cs": "",
+      "ar": ""
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 48,
+    "number": "H4",
+    "categoryId": 8,
+    "name": {
+      "en": "Grilled Vegetables",
+      "cs": "4 - Grilovaná zelenina",
+      "ar": "4- خضار مشوية"
+    },
+    "description": {
+      "en": "",
+      "cs": "",
+      "ar": ""
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 49,
+    "number": "I1",
+    "categoryId": 9,
+    "name": {
+      "en": "Baklava",
+      "cs": "1- Baklava",
+      "ar": "1- بقلاوة"
+    },
+    "description": {
+      "en": "Phyllo dough, Butter, Pistachios/ Walnuts, Sugar syrup",
+      "cs": "filo těsto, máslo, pistácie/vlaštské ořechy, cukrový sirup",
+      "ar": "عجينة الفيلو، زبدة، فستق/ جوز، شراب السكر"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 50,
+    "number": "I2",
+    "categoryId": 9,
+    "name": {
+      "en": "Knafeh",
+      "cs": "2- Knafeh",
+      "ar": "2- كنافة"
+    },
+    "description": {
+      "en": "Kadayif spun pastry dough, Akkawi cheese, Butter, Sugar syrup",
+      "cs": "těsto kadayif, sýr Akkawi, máslo, cukrový sirup",
+      "ar": "عجينة الكنافة، جبنة عكاوي، زبدة، شراب السكر"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  }
+]
 
 // Helper functions
 export function getCategoryById(id: number): Category | undefined {
