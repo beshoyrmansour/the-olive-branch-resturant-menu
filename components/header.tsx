@@ -12,7 +12,7 @@ import { RestaurantLogo } from "@/components/restaurant-logo";
 
 export function Header() {
   const pathname = usePathname();
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
@@ -43,9 +43,12 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b glossy backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header
+      dir={dir}
+      className="sticky top-0 z-50 w-full border-b glossy backdrop-blur supports-[backdrop-filter]:bg-background/60"
+    >
       <div className="container flex h-20 items-center justify-between">
-        <div className="flex items-center gap-2">
+        <div className="lg:hidden flex items-center gap-2 ">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="lg:hidden">
               <Button variant="outline" size="icon" className="rounded-xl">
@@ -72,11 +75,10 @@ export function Header() {
               </nav>
             </SheetContent>
           </Sheet>
-          <Link href="/" className="flex items-center">
-            <RestaurantLogo variant="small" />
-          </Link>
         </div>
-
+        <Link href="/" className="flex items-center ">
+          <RestaurantLogo variant="small" />
+        </Link>
         <nav className="hidden lg:flex items-center gap-6">
           {navItems.map((item) => (
             <Link
