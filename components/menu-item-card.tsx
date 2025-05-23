@@ -88,7 +88,7 @@ export function MenuItemCard({ item }: MenuItemCardProps) {
             </div>
             <Badge
               variant="outline"
-              className="text-lg font-semibold rounded-xl bg-olive/10 text-olive border-olive/30"
+              className="text-lg font-semibold rounded-xl bg-olive/10 text-olive border-olive/30 whitespace-nowrap"
             >
               {formatPrice(item.price)}
             </Badge>
@@ -135,7 +135,7 @@ export function MenuItemCard({ item }: MenuItemCardProps) {
                     <TooltipTrigger>
                       <Badge variant="secondary" className="text-xs rounded-xl">
                         <Info className="h-3 w-3 mr-1" />
-                        {allergy.name[language]}
+                        {allergy.id} {allergy.name[language]}
                       </Badge>
                     </TooltipTrigger>
                     <TooltipContent>
