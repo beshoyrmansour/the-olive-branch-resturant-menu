@@ -25,7 +25,7 @@ interface MenuItemCardProps {
 }
 
 export function MenuItemCard({ item }: MenuItemCardProps) {
-  const { t, language } = useLanguage();
+  const { t, language, dir } = useLanguage();
 
   const formatPrice = (price: number) => {
     if (language === "cs") {
@@ -43,6 +43,7 @@ export function MenuItemCard({ item }: MenuItemCardProps) {
         className={`rounded-2xl glossy-card ${
           !item.isAvailable ? "opacity-60" : ""
         }`}
+        dir={dir}
       >
         <CardHeader className="p-4">
           <div className="flex justify-between items-start">
@@ -95,28 +96,29 @@ export function MenuItemCard({ item }: MenuItemCardProps) {
           </div>
         </CardHeader>
         <CardContent className="p-0">
-          {item.img && item.img !== "/placeholder.svg?height=150&width=150" ? (
-            <div className="relative h-40 w-full">
-              <Image
-                src={item.img || "/placeholder.svg"}
-                alt={item.name[language]}
-                fill
-                className="object-cover"
-              />
-            </div>
-          ) : (
-            <div className="h-40 w-full menu-card-pattern flex items-center justify-center p-4 bg-olive/5 relative">
-              <div className="absolute inset-0 opacity-10 bg-olive-pattern"></div>
-              <div className="text-center z-10">
-                <div className="text-olive text-lg font-raleway-medium mb-2">
-                  {item.name[language]}
-                </div>
-                <div className="text-sm font-raleway-light text-muted-foreground">
-                  {item.description[language]}
-                </div>
+          {
+            item.img && item.img !== "/placeholder.svg?height=150&width=150" ? (
+              <div className="relative h-40 w-full">
+                <Image
+                  src={item.img || "/placeholder.svg"}
+                  alt={item.name[language]}
+                  fill
+                  className="object-cover"
+                />
               </div>
-            </div>
-          )}
+            ) : null
+            // <div className="h-40 w-full menu-card-pattern flex items-center justify-center p-4 bg-olive/5 relative">
+            //   <div className="absolute inset-0 opacity-10 bg-olive-pattern"></div>
+            //   <div className="text-center z-10">
+            //     <div className="text-olive text-lg font-raleway-medium mb-2">
+            //       {item.name[language]}
+            //     </div>
+            //     <div className="text-sm font-raleway-light text-muted-foreground">
+            //       {item.description[language]}
+            //     </div>
+            //   </div>
+            // </div>
+          }
           <div className="p-4">
             <CardDescription className="text-sm">
               {item.description[language]}

@@ -19,7 +19,7 @@ import { FooterWithMap } from "@/components/footer-with-map";
 import { DecorativeDivider } from "@/components/decorative-divider";
 
 export default function LunchMenuPage() {
-  const { t, language } = useLanguage();
+  const { t, language, dir } = useLanguage();
   const [selectedDay, setSelectedDay] = useState<string>("1");
   const [isLunch, setIsLunch] = useState(true);
 
@@ -38,11 +38,11 @@ export default function LunchMenuPage() {
   );
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen" dir={dir}>
       <Header />
       <main className="flex-1 container px-4 py-8 md:px-6">
-        <div className="flex items-center gap-4 mb-6">
-          <h1 className="text-3xl font-raleway-medium text-olive">
+        <div className="flex items-center justify-center gap-4 mb-6 w-full">
+          <h1 className="text-3xl font-raleway-medium text-center  text-olive">
             {t("lunchMenu", {
               en: "Lunch Menu",
               cs: "Obědové Menu",
@@ -94,10 +94,6 @@ export default function LunchMenuPage() {
           {weekDays.map((day) => (
             <TabsContent key={day.id} value={day.id.toString()}>
               <div className="mt-6">
-                <h2 className="text-2xl font-semibold mb-4 text-olive">
-                  {day.name[language]}
-                </h2>
-
                 {categoriesForDay.length > 0 ? (
                   categoriesForDay.map((catId) => {
                     const categoryItems = getMenuItemsByCategory(

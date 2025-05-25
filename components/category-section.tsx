@@ -10,7 +10,7 @@ interface CategorySectionProps {
 }
 
 export function CategorySection({ categoryId, items }: CategorySectionProps) {
-  const { t, language } = useLanguage();
+  const { t, language, dir } = useLanguage();
   const category = getCategoryById(categoryId);
 
   if (!category || items.length === 0) return null;

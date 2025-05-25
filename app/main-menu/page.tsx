@@ -10,7 +10,7 @@ import { FooterWithMap } from "@/components/footer-with-map";
 import { DecorativeDivider } from "@/components/decorative-divider";
 
 export default function MainMenuPage() {
-  const { t, language } = useLanguage();
+  const { t, language, dir } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
   // Filter menu items by category if a specific category is selected
@@ -27,7 +27,7 @@ export default function MainMenuPage() {
   );
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen" dir={dir}>
       <Header />
       <main className="flex-1 container px-4 py-8 md:px-6">
         <div className="flex items-center gap-4 mb-6">

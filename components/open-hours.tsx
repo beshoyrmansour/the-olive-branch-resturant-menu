@@ -11,7 +11,7 @@ const OpenHours = ({
   titleStyle = "text-2xl font-raleway-medium tracking-tighter text-olive",
   className = "",
 }: Props) => {
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
   return (
     <div className={cn("space-y-4", className)}>
       <h2
@@ -25,15 +25,25 @@ const OpenHours = ({
       </h2>
       <ul className="space-y-2 text-muted-foreground">
         <li className="flex justify-between">
-          <span>Monday - Friday</span>
+          <span>
+            {t("mondayToFriday", {
+              en: "Monday - Friday",
+              cs: "Pondělí - pátek",
+              ar: "الاثنين -  الجمعة",
+            })}
+          </span>
           <span>11:00 - 22:00</span>
         </li>
         <li className="flex justify-between">
-          <span>Saturday</span>
+          <span>
+            {t("saturday", { en: "Saturday", cs: "Sobota", ar: "السبت" })}
+          </span>
           <span>12:00 - 23:00</span>
         </li>
         <li className="flex justify-between">
-          <span>Sunday</span>
+          <span>
+            {t("sunday", { en: "Sunday", cs: "Neděle", ar: "الأحد" })}
+          </span>
           <span>12:00 - 21:00</span>
         </li>
       </ul>

@@ -4,7 +4,7 @@ import React from "react";
 
 export function RestaurantName() {
   return "The Olive Branch";
-  //   const { t } = useLanguage();
+  //   const { t, dir } = useLanguage();
   //   return t("restaurantName", {
   //     en: "The Olive Branch",
   //     cs: "Olivová Větev",

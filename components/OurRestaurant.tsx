@@ -2,9 +2,9 @@
 import { useLanguage } from "@/components/language-provider";
 
 const OurRestaurant = () => {
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
   return (
-    <div className="space-y-4 p-6 rounded-2xl glossy-card">
+    <div className="space-y-4 p-6 rounded-2xl glossy-card" dir={dir}>
       <h2 className="text-3xl font-raleway-medium tracking-tighter text-olive">
         {t("ourRestaurant", {
           en: "Our Restaurant",
