@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import { RestaurantName } from "@/components/RestaurantName";
 import OurRestaurant from "@/components/OurRestaurant";
 import OpenHours from "@/components/open-hours";
+import GoToTheRightMenu from "@/components/go-to-the-right-menu";
 
 export default function Home() {
   const showLunchMenu = isLunchTime();
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
+      <GoToTheRightMenu />
       <main className="flex-1">
         <section className="py-12 md:py-20 lg:py-24 bg-gradient-to-b from-background to-muted decorative-border">
           <div className="container px-4 md:px-6">

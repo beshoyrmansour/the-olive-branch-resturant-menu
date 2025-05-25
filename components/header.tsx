@@ -76,7 +76,7 @@ export function Header() {
             </SheetContent>
           </Sheet>
         </div>
-        <Link href="/" className="flex items-center ">
+        <Link href="/about" className="flex items-center ">
           <RestaurantLogo variant="small" />
         </Link>
         <nav className="hidden lg:flex items-center gap-6">
