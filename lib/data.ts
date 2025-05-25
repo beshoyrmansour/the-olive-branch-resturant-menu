@@ -81,6 +81,10 @@ export const categories: Category[] = [
   },
   { id: 8, name: { en: "Extras", cs: "Přílohy", ar: "الإضافات الجانبية" } },
   { id: 9, name: { en: "Desserts", cs: "Dezerty", ar: "الحلويات" } },
+  {
+    id: 696,
+    name: { en: "Menu of the day", cs: "Denní menu", ar: "قائمة اليوم" },
+  },
 ];
 
 export const weekDays: WeekDay[] = [
