@@ -92,253 +92,427 @@ export const weekDays: WeekDay[] = [
 ];
 
 export const lunchMenu: MenuItem[] = [
-  // Monday - Starters
   {
-    id: 101,
-    number: "L1.1",
-    categoryId: 1,
-    name: {
-      en: "Tomato Bruschetta",
-      cs: "Rajčatová Bruschetta",
-      ar: "بروسكيتا الطماطم",
+    "id": 1,
+    "number": "1",
+    "categoryId": 696,
+    "lunchMenuDayId": 1,
+    "name": {
+      "en": "Today’s Soup",
+      "cs": "polévka dne",
+      "ar": "شوربة اليوم"
     },
-    description: {
-      en: "Toasted bread topped with fresh tomatoes, basil, and olive oil",
-      cs: "Opečený chléb s čerstvými rajčaty, bazalkou a olivovým olejem",
-      ar: "خبز محمص مع طماطم طازجة وريحان وزيت زيتون",
+    "description": {
+      "en": "",
+      "cs": "",
+      "ar": ""
     },
-    price: 85,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: true,
-    isAvailable: true,
-    allergies: [1],
-    lunchMenuDayId: 1,
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
-  // Monday - Main Course
   {
-    id: 102,
-    number: "L1.2",
-    categoryId: 2,
-    name: {
-      en: "Grilled Chicken with Rice",
-      cs: "Grilované Kuře s Rýží",
-      ar: "دجاج مشوي مع أرز",
+    "id": 2,
+    "number": "2",
+    "categoryId": 696,
+    "lunchMenuDayId": 1,
+    "name": {
+      "en": "Mujaddara",
+      "cs": "Mudžaddara",
+      "ar": "مجدرة"
     },
-    description: {
-      en: "Tender grilled chicken breast served with steamed rice and vegetables",
-      cs: "Šťavnaté grilované kuřecí prso podávané s dušenou rýží a zeleninou",
-      ar: "صدر دجاج مشوي طري يقدم مع أرز مطهو على البخار وخضروات",
+    "description": {
+      "en": "Lentils, Rice, Onions, Olive oil",
+      "cs": "hnědá čočka, rýže, smažená cibule, olivový olej) ",
+      "ar": "عدس، أرز، بصل، زيت زيتون"
     },
-    price: 145,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [],
-    lunchMenuDayId: 1,
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
-  // Monday - Dessert
   {
-    id: 103,
-    number: "L1.3",
-    categoryId: 3,
-    name: {
-      en: "Apple Strudel",
-      cs: "Jablečný Štrúdl",
-      ar: "فطيرة التفاح",
+    "id": 3,
+    "number": "3",
+    "categoryId": 696,
+    "lunchMenuDayId": 1,
+    "name": {
+      "en": "Grilled Chicken Thighs",
+      "cs": "Kuřecí stehno s pečenými bramborami",
+      "ar": "أفخاذ دجاج مشوية"
     },
-    description: {
-      en: "Traditional pastry filled with apples, cinnamon, and raisins",
-      cs: "Tradiční moučník plněný jablky, skořicí a rozinkami",
-      ar: "معجنات تقليدية محشوة بالتفاح والقرفة والزبيب",
+    "description": {
+      "en": "Grilled chicken, Grilled potatoes",
+      "cs": "kuřecí stehno, pečené brambory",
+      "ar": "دجاج محمر، بطاطس مشوية"
     },
-    price: 75,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [1, 2, 4],
-    lunchMenuDayId: 1,
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
-
-  // Tuesday - Soup
   {
-    id: 104,
-    number: "L2.1",
-    categoryId: 5,
-    name: {
-      en: "Mushroom Soup",
-      cs: "Houbová Polévka",
-      ar: "شوربة الفطر",
+    "id": 4,
+    "number": "4",
+    "categoryId": 696,
+    "lunchMenuDayId": 1,
+    "name": {
+      "en": "Beans",
+      "cs": "Bílé fazole s rýži",
+      "ar": "فاصوليا"
     },
-    description: {
-      en: "Creamy soup made with fresh forest mushrooms and herbs",
-      cs: "Krémová polévka z čerstvých lesních hub a bylin",
-      ar: "شوربة كريمية مصنوعة من فطر الغابات الطازج والأعشاب",
+    "description": {
+      "en": "Navy bean, Beef, Tomato sauce, Bulgur",
+      "cs": " fazole v rajčatové omáčce s hovězím masem, bulgur) ",
+      "ar": "فاصوليا بيضاء، لحم بقري، صوص البندورة، برغل"
     },
-    price: 65,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [4],
-    lunchMenuDayId: 2,
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
-  // Tuesday - Main Course
   {
-    id: 105,
-    number: "L2.2",
-    categoryId: 2,
-    name: {
-      en: "Beef Goulash",
-      cs: "Hovězí Guláš",
-      ar: "جولاش لحم البقر",
+    "id": 5,
+    "number": "1",
+    "categoryId": 696,
+    "lunchMenuDayId": 2,
+    "name": {
+      "en": "Today’s Soup",
+      "cs": "polévka dne",
+      "ar": "شوربة اليوم"
     },
-    description: {
-      en: "Traditional beef stew with paprika, served with dumplings",
-      cs: "Tradiční hovězí dušené maso s paprikou, podávané s knedlíky",
-      ar: "يخنة لحم البقر التقليدية مع الفلفل الأحمر، تقدم مع زلابية",
+    "description": {
+      "en": "",
+      "cs": "",
+      "ar": ""
     },
-    price: 155,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [1],
-    lunchMenuDayId: 2,
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
-
-  // Wednesday - Starters
   {
-    id: 106,
-    number: "L3.1",
-    categoryId: 1,
-    name: {
-      en: "Greek Salad",
-      cs: "Řecký Salát",
-      ar: "سلطة يونانية",
+    "id": 6,
+    "number": "2",
+    "categoryId": 696,
+    "lunchMenuDayId": 2,
+    "name": {
+      "en": "Falafel With Hummus",
+      "cs": "Falafel s humusem",
+      "ar": "فلافل مع حمص"
     },
-    description: {
-      en: "Fresh salad with tomatoes, cucumbers, olives, and feta cheese",
-      cs: "Čerstvý salát s rajčaty, okurkami, olivami a sýrem feta",
-      ar: "سلطة طازجة مع طماطم وخيار وزيتون وجبنة فيتا",
+    "description": {
+      "en": "Falafel, Hummus, Tahini, Bread",
+      "cs": "falafel, humus, tahin, pita chléb) ",
+      "ar": "فلافل، حمص، طحينة، خبز"
     },
-    price: 95,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [4],
-    lunchMenuDayId: 3,
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
-  // Wednesday - Main Course
   {
-    id: 107,
-    number: "L3.2",
-    categoryId: 2,
-    name: {
-      en: "Vegetable Risotto",
-      cs: "Zeleninové Rizoto",
-      ar: "ريزوتو الخضار",
+    "id": 7,
+    "number": "3",
+    "categoryId": 696,
+    "lunchMenuDayId": 2,
+    "name": {
+      "en": "Okra",
+      "cs": "Okra s rýži",
+      "ar": "بامية"
     },
-    description: {
-      en: "Creamy Italian rice with seasonal vegetables and parmesan",
-      cs: "Krémová italská rýže se sezónní zeleninou a parmezánem",
-      ar: "أرز إيطالي كريمي مع خضروات موسمية وجبن بارميزان",
+    "description": {
+      "en": "Okra, Garlic, Beef, Tomato sauce, Rice",
+      "cs": "okra, rajčatová omáčka, hovězí maso, česnek, rýže) ",
+      "ar": "بامية، ثوم، لحم بقري، صوص البندورة، أرز"
     },
-    price: 125,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [4],
-    lunchMenuDayId: 3,
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
-
-  // Thursday - Soup
   {
-    id: 108,
-    number: "L4.1",
-    categoryId: 5,
-    name: {
-      en: "Tomato Soup",
-      cs: "Rajčatová Polévka",
-      ar: "شوربة طماطم",
+    "id": 8,
+    "number": "4",
+    "categoryId": 696,
+    "lunchMenuDayId": 2,
+    "name": {
+      "en": "kufta With Tahini",
+      "cs": "Kafta bitahini",
+      "ar": "كفتة بطحينة"
     },
-    description: {
-      en: "Homemade tomato soup with fresh basil and cream",
-      cs: "Domácí rajčatová polévka s čerstvou bazalkou a smetanou",
-      ar: "شوربة طماطم محلية الصنع مع ريحان طازج وكريمة",
+    "description": {
+      "en": "Kufta, Tahini, Roasted potatoes",
+      "cs": "grilované mleté hovězí maso, petržel, sezamová omáčka, pečené brambory",
+      "ar": "كفتة، طحينة، بطاطس مشوية"
     },
-    price: 60,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [4],
-    lunchMenuDayId: 4,
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
-  // Thursday - Main Course
   {
-    id: 109,
-    number: "L4.2",
-    categoryId: 2,
-    name: {
-      en: "Pork Schnitzel",
-      cs: "Vepřový Řízek",
-      ar: "شنيتزل لحم الخنزير",
+    "id": 9,
+    "number": "1",
+    "categoryId": 696,
+    "lunchMenuDayId": 3,
+    "name": {
+      "en": "Today’s Soup",
+      "cs": "polévka dne",
+      "ar": "شوربة اليوم"
     },
-    description: {
-      en: "Breaded pork cutlet served with potato salad",
-      cs: "Obalovaná vepřová kotleta podávaná s bramborovým salátem",
-      ar: "شريحة لحم خنزير مغطاة بالبقسماط تقدم مع سلطة بطاطس",
+    "description": {
+      "en": "",
+      "cs": "",
+      "ar": ""
     },
-    price: 140,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [1, 2],
-    lunchMenuDayId: 4,
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
-
-  // Friday - Starters
   {
-    id: 110,
-    number: "L5.1",
-    categoryId: 1,
-    name: {
-      en: "Hummus with Pita",
-      cs: "Hummus s Pitou",
-      ar: "حمص مع خبز بيتا",
+    "id": 10,
+    "number": "2",
+    "categoryId": 696,
+    "lunchMenuDayId": 3,
+    "name": {
+      "en": "Couscous With Veggies",
+      "cs": "Kuskus se zeleninou",
+      "ar": "كسكس مع خضار"
     },
-    description: {
-      en: "Chickpea spread with tahini, served with warm pita bread",
-      cs: "Cizrnová pomazánka s tahini, podávaná s teplým chlebem pita",
-      ar: "معجون الحمص مع الطحينة، يقدم مع خبز بيتا دافئ",
+    "description": {
+      "en": "Couscous, roasted vegetables",
+      "cs": "kuskus, pečená zelenina) ",
+      "ar": "كسكس، خضار مشوية"
     },
-    price: 85,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: true,
-    isAvailable: true,
-    allergies: [1],
-    lunchMenuDayId: 5,
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
-  // Friday - Main Course
   {
-    id: 111,
-    number: "L5.2",
-    categoryId: 2,
-    name: {
-      en: "Grilled Trout",
-      cs: "Grilovaný Pstruh",
-      ar: "سمك السلمون المرقط المشوي",
+    "id": 11,
+    "number": "3",
+    "categoryId": 696,
+    "lunchMenuDayId": 3,
+    "name": {
+      "en": "Macaroni Béchamel",
+      "cs": "Zapečené těstoviny s boloňskou omáčku",
+      "ar": "معكرونة بالشاميل"
     },
-    description: {
-      en: "Whole grilled trout with herbs, served with roasted potatoes",
-      cs: "Celý grilovaný pstruh s bylinkami, podávaný s pečenými bramborami",
-      ar: "سمك السلمون المرقط المشوي بالكامل مع الأعشاب، يقدم مع البطاطس المحمرة",
+    "description": {
+      "en": "Macaroni, Beef, Tomato sauce, Béchamel",
+      "cs": "penne, boloňská omáčka, bešamel",
+      "ar": "معكرونة، لحم بقري، صوص بندورة، باشاميل"
     },
-    price: 165,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [3],
-    lunchMenuDayId: 5,
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
   },
-];
+  {
+    "id": 12,
+    "number": "4",
+    "categoryId": 696,
+    "lunchMenuDayId": 3,
+    "name": {
+      "en": "Chicken Breasts With Cream Sauce",
+      "cs": "Kuřecí prsa na smetaně",
+      "ar": "صدور دجاج مع كريمة صوص"
+    },
+    "description": {
+      "en": "Chicken, Mushrooms, Onions, Garlic, Leek, Cream, Rice",
+      "cs": "kuřecí prsa, smetana, žampiony, pórek, česnek, rýže",
+      "ar": "دجاج، فطر، بصل، ثوم، كراث، كريمة، أرز"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 13,
+    "number": "1",
+    "categoryId": 696,
+    "lunchMenuDayId": 4,
+    "name": {
+      "en": "Today’s soup",
+      "cs": "polévka dne",
+      "ar": "شوربة اليوم"
+    },
+    "description": {
+      "en": "",
+      "cs": "",
+      "ar": ""
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 14,
+    "number": "2",
+    "categoryId": 696,
+    "lunchMenuDayId": 4,
+    "name": {
+      "en": "Thyme Arayes",
+      "cs": "Arayes Zaatar se salátem",
+      "ar": "عرايس زعتر"
+    },
+    "description": {
+      "en": "Pitta Bread, Tomatoes, Thyme, Green salad",
+      "cs": "pita plněná tymiánem a rajčaty, olivový olej, zeleninový salát) ",
+      "ar": "خبز عربي، بندورة، زعتر، سلطة خضار مشكل"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 15,
+    "number": "3",
+    "categoryId": 696,
+    "lunchMenuDayId": 4,
+    "name": {
+      "en": "Meat With Veggies Platter",
+      "cs": "Pečená zelenina s hovězím masem",
+      "ar": "صينية خضار باللحمة"
+    },
+    "description": {
+      "en": "Beef, Potatoes, Carrots, Broccoli, Cheese",
+      "cs": "brambory, paprika, brokolice, česnek, mleté hovězí maso, mozzarella",
+      "ar": "لحم بقري، بطاطس، جزر، بروكولي، جبنة"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 16,
+    "number": "4",
+    "categoryId": 696,
+    "lunchMenuDayId": 4,
+    "name": {
+      "en": "Fish Fillet",
+      "cs": "Rybí filé s bramborami",
+      "ar": "فيليه سمك"
+    },
+    "description": {
+      "en": "Fried pangasius, Roasted potatoes",
+      "cs": "pangas, pečené brambory",
+      "ar": "بنغاسيوس مقلي، بطاطس مشوية"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 17,
+    "number": "1",
+    "categoryId": 696,
+    "lunchMenuDayId": 5,
+    "name": {
+      "en": "Today’s soup",
+      "cs": "polévka dne",
+      "ar": "شوربة اليوم"
+    },
+    "description": {
+      "en": "",
+      "cs": "",
+      "ar": ""
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 18,
+    "number": "2",
+    "categoryId": 696,
+    "lunchMenuDayId": 5,
+    "name": {
+      "en": "Bulgur With Veggies",
+      "cs": "Bulgurové rizoto",
+      "ar": "برغل بالخضار"
+    },
+    "description": {
+      "en": "Bulgur, Tomatoe sauce, Onions, Chickpeas Peas, Carrots",
+      "cs": " (bulgur, cizrna, hrách, mrkev, rajčatový pyré) ",
+      "ar": "برغل، صلصة بندورة، بصل، حمص، بازيلاء، جزر"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 19,
+    "number": "3",
+    "categoryId": 696,
+    "lunchMenuDayId": 5,
+    "name": {
+      "en": "Chicken Breasts With Potatoes",
+      "cs": "Kuřecí steak s bramborami",
+      "ar": "صدور دجاج مع البطاطس"
+    },
+    "description": {
+      "en": "Chicken breasts, Bell peppers, Potatoes, Garlic",
+      "cs": "pečená kuřecí prsa, pečené brambory, paprika",
+      "ar": "صدور دجاج، فلفل حلو، بطاطس، ثوم"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  },
+  {
+    "id": 20,
+    "number": "4",
+    "categoryId": 696,
+    "lunchMenuDayId": 5,
+    "name": {
+      "en": "Dawood Pasha",
+      "cs": "Dawood Basha",
+      "ar": "داوود باشا"
+    },
+    "description": {
+      "en": "Beef, peas, Bell peppers, Carrots, Tomato sauce, Rice",
+      "cs": "masové kuličky v rajčatové omáčce, hrách, paprika, mrkev, rýže",
+      "ar": "لحم بقري، بازيلاء، فلفل حلو، جزر، صلصة بندورة، أرز"
+    },
+    "price": 999,
+    "img": "/placeholder.svg?height=150&width=150",
+    "isVegan": false,
+    "isAvailable": true,
+    "allergies": []
+  }
+]
 
 export const mainMenu: MenuItem[] = [
   {
