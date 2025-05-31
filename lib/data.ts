@@ -1570,8 +1570,14 @@ export function getMenuItemsByDay(
 
 export function isLunchTime(): boolean {
   const now = new Date();
+  // check if it's between 12 PM and 3 PM and not weekend
+  if (now.getDay() === 0 || now.getDay() === 6) {
+    console.log("It's weekend, not lunch time.");
+    return false;
+  }
   const hours = now.getHours();
   // Lunch time is between 12:00 and 15:00
+  console.log("Current hour:", hours);
   return hours >= 12 && hours < 15;
 }
 
