@@ -729,8 +729,8 @@ export const mainMenu: MenuItem[] = [
       ar: "حمص",
     },
     description: {
-      en: "Chickpeas, Tahini, Lemon juice, Olive oil",
-      cs: "cizrna, tahini, citronová šťáva, olivový olej",
+      en: "Hummus, Tahini, Lemon juice, Olive oil",
+      cs: "Hummus, tahini, citronová šťáva, olivový olej",
       ar: "حمص، طحينة، عصير ليمون، زيت زيتون",
     },
     price: 125,
@@ -749,8 +749,8 @@ export const mainMenu: MenuItem[] = [
       ar: "حمص مع لحمة",
     },
     description: {
-      en: "chickpeas, tahini, lemon juice, lamb meat nuts, olive oil",
-      cs: "cizrna, tahini, citronová šťáva, jehněčí maso, ořechy, olivový olej",
+      en: "Hummus, tahini, lemon juice, lamb meat nuts, olive oil",
+      cs: "Hummus, tahini, citronová šťáva, jehněčí maso, ořechy, olivový olej",
       ar: "حمص، طحينة، عصير ليمون، لحمة خروف، مكسرات، زيت زيتون",
     },
     price: 145,
@@ -764,8 +764,8 @@ export const mainMenu: MenuItem[] = [
     number: "C3",
     categoryId: 3,
     name: {
-      en: "Baba Ghanoush",
-      cs: "Baba ghanúš",
+      en: "Baba Ganoush",
+      cs: "Baba ganúš",
       ar: "بابا غنوج",
     },
     description: {
@@ -785,7 +785,7 @@ export const mainMenu: MenuItem[] = [
     categoryId: 3,
     name: {
       en: "Eggplants With Garlic",
-      cs: "Smažený lilenk s česnekem",
+      cs: "Smažený lilek s česnekem",
       ar: "باذنجان بثوم",
     },
     description: {
@@ -810,7 +810,7 @@ export const mainMenu: MenuItem[] = [
     },
     description: {
       en: "Labneh, Mint, Garlic, Olive oil",
-      cs: "labneh, máta, česnek, olivový olej",
+      cs: "Labneh, máta, česnek, olivový olej",
       ar: "لبنة، نعناع، ثوم، زيت زيتون",
     },
     price: 125,
@@ -913,7 +913,7 @@ export const mainMenu: MenuItem[] = [
       cs: "bulgur, jehněčí a telecí maso, cibule, pinie",
       ar: "برغل، لحم خروف و عجل، بصل، صنوبر",
     },
-    price: 135,
+    price: 150,
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
