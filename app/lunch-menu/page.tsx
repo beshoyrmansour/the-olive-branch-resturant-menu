@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Header } from "@/components/header";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Clock } from "lucide-react";
 import { CategorySection } from "@/components/category-section";
@@ -14,14 +13,18 @@ import {
   getMenuItemsByCategory,
   isLunchTime,
   getCurrentWeekDay,
+  categories,
 } from "@/lib/data";
 import { FooterWithMap } from "@/components/footer-with-map";
 import { DecorativeDivider } from "@/components/decorative-divider";
+import { Button } from "@/components/ui/button";
 
 export default function LunchMenuPage() {
   const { t, language, dir } = useLanguage();
   const [selectedDay, setSelectedDay] = useState<string>("1");
   const [isLunch, setIsLunch] = useState(true);
+  const [activeCategory, setActiveCategory] = useState<string>("");
+  const categoriesContainerRef = useRef<HTMLDivElement>(null);
 
   // Set the current weekday on initial load
   useEffect(() => {
@@ -36,6 +39,64 @@ export default function LunchMenuPage() {
   const categoriesForDay = Array.from(
     new Set(dayItems.map((item) => item.categoryId))
   );
+
+  useEffect(() => {
+    if (activeCategory && categoriesContainerRef.current) {
+      const activeButton =
+        categoriesContainerRef.current.querySelector<HTMLButtonElement>(
+          `[data-category-id="${activeCategory}"]`
+        );
+      if (activeButton) {
+        activeButton.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "center",
+        });
+      }
+    }
+  }, [activeCategory]);
+
+  useEffect(() => {
+    if (categoriesForDay.length > 0) {
+      setActiveCategory(`category-${categoriesForDay[0]}`);
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const intersectingEntries = entries.filter((e) => e.isIntersecting);
+        if (intersectingEntries.length > 0) {
+          const mostVisibleEntry = intersectingEntries.reduce(
+            (prev, current) => {
+              return prev.intersectionRatio > current.intersectionRatio
+                ? prev
+                : current;
+            }
+          );
+          setActiveCategory(mostVisibleEntry.target.id);
+        }
+      },
+      {
+        rootMargin: "-200px 0px -70% 0px",
+        threshold: 0.1, // Trigger when at least 10% of the element is visible
+      }
+    );
+
+    const elements = categoriesForDay.map((id) =>
+      document.getElementById(`category-${id}`)
+    );
+    elements.forEach((el) => el && observer.observe(el));
+
+    return () => {
+      elements.forEach((el) => el && observer.unobserve(el));
+    };
+  }, [categoriesForDay]);
+
+  const handleScrollToCategory = (categoryId: string) => {
+    const element = document.getElementById(categoryId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="flex flex-col min-h-screen" dir={dir}>
@@ -73,54 +134,71 @@ export default function LunchMenuPage() {
 
         <DecorativeDivider />
 
-        <Tabs
-          defaultValue={selectedDay}
-          onValueChange={setSelectedDay}
-          className="w-full"
-        >
-          <TabsList className="w-full grid grid-cols-5 rounded-xl overflow-hidden sticky top-[85px] z-20 ">
-            {weekDays.map((day) => (
-              <TabsTrigger
-                key={day.id}
-                value={day.id.toString()}
-                className="data-[state=active]:bg-olive data-[state=active]:text-white"
-              >
-                <span className="hidden md:inline">{day.name[language]}</span>
-                <span className="md:hidden">{day.shortName[language]}</span>
-              </TabsTrigger>
-            ))}
-          </TabsList>
-
+        <div className="w-full grid grid-cols-5 rounded-xl overflow-hidden sticky top-[85px] z-30 glossy mb-6">
           {weekDays.map((day) => (
-            <TabsContent key={day.id} value={day.id.toString()}>
-              <div className="mt-6">
-                {categoriesForDay.length > 0 ? (
-                  categoriesForDay.map((catId) => {
-                    const categoryItems = getMenuItemsByCategory(
-                      dayItems,
-                      catId
-                    );
-                    return (
-                      <CategorySection
-                        key={catId}
-                        categoryId={catId}
-                        items={categoryItems}
-                      />
-                    );
-                  })
-                ) : (
-                  <p className="text-muted-foreground">
-                    {t("noItems", {
-                      en: "No menu items available for this day.",
-                      cs: "Pro tento den nejsou k dispozici žádné položky menu.",
-                      ar: "لا توجد عناصر قائمة متاحة لهذا اليوم.",
-                    })}
-                  </p>
-                )}
-              </div>
-            </TabsContent>
+            <Button
+              key={day.id}
+              variant={selectedDay === day.id.toString() ? "default" : "ghost"}
+              onClick={() => setSelectedDay(day.id.toString())}
+              className="bg-olive/80 data-[state=active]:bg-olive data-[state=active]:text-white rounded-none flex-1"
+            >
+              <span className="hidden md:inline">{day.name[language]}</span>
+              <span className="md:hidden">{day.shortName[language]}</span>
+            </Button>
           ))}
-        </Tabs>
+        </div>
+
+        {categoriesForDay.length > 0 && (
+          <div
+            ref={categoriesContainerRef}
+            className="sticky top-[135px] z-20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 mb-6 rounded-xl overflow-hidden p-2 flex flex-nowrap overflow-x-auto justify-start gap-2"
+          >
+            {categories
+              .filter((cat) => categoriesForDay.includes(cat.id))
+              .map((category) => (
+                <Button
+                  key={category.id}
+                  data-category-id={`category-${category.id}`}
+                  variant={
+                    activeCategory === `category-${category.id}`
+                      ? "default"
+                      : "ghost"
+                  }
+                  className="hover:bg-olive/20"
+                  onClick={() =>
+                    handleScrollToCategory(`category-${category.id}`)
+                  }
+                >
+                  {category.name[language]}
+                </Button>
+              ))}
+          </div>
+        )}
+
+        <div>
+          {categoriesForDay.length > 0 ? (
+            categoriesForDay.map((catId) => {
+              const categoryItems = getMenuItemsByCategory(dayItems, catId);
+              return (
+                <CategorySection
+                  key={catId}
+                  id={`category-${catId}`}
+                  categoryId={catId}
+                  items={categoryItems}
+                  stickyTopClass="top-[185px]"
+                />
+              );
+            })
+          ) : (
+            <p className="text-muted-foreground text-center py-10">
+              {t("noItems", {
+                en: "No menu items available for this day.",
+                cs: "Pro tento den nejsou k dispozici žádné položky menu.",
+                ar: "لا توجد عناصر قائمة متاحة لهذا اليوم.",
+              })}
+            </p>
+          )}
+        </div>
       </main>
 
       <FooterWithMap />

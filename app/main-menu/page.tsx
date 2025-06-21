@@ -1,30 +1,84 @@
 "use client";
 
-import { useState } from "react";
 import { Header } from "@/components/header";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CategorySection } from "@/components/category-section";
 import { useLanguage } from "@/components/language-provider";
 import { mainMenu, categories, getMenuItemsByCategory } from "@/lib/data";
 import { FooterWithMap } from "@/components/footer-with-map";
 import { DecorativeDivider } from "@/components/decorative-divider";
+import { Button } from "@/components/ui/button";
+import { useEffect, useState, useRef } from "react";
+import { cn } from "@/lib/utils";
 
 export default function MainMenuPage() {
   const { t, language, dir } = useLanguage();
-  const [selectedCategory, setSelectedCategory] = useState<string>("all");
-
-  // Filter menu items by category if a specific category is selected
-  const displayedItems =
-    selectedCategory === "all"
-      ? mainMenu
-      : mainMenu.filter(
-          (item) => item.categoryId === Number.parseInt(selectedCategory)
-        );
+  const [activeCategory, setActiveCategory] = useState<string>("");
+  const categoriesContainerRef = useRef<HTMLDivElement>(null);
 
   // Get unique category IDs from the main menu
   const menuCategories = Array.from(
     new Set(mainMenu.map((item) => item.categoryId))
   );
+
+  useEffect(() => {
+    if (activeCategory && categoriesContainerRef.current) {
+      const activeButton =
+        categoriesContainerRef.current.querySelector<HTMLButtonElement>(
+          `[data-category-id="${activeCategory}"]`
+        );
+      if (activeButton) {
+        activeButton.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "center",
+        });
+      }
+    }
+  }, [activeCategory]);
+
+  useEffect(() => {
+    if (menuCategories.length > 0) {
+      setActiveCategory(`category-${menuCategories[0]}`);
+    }
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const intersectingEntries = entries.filter((e) => e.isIntersecting);
+        if (intersectingEntries.length > 0) {
+          const mostVisibleEntry = intersectingEntries.reduce(
+            (prev, current) => {
+              return prev.intersectionRatio > current.intersectionRatio
+                ? prev
+                : current;
+            }
+          );
+          setActiveCategory(mostVisibleEntry.target.id);
+        }
+      },
+      {
+        rootMargin: "-140px 0px -70% 0px",
+        threshold: 0.1, // Trigger when at least 10% of the element is visible
+      }
+    );
+
+    const elements = menuCategories.map((id) =>
+      document.getElementById(`category-${id}`)
+    );
+    elements.forEach((el) => el && observer.observe(el));
+
+    return () => {
+      elements.forEach((el) => el && observer.unobserve(el));
+    };
+  }, [menuCategories]);
+
+  const handleScrollToCategory = (categoryId: string) => {
+    const element = document.getElementById(categoryId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="flex flex-col min-h-screen" dir={dir}>
@@ -42,59 +96,44 @@ export default function MainMenuPage() {
 
         <DecorativeDivider />
 
-        <Tabs
-          defaultValue={selectedCategory}
-          onValueChange={setSelectedCategory}
-          className="w-full justify-center flex flex-col"
+        <div
+          ref={categoriesContainerRef}
+          className="sticky top-[85px] z-20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 mb-6 rounded-xl overflow-hidden p-2 flex flex-nowrap overflow-x-auto justify-start gap-2"
         >
-          <TabsList className="mb-6 rounded-xl overflow-hidden sticky top-[85px] z-20 ">
-            <TabsTrigger
-              value="all"
-              className="data-[state=active]:bg-olive data-[state=active]:text-white"
-            >
-              {t("allCategories", {
-                en: "All Categories",
-                cs: "Všechny Kategorie",
-                ar: "جميع الفئات",
-              })}
-            </TabsTrigger>
-            {categories
-              .filter((cat) => menuCategories.includes(cat.id))
-              .map((category) => (
-                <TabsTrigger
-                  key={category.id}
-                  value={category.id.toString()}
-                  className="data-[state=active]:bg-olive data-[state=active]:text-white"
-                >
-                  {category.name[language]}
-                </TabsTrigger>
-              ))}
-          </TabsList>
-
-          <TabsContent value="all">
-            {menuCategories.map((catId) => {
-              const categoryItems = getMenuItemsByCategory(mainMenu, catId);
-              return (
-                <CategorySection
-                  key={catId}
-                  categoryId={catId}
-                  items={categoryItems}
-                />
-              );
-            })}
-          </TabsContent>
-
           {categories
             .filter((cat) => menuCategories.includes(cat.id))
             .map((category) => (
-              <TabsContent key={category.id} value={category.id.toString()}>
-                <CategorySection
-                  categoryId={category.id}
-                  items={getMenuItemsByCategory(mainMenu, category.id)}
-                />
-              </TabsContent>
+              <Button
+                key={category.id}
+                data-category-id={`category-${category.id}`}
+                variant={
+                  activeCategory === `category-${category.id}`
+                    ? "default"
+                    : "ghost"
+                }
+                className="hover:bg-olive/20"
+                onClick={() =>
+                  handleScrollToCategory(`category-${category.id}`)
+                }
+              >
+                {category.name[language]}
+              </Button>
             ))}
-        </Tabs>
+        </div>
+
+        <div>
+          {menuCategories.map((catId) => {
+            const categoryItems = getMenuItemsByCategory(mainMenu, catId);
+            return (
+              <CategorySection
+                key={catId}
+                id={`category-${catId}`}
+                categoryId={catId}
+                items={categoryItems}
+              />
+            );
+          })}
+        </div>
       </main>
 
       <FooterWithMap />
