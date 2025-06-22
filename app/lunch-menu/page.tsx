@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Header } from "@/components/header";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Clock } from "lucide-react";
+import { Clock, ChefHat } from "lucide-react";
 import { CategorySection } from "@/components/category-section";
 import { useLanguage } from "@/components/language-provider";
 import {
@@ -18,6 +18,7 @@ import {
 import { FooterWithMap } from "@/components/footer-with-map";
 import { DecorativeDivider } from "@/components/decorative-divider";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export default function LunchMenuPage() {
   const { t, language, dir } = useLanguage();
@@ -148,7 +149,23 @@ export default function LunchMenuPage() {
           ))}
         </div>
 
-        {categoriesForDay.length > 0 && (
+        {/* <Alert className="mb-6 rounded-xl glossy flex items-center gap-2"> */}
+        <h2
+          className={cn(
+            "text-2xl font-raleway-medium text-olive text-center items-center gap-2 sticky z-10 flex justify-center mx-auto mb-6"
+          )}
+        >
+          <ChefHat className="h-8 w-8" />
+          {t("twoHotMeals", {
+            en: "We serve 2 hot meals daily",
+            cs: "Denně nabízíme 2 teplá jídla",
+            ar: "نحن نقدم وجبتين ساخنتين يوميًا",
+          })}
+          <ChefHat className="h-8 w-8" />
+        </h2>
+        {/* </Alert> */}
+
+        {/* {categoriesForDay.length > 0 && (
           <div
             ref={categoriesContainerRef}
             className="sticky top-[135px] z-20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 mb-6 rounded-xl overflow-hidden p-2 flex flex-nowrap overflow-x-auto justify-start gap-2"
@@ -173,7 +190,7 @@ export default function LunchMenuPage() {
                 </Button>
               ))}
           </div>
-        )}
+        )} */}
 
         <div>
           {categoriesForDay.length > 0 ? (
