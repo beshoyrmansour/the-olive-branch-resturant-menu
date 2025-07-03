@@ -39,16 +39,13 @@ export interface MenuItem {
 
 // Mock data
 export const allergies: Allergy[] = [
-  { id: 1, name: { en: "Gluten", cs: "Lepek", ar: "الغلوتين" }, icon: "wheat" },
-  { id: 2, name: { en: "Egg", cs: "Vejce", ar: "البيض" }, icon: "egg" },
-  { id: 3, name: { en: "Fish", cs: "Ryby", ar: "السمك" }, icon: "fish" },
-  {
-    id: 4,
-    name: { en: "Lactose", cs: "Laktóza", ar: "اللاكتوز" },
-    icon: "milk",
-  },
-  { id: 5, name: { en: "Nuts", cs: "Ořechy", ar: "المكسرات" }, icon: "nut" },
-  { id: 6, name: { en: "Soy", cs: "Sója", ar: "الصويا" }, icon: "soy" },
+  { id: 1, name: { en: "Cereals containing gluten", cs: "Obiloviny obsahující lepek", ar: "حبوب تحتوي على الغلوتين" }, icon: "wheat" },
+  { id: 3, name: { en: "Eggs and egg products", cs: "Vejce a výrobky z nich", ar: "بيض ومنتجاته" }, icon: "egg" },
+  { id: 5, name: { en: "Groundnut kernels (peanuts)", cs: "Jádra podzemnice olejné (arašídy)", ar: "فول سوداني (فستق عبيد)" }, icon: "peanut" },
+  { id: 7, name: { en: "Milk and milk products", cs: "Mléko a výrobky z něj", ar: "حليب ومنتجاته" }, icon: "milk" },
+  { id: 8, name: { en: "Nuts", cs: "Skořápkové plody", ar: "مكسرات" }, icon: "nut" },
+  { id: 11, name: { en: "Sesame seeds ", cs: "Sezamová semena", ar: "سمسم" }, icon: "sesame" },
+  { id: 13, name: { en: "Lupine and its products", cs: "Vlčí bob (lupina)", ar: "ترمس ومنتجاته" }, icon: "lupine" },
 ];
 
 export const categories: Category[] = [
