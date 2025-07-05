@@ -1933,6 +1933,3 @@ export function getCurrentWeekDay(): number {
   // Convert from Sunday-based (0-6) to Monday-based (1-5)
   return day === 0 ? 5 : day;
 }
-  // Convert from Sunday-based (0-6) to Monday-based (1-5)
-  return day === 0 ? 5 : day;
-}
