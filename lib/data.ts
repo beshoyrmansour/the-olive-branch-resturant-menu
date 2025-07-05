@@ -48,7 +48,7 @@ export const allergies: Allergy[] = [
 ];
 
 export const categories: Category[] = [
-  { id: 1, name: { en: "Soups", cs: "Polévky:", ar: "الشوربات" } },
+  { id: 1, name: { en: "Soups", cs: "Polévky", ar: "الشوربات" } },
   { id: 2, name: { en: "Salads", cs: "Saláty", ar: "السلطات" } },
   {
     id: 3,
@@ -743,6 +743,9 @@ export const lunchMenu: MenuItem[] = [
     isAvailable: true,
     allergies: [],
   },
+]
+
+export const mainMenu: MenuItem[] = [
   {
     id: 1,
     number: "A1",
