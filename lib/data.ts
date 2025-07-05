@@ -45,7 +45,6 @@ export const allergies: Allergy[] = [
   { id: 7, name: { en: "Milk and milk products", cs: "Mléko a výrobky z něj", ar: "حليب ومنتجاته" }, icon: "milk" },
   { id: 8, name: { en: "Nuts", cs: "Skořápkové plody", ar: "مكسرات" }, icon: "nut" },
   { id: 11, name: { en: "Sesame seeds ", cs: "Sezamová semena", ar: "سمسم" }, icon: "sesame" },
-  { id: 13, name: { en: "Lupine and its products", cs: "Vlčí bob (lupina)", ar: "ترمس ومنتجاته" }, icon: "lupine" },
 ];
 
 export const categories: Category[] = [
@@ -743,10 +742,7 @@ export const lunchMenu: MenuItem[] = [
     isVegan: false,
     isAvailable: true,
     allergies: [],
-  }
-];
-
-export const mainMenu: MenuItem[] = [
+  },
   {
     id: 1,
     number: "A1",
@@ -763,7 +759,7 @@ export const mainMenu: MenuItem[] = [
     },
     price: 65,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [],
   },
@@ -798,12 +794,12 @@ export const mainMenu: MenuItem[] = [
     },
     description: {
       en: "Parsley, Mint, Onions, Tomatoes, Bulgur, Olive oil, Lemon juice",
-      cs: "petržel, máta, cibulka, rajčata, bulgur, olivový olej, citronová šťáva",
+      cs: "Petržel, máta, cibulka, rajčata, bulgur, olivový olej, citronová šťáva",
       ar: "بقدونس، نعناع، بصل، بندورة، برغل، زيت زيتون، حامض",
     },
     price: 145,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [1],
   },
@@ -823,7 +819,7 @@ export const mainMenu: MenuItem[] = [
     },
     price: 145,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [1],
   },
@@ -843,7 +839,7 @@ export const mainMenu: MenuItem[] = [
     },
     price: 145,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [7],
   },
@@ -863,7 +859,7 @@ export const mainMenu: MenuItem[] = [
     },
     price: 135,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [],
   },
@@ -874,7 +870,7 @@ export const mainMenu: MenuItem[] = [
     name: {
       en: "Turkish Salad",
       cs: "Turecký salát",
-      ar: "تركية",
+      ar: "سلطة تركية",
     },
     description: {
       en: "Tomatoes, Tomato paste, Onions, Parsley, Chilli, Vinegar, Cumin, Olive oil",
@@ -883,7 +879,7 @@ export const mainMenu: MenuItem[] = [
     },
     price: 145,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [],
   },
@@ -897,13 +893,13 @@ export const mainMenu: MenuItem[] = [
       ar: "سلطة الذرة",
     },
     description: {
-      en: "Corn, Bell peppers, Pickled cucumbers",
-      cs: "kukuřice, paprika, nakládané okurky",
-      ar: "ذرة، فلفل حلو، خيار مخلل",
+      en: "Corn, Bell peppers, Pickled cucumbers, dill",
+      cs: "kukuřice, paprika, nakládané okurky, kopr",
+      ar: "شبت ، ذرة، فلفل حلو، خيار مخلل",
     },
     price: 145,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [],
   },
@@ -914,7 +910,7 @@ export const mainMenu: MenuItem[] = [
     name: {
       en: "The Olive Branch Salad",
       cs: "The Olive Branch salát",
-      ar: "أوليڤ برانش",
+      ar: "سلطةأوليڤ برانش",
     },
     description: {
       en: "Nuts, Parsley, Basil, Dill, Raisins, Pomegranate molasses, Olive oil, Lemon juice",
@@ -923,7 +919,7 @@ export const mainMenu: MenuItem[] = [
     },
     price: 189,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [8],
   },
@@ -943,7 +939,7 @@ export const mainMenu: MenuItem[] = [
     },
     price: 110,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [11],
   },
@@ -978,12 +974,12 @@ export const mainMenu: MenuItem[] = [
     },
     description: {
       en: "Grilled Eggplants, Garlic, Tahini, Lemon juice, Olive oil",
-      cs: "grilovaný lilek, česnek, tahini, citronová šťáva, olivový olej",
+      cs: "Grilovaný lilek, česnek, tahini, citronová šťáva, olivový olej",
       ar: "باذنجان مشوي، ثوم، طحينة، عصير ليمون، زيت زيتون",
     },
     price: 145,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [11],
   },
@@ -1003,7 +999,7 @@ export const mainMenu: MenuItem[] = [
     },
     price: 145,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [],
   },
@@ -1023,7 +1019,7 @@ export const mainMenu: MenuItem[] = [
     },
     price: 125,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [7],
   },
@@ -1037,13 +1033,13 @@ export const mainMenu: MenuItem[] = [
       ar: "ورق عنب",
     },
     description: {
-      en: "Vine leaves, Tomatoes, Rice, Onions, Parsley, Olive oil",
-      cs: "vinné listy, rajčata, rýže, cibule, petržel, olivový olej",
-      ar: "ورق العنب، بندورة، أرز، بصل، بقدونس، زيت زيتون",
+      en: "6 Pieces Vine leaves, Tomatoes, Rice, Onions, Parsley, Olive oil, Lemon juice",
+      cs: "6 kusy vinné listy, rajčata, rýže, cibule, petržel, olivový olej, citronová šťáva",
+      ar: "٦ قطع ورق عنب، بندورة، أرز، بصل، بقدونس، زيت زيتون، عصير ليمون",
     },
     price: 120,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [],
   },
@@ -1063,7 +1059,7 @@ export const mainMenu: MenuItem[] = [
     },
     price: 145,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [8],
   },
@@ -1077,13 +1073,13 @@ export const mainMenu: MenuItem[] = [
       ar: "مخلالات و زيتون",
     },
     description: {
-      en: "carrots, radishes, red beets, cauliflower",
-      cs: "mrkev, ředkev, červená řepa, květák",
-      ar: "جزر، فجل، شمندر أحمر، قرنبيط",
+      en: "Olives, Carrots, radishes, red beets, cauliflower",
+      cs: "Olivy, Mrkev, ředkev, červená řepa, květák",
+      ar: "زيتون، جزر، فجل، شمندر أحمر، قرنبيط",
     },
     price: 110,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [],
   },
@@ -1092,18 +1088,18 @@ export const mainMenu: MenuItem[] = [
     number: "D1",
     categoryId: 4,
     name: {
-      en: "Falafel",
-      cs: "Falafel",
-      ar: "فلافل",
+      en: "Falafel (6 Pieces)",
+      cs: "Falafe (6 ks)",
+      ar: "فلافل (٦ قطع)",
     },
     description: {
       en: "Chickpeas, Parsley, Onions, Garlic, Green peppers, Tahini",
       cs: "cizrna, petržel, cibule, česnek, zelená paprika, tahini",
       ar: "حمص، بقدونس، بصل، ثوم، فلفل أخضر، طحينة",
     },
-    price: 90,
+    price: 110,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [11],
   },
@@ -1112,9 +1108,9 @@ export const mainMenu: MenuItem[] = [
     number: "D2",
     categoryId: 4,
     name: {
-      en: "Kibbeh",
-      cs: "Kibbeh",
-      ar: "كبة مقلية",
+      en: "Kibbeh (3 pieces)",
+      cs: "Kibbeh (3 ks)",
+      ar: "كبة (٣ قطع)",
     },
     description: {
       en: "bulgur, lamb and veal meat, onions, pine",
@@ -1153,7 +1149,7 @@ export const mainMenu: MenuItem[] = [
     categoryId: 4,
     name: {
       en: "Meat Arayes (4 peices)",
-      cs: "Arayes s masem (4 kusy)",
+      cs: "Arayes s masem (4 ks)",
       ar: "عرايس لحمة (٤ قطع)",
     },
     description: {
@@ -1203,7 +1199,7 @@ export const mainMenu: MenuItem[] = [
     },
     price: 99,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [1,7],
   },
@@ -1223,7 +1219,7 @@ export const mainMenu: MenuItem[] = [
     },
     price: 99,
     img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
+    isVegan: true,
     isAvailable: true,
     allergies: [1],
   },
@@ -1279,7 +1275,7 @@ export const mainMenu: MenuItem[] = [
     description: {
       en: "350g of Lamb and Veal meat/ Chicken, Rice, Garlic, Chickpeas, Onions, Nuts",
       cs: "350g jehněčí a telecí maso/kuřecí maso, rýže, česnek, cizrna, cibule, ořechy",
-      ar: " ٣٥٠غ لحم خروف و عجل/ دجاج، أرز، ثوم، حمص، بصل، مكسرات",
+      ar: "٣٥٠غ لحم خروف و عجل/ دجاج، أرز، ثوم، حمص، بصل، مكسرات",
     },
     price: 339,
     img: "/placeholder.svg?height=150&width=150",
@@ -1317,11 +1313,11 @@ export const mainMenu: MenuItem[] = [
       ar: "كفتة",
     },
     description: {
-      en: "350g of Lamb and Veal meat, Parsley, Onions, Tomatoes, French fries/ Rice/ Bulgur",
-      cs: "350g jehněčí a telecí maso, petržel, cibule, rajčata, hranolky/rýže/Bulgur",
-      ar: "٣٥٠غ لحم خروف و عجل، بقدونس، بصل، بندورة، بطاطس مقلية/ أرز",
+      en: "200g of Lamb and Veal meat, Parsley, Onions, Tomatoes, French fries/ Rice/ Bulgur",
+      cs: "200g jehněčí a telecí maso, petržel, cibule, rajčata, hranolky/rýže/Bulgur",
+      ar: "٢٠٠غ لحم خروف و عجل، بقدونس، بصل، بندورة، بطاطس مقلية/ ارز / برغل",
     },
-    price: 249,
+    price: 295,
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
@@ -1337,11 +1333,11 @@ export const mainMenu: MenuItem[] = [
       ar: "كفتة بطحينة",
     },
     description: {
-      en: "220g of Lamb and Veal meat, Parsley, Onions, tahini, French fries/ Rice/ Bulgur",
-      cs: "220g jehněčí a telecí maso, petržel, cibule, tahini, hranolky/rýže/Bulgur",
-      ar: "٢٢٠غ لحم خروف و عجل، بقدونس ، بصل، طحينة، بطاطس مقلية/ أرز",
+      en: "200g of Lamb and Veal meat, Parsley, Onions, tahini, French fries/ Rice/ Bulgur",
+      cs: "200g jehněčí a telecí maso, petržel, cibule, tahini, hranolky/rýže/Bulgur",
+      ar: "٢٠٠غ لحم خروف و عجل، بقدونس ، بصل، طحينة، بطاطس مقلية/ ارز / برغل",
     },
-    price: 249,
+    price: 295,
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
@@ -1359,13 +1355,13 @@ export const mainMenu: MenuItem[] = [
     description: {
       en: "200g of Grilled Chicken breast on skewers, Garlic, Special seasoning, French fries/ Rice/ Bulgur, Garlic sauce",
       cs: "200g grilovaná kuřecí prsa na špízu, česnek, speciální koření, hranolky/ rýže/ Bulgur, česneková omáčka",
-      ar: "٢٢٠غ صدور دجاج، ثوم، توابل خاصة، بطاطس مقلية/ أرزة، ثومية",
+      ar: "٢٠٠غ صدور دجاج، ثوم، توابل خاصة، بطاطس مقلية/ ارز / برغل، ثومية",
     },
     price: 280,
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,3],
+    allergies: [1,3,7],
   },
   {
     id: 32,
@@ -1377,11 +1373,11 @@ export const mainMenu: MenuItem[] = [
       ar: "دجاج مسحب",
     },
     description: {
-      en: "220g of Chicken thigh, French fries/ Rice/ Bulgur, Garlic sauce",
-      cs: "220g kuřecí stehno, hranolky/ rýže/ volská oka, česneková omáčka",
-      ar: "٢٢٠غ فخد دجاجة، بطاطس مقلية/ أرزة، ثومية",
+      en: "200g of Chicken thigh, French fries/ Rice/ Bulgur, Garlic sauce",
+      cs: "200g kuřecí stehno, hranolky/ rýže/ volská oka, česneková omáčka",
+      ar: "٢٠٠غ فخد دجاجة، بطاطس مقلية/ ارز / برغل، ثومية",
     },
-    price: 320,
+    price: 245,
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
@@ -1397,9 +1393,9 @@ export const mainMenu: MenuItem[] = [
       ar: "شيش كباب",
     },
     description: {
-      en: "200g of Grilled cubes of lamb and veal meat on skewers, Onions, Parsley, French fries/ Rice/ Bulgur, Tahini",
+      en: "200g of Grilled lamb and veal meat on skewers, Onions, Parsley, French fries/ Rice/ Bulgur, Tahini",
       cs: "200g Grilované jehněčí a telecí maso na špízu, cibule, petržel, hranolky/ rýže/ Bulgur, tahini",
-      ar: "٢٢٠غ لحم خروف و عجل، بصل، بقدونس، بطاطس مقلية/ أرزة، طحينة",
+      ar: "٢٠٠غ لحم خروف و عجل، بصل، بقدونس، بطاطس مقلية/ ارز / برغل، طحينة",
     },
     price: 320,
     img: "/placeholder.svg?height=150&width=150",
@@ -1412,14 +1408,14 @@ export const mainMenu: MenuItem[] = [
     number: "F4", // was F5, now sequential
     categoryId: 6,
     name: {
-      en: "Sliced Lamb Meat",
-      cs: "Plátky jehněčího masa",
-      ar: "شرائح خروف",
+      en: "Gilled lamb meat",
+      cs: "Grilované jehněčí maso",
+      ar: "لحم خروف مشوي",
     },
     description: {
       en: "200g of Lamb meat, French fries/ Rice/ Bulgur",
       cs: "200g jehněčí maso, hranolky/ rýže/ Bulgur",
-      ar: "٢٢٠غ لحم خروف، بطاطس مقلية/ أرزة",
+      ar: "٢٠٠غ لحم خروف، بطاطس مقلية/ ارز / برغل",
     },
     price: 379,
     img: "/placeholder.svg?height=150&width=150",
@@ -1438,8 +1434,8 @@ export const mainMenu: MenuItem[] = [
     },
     description: {
       en: "4 pieces of Lamb ribs, French fries/ Rice/ Bulgur",
-      cs: "4 kusy jehněčí žebírka, hranolky/ rýže/ Bulgur",
-      ar: "٤ قطع ريش خروف، بطاطس مقلية/ أرزة",
+      cs: "4 kusy jehněčí kotlety, hranolky/ rýže/ Bulgur",
+      ar: "٤ قطع ريش خروف، بطاطس مقلية/ ارز / برغل",
     },
     price: 439,
     img: "/placeholder.svg?height=150&width=150",
@@ -1452,60 +1448,60 @@ export const mainMenu: MenuItem[] = [
     number: "F6", // was F7, now sequential
     categoryId: 6,
     name: {
-      en: "Mixed Grills For One Person",
-      cs: "Mixed gril pro 1 osobu",
-      ar: "مشاوي مشكل لشخص",
+      en: "Mixed Grills For One Person (400g)",
+      cs: "Mixed gril pro 1 osobu (400g)",
+      ar: "مشاوي مشكل لشخص (٤٠٠غ)",
     },
     description: {
-      en: "(400g) Grilled chicken on skewers, Grilled cubes of meat on skewers, Sliced lamb meat, French fries/ Rice/ Bulgur, Garlic sauce",
-      cs: "(400g) Grilované kuřecí na špejlích, grilované kostky masa na špejlích, plátky jehněčího masa, hranolky/ rýže/ Bulgur, česneková omáčka",
-      ar: "(٤٠٠غ) سيخ شيش طاوو، سيخ شيش كباب، شرائح خروف، بطاطس مقلية/ أرز/فريكةة، ثومية",
+      en: "Shish Taouk, Shish Kebeb, Lamb cubes, 1x Lamb ribs, Chicken wings, French fries/ Rice/ Bulgur, Garlic sauce, Tahini",
+      cs: "Shish tatouk, shish kebab, jehněčí kousky, 1x jehněčí kotlet, kuřecí křídla, hranolky/ rýže/ bulgur, česneková omáčka, Tahini",
+      ar: "شيش طاووق، شيش كباب، قطع لحم خروف، ريشة خروف، جوانح دجاج ، بطاطس مقلية/ أرز/ برغل ، ثومية ، طحينة",
     },
     price: 490,
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true, 
-    allergies: [1,3,11],
+    allergies: [1,3,7,11],
   },
   {
     id: 37,
     number: "F7", // was F8, now sequential
     categoryId: 6,
     name: {
-      en: "Mixed Grills For Two People",
-      cs: "Mixed gril pro 2 osoby",
-      ar: "مشاوي مشكل لشخصين",
+      en: "Mixed Grills For Two People (800g)",
+      cs: "Mixed gril pro 2 osoby (800g)",
+      ar: "مشاوي مشكل لشخصين (٨٠٠غ)",
     },
     description: {
-      en: "(800g) Grilled chicken on skewers, Grilled cubes of meat on skewers, Chicken slices, Lamb ribs, Chicken wings, French fries/ Rice/ Bulgur, Garlic sauce, Tahini",
-      cs: "(800g) Grilované kuřecí maso na špízu, grilované kostky masa na špízu, kuřecí plátky, jehněčí žebra, kuřecí křídla, hranolky/ rýže/ Bulgur, česneková omáčka, tahini",
-      ar: "(٨٠٠ غ)سيخ شيش طاوو،سيخ شيش كباب، شرائح خرف، ريش خروف، جوانح دجاج ، بطاطس مقلية/ أرز، ثومية، طحينة",
+      en: "Shish Taouk, Shish Kebeb, Lamb cubes, 2x Lamb ribs, Chicken wings, French fries/ Rice/ Bulgur, Garlic sauce, Tahini",
+      cs: "Shish tatouk, shish kebab, jehněčí kousky, 2x jehněčí kotlet, kuřecí křídla, hranolky/ rýže/ bulgur, česneková omáčka, Tahini",
+      ar: "شيش طاووق، شيش كباب، قطع لحم خروف، ريشتين خروف، جوانح دجاج ، بطاطس مقلية/ أرز/ برغل ، ثومية ، طحينة",
     },
     price: 950,
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,3,11],
+    allergies: [1,3,7,11],
   },
   {
     id: 38,
     number: "F8", // was F9, now sequential
     categoryId: 6,
     name: {
-      en: "Mixed Grills For Three People",
-      cs: "Mixed gril pro 3 osoby",
-      ar: "مشاوي مشكل لثلاث أشخاص",
+      en: "Mixed Grills For Three People (1200g)",
+      cs: "Mixed gril pro 3 osoby (1200g)",
+      ar: "مشاوي مشكل لثلاث أشخاص (١٢٠٠غ)",
     },
     description: {
-      en: "(1200g) Grilled chicken on skewers, Grilled cubes of meat on skewers, Chicken slices, Lamb ribs, Chicken wings, French fries/ Rice/ Bulgur, Garlic sauce, Tahini",
-      cs: "(1200) Grilované kuřecí maso na špízu, grilované kostky masa na špízu, kuřecí plátky, jehněčí žebra, kuřecí křídla, hranolky/ rýže/ Bulgur, česneková omáčka, tahini",
-      ar: "(١٢٠٠ غ)سيخ شيش طاوو،سيخ شيش كباب، شرائح خرف، ريش خروف، جوانح دجاج ، بطاطس مقلية/ أرز، ثومية، طحينة",
+      en: "Shish Taouk, Shish Kebeb, Lamb cubes, 1x Lamb ribs, Chicken wings, French fries/ Rice/ Bulgur, Garlic sauce, Tahini",
+      cs: "Shish tatouk, shish kebab, jehněčí kousky, 1x jehněčí kotlet, kuřecí křídla, hranolky/ rýže/ bulgur, česneková omáčka, Tahini",
+      ar: "شيش طاووق، شيش كباب، قطع لحم خروف، ثلاث ريشات خروف، جوانح دجاج ، بطاطس مقلية/ أرز/ برغل ، ثومية ، طحينة",
     },
     price: 1400,
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,3,11],
+    allergies: [1,3,7,11],
   },
   {
     id: 39,
@@ -1517,9 +1513,9 @@ export const mainMenu: MenuItem[] = [
       ar: "سلمون مشوي",
     },
     description: {
-      en: "200g of Salmon, Rosemary, Butter, Lemon, French fries/ Rice/ Bulgur/ Mixed vegetables",
-      cs: "200g losos, rozmarýn, máslo, citron, hranolky/ rýže/ Bulgur / zeleninová směs",
-      ar: "٢٠٠غ سلمون، إكليل الجبل ، زبدة، ليمون، بطاطس مقلية/ أرز/ خضار مشكل",
+      en: "200g of Salmon, Rosemary, Butter, Lemon, French fries/ Rice/ Bulgur",
+      cs: "200g losos, rozmarýn, máslo, citron, hranolky/ rýže/ Bulgur",
+      ar: "٢٠٠غ سلمون، إكليل الجبل ، زبدة، ليمون، بطاطس مقلية/ أرز / برغل",
     },
     price: 360,
     img: "/placeholder.svg?height=150&width=150",
@@ -1532,14 +1528,14 @@ export const mainMenu: MenuItem[] = [
     number: "G2",
     categoryId: 7,
     name: {
-      en: "Silver Sea-bream",
+      en: "Sea-bass",
       cs: "Mořský vlk",
-      ar: "سمكة الدنيس",
+      ar: "سمكة القاروس",
     },
     description: {
-      en: "300-350g Silver seabream, Garlic, Coriander, Lemon, Rice/ Bulgur/ Mixed vegetables",
-      cs: "300-350g mořský vlk, česnek, koriandr, citron, rýže / Bulgur / zeleninový směs",
-      ar: "القاروس، ثوم، كزبرة، ليمون، أرزة",
+      en: "300-350g Silver seabream, Garlic, Coriander, Lemon, French fries/ Rice/ Bulgur",
+      cs: "300-350g mořský vlk, česnek, koriandr, citron, hranolky/ rýže/ Bulgur",
+      ar: "القاروس، ثوم، كزبرة، ليمون، بطاطس مقلية/ أرز / برغل",
     },
     price: 420,
     img: "/placeholder.svg?height=150&width=150",
@@ -1577,9 +1573,9 @@ export const mainMenu: MenuItem[] = [
       ar: "جمبري مع الزبدة و الثوم",
     },
     description: {
-      en: "Shrimps, Butter, Garlic, Rice/ Bulgur/ Mixed vegetables",
-      cs: "krevety, máslo, česnek, rýže / Bulgur / zeleninový směs",
-      ar: "جمبري، زبدة، ثوم، أرز، فريكة، خضار مشكل",
+      en: "Shrimps, Butter, Garlic,French fries/ Rice/ Bulgur",
+      cs: "krevety, máslo, česnek, hranolky/ rýže/ Bulgur",
+      ar: "جمبري، زبدة، ثوم، بطاطس مقلية/ أرز / برغل",
     },
     price: 390,
     img: "/placeholder.svg?height=150&width=150",
@@ -1648,27 +1644,7 @@ export const mainMenu: MenuItem[] = [
     allergies: [],
   },
   {
-    id: 47,
-    number: "H4",
-    categoryId: 8,
-    name: {
-      en: "Grilled Vegetables",
-      cs: "Grilovaná zelenina",
-      ar: "خضار مشوية",
-    },
-    description: {
-      en: "",
-      cs: "",
-      ar: "",
-    },
-    price: 75,
-    img: "/placeholder.svg?height=150&width=150",
-    isVegan: false,
-    isAvailable: true,
-    allergies: [],
-  },
-  {
-    id: 48,
+    id: 47, // was 48
     number: "I1",
     categoryId: 9,
     name: {
@@ -1688,7 +1664,7 @@ export const mainMenu: MenuItem[] = [
     allergies: [1,7,8],
   },
   {
-    id: 49,
+    id: 48, // was 49
     number: "I2",
     categoryId: 9,
     name: {
@@ -1708,7 +1684,7 @@ export const mainMenu: MenuItem[] = [
     allergies: [1,7,8],
   },
   {
-    id: 50,
+    id: 49, // was 50
     number: "J1",
     categoryId: 10,
     name: {
@@ -1728,7 +1704,7 @@ export const mainMenu: MenuItem[] = [
     allergies: [],
   },
   {
-    id: 51,
+    id: 50, // was 51
     number: "J2",
     categoryId: 10,
     name: {
@@ -1748,7 +1724,7 @@ export const mainMenu: MenuItem[] = [
     allergies: [],
   },
   {
-    id: 52,
+    id: 51, // was 52
     number: "J3",
     categoryId: 10,
     name: {
@@ -1768,7 +1744,7 @@ export const mainMenu: MenuItem[] = [
     allergies: [],
   },
   {
-    id: 53,
+    id: 52, // was 53
     number: "J4",
     categoryId: 10,
     name: {
@@ -1788,7 +1764,7 @@ export const mainMenu: MenuItem[] = [
     allergies: [],
   },
   {
-    id: 54,
+    id: 53, // was 54
     number: "J5",
     categoryId: 10,
     name: {
@@ -1808,7 +1784,7 @@ export const mainMenu: MenuItem[] = [
     allergies: [],
   },
   {
-    id: 55,
+    id: 54, // was 55
     number: "J6",
     categoryId: 10,
     name: {
@@ -1828,7 +1804,7 @@ export const mainMenu: MenuItem[] = [
     allergies: [],
   },
   {
-    id: 56,
+    id: 55, // was 56
     number: "J7",
     categoryId: 10,
     name: {
@@ -1848,7 +1824,7 @@ export const mainMenu: MenuItem[] = [
     allergies: [],
   },
   {
-    id: 57,
+    id: 56, // was 57
     number: "J8",
     categoryId: 10,
     name: {
@@ -1868,7 +1844,7 @@ export const mainMenu: MenuItem[] = [
     allergies: [],
   },
   {
-    id: 58,
+    id: 57, // was 58
     number: "J9",
     categoryId: 10,
     name: {
@@ -1888,7 +1864,7 @@ export const mainMenu: MenuItem[] = [
     allergies: [],
   },
   {
-    id: 59,
+    id: 58, // was 59
     number: "J10",
     categoryId: 10,
     name: {
@@ -1954,6 +1930,9 @@ export function getCurrentWeekDay(): number {
   const day = now.getDay();
   console.log("Current day:", day);
 
+  // Convert from Sunday-based (0-6) to Monday-based (1-5)
+  return day === 0 ? 5 : day;
+}
   // Convert from Sunday-based (0-6) to Monday-based (1-5)
   return day === 0 ? 5 : day;
 }
