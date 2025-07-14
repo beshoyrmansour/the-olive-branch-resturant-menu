@@ -1452,14 +1452,14 @@ export const mainMenu: MenuItem[] = [
     number: "F6", // was F7, now sequential
     categoryId: 6,
     name: {
-      en: "Mixed Grills For One Person (400g)",
-      cs: "Mixed gril pro 1 osobu (400g)",
-      ar: "مشاوي مشكل لشخص (٤٠٠غ)",
+      en: "Mixed Grills For One Person (350g)",
+      cs: "Mixed gril pro 1 osobu (350g)",
+      ar: "مشاوي مشكل لشخص (٣٥٠غ)",
     },
     description: {
-      en: "Shish Taouk, Shish Kebeb, Lamb cubes, 1x Lamb ribs, Chicken wings, French fries/ Rice/ Bulgur, Garlic sauce, Tahini",
-      cs: "Shish tatouk, shish kebab, jehněčí kousky, 1x jehněčí kotlet, kuřecí křídla, hranolky/ rýže/ bulgur, česneková omáčka, Tahini",
-      ar: "شيش طاووق، شيش كباب، قطع لحم خروف، ريشة خروف، جوانح دجاج ، بطاطس مقلية/ أرز/ برغل ، ثومية ، طحينة",
+      en: "Shish Taouk, Shish Kebeb, Lamb cubes, Chicken wings, French fries/ Rice/ Bulgur, Garlic sauce, Tahini",
+      cs: "Shish tatouk, shish kebab, jehněčí kousky, kuřecí křídla, hranolky/ rýže/ bulgur, česneková omáčka, Tahini",
+      ar: "شيش طاووق، شيش كباب، قطع لحم خروف، جوانح دجاج ، بطاطس مقلية/ أرز/ برغل ، ثومية ، طحينة",
     },
     price: 490,
     img: "/placeholder.svg?height=150&width=150",
@@ -1472,14 +1472,14 @@ export const mainMenu: MenuItem[] = [
     number: "F7", // was F8, now sequential
     categoryId: 6,
     name: {
-      en: "Mixed Grills For Two People (800g)",
-      cs: "Mixed gril pro 2 osoby (800g)",
-      ar: "مشاوي مشكل لشخصين (٨٠٠غ)",
+      en: "Mixed Grills For Two People (700g)",
+      cs: "Mixed gril pro 2 osoby (700g)",
+      ar: "مشاوي مشكل لشخصين (٧٠٠غ)",
     },
     description: {
-      en: "Shish Taouk, Shish Kebeb, Lamb cubes, 2x Lamb ribs, Chicken wings, French fries/ Rice/ Bulgur, Garlic sauce, Tahini",
-      cs: "Shish tatouk, shish kebab, jehněčí kousky, 2x jehněčí kotlet, kuřecí křídla, hranolky/ rýže/ bulgur, česneková omáčka, Tahini",
-      ar: "شيش طاووق، شيش كباب، قطع لحم خروف، ريشتين خروف، جوانح دجاج ، بطاطس مقلية/ أرز/ برغل ، ثومية ، طحينة",
+      en: "Shish Taouk, Shish Kebeb, Lamb cubes, Chicken wings, French fries/ Rice/ Bulgur, Garlic sauce, Tahini",
+      cs: "Shish tatouk, shish kebab, jehněčí kousky, kuřecí křídla, hranolky/ rýže/ bulgur, česneková omáčka, Tahini",
+      ar: "شيش طاووق، شيش كباب، قطع لحم خروف، جوانح دجاج، بطاطس مقلية/ أرز/ برغل ، ثومية ، طحينة",
     },
     price: 950,
     img: "/placeholder.svg?height=150&width=150",
@@ -1492,14 +1492,14 @@ export const mainMenu: MenuItem[] = [
     number: "F8", // was F9, now sequential
     categoryId: 6,
     name: {
-      en: "Mixed Grills For Three People (1200g)",
-      cs: "Mixed gril pro 3 osoby (1200g)",
-      ar: "مشاوي مشكل لثلاث أشخاص (١٢٠٠غ)",
+      en: "Mixed Grills For Three People (1050g)",
+      cs: "Mixed gril pro 3 osoby (1050g)",
+      ar: "مشاوي مشكل لثلاث أشخاص (١٠٥٠غ)",
     },
     description: {
-      en: "Shish Taouk, Shish Kebeb, Lamb cubes, 1x Lamb ribs, Chicken wings, French fries/ Rice/ Bulgur, Garlic sauce, Tahini",
-      cs: "Shish tatouk, shish kebab, jehněčí kousky, 1x jehněčí kotlet, kuřecí křídla, hranolky/ rýže/ bulgur, česneková omáčka, Tahini",
-      ar: "شيش طاووق، شيش كباب، قطع لحم خروف، ثلاث ريشات خروف، جوانح دجاج ، بطاطس مقلية/ أرز/ برغل ، ثومية ، طحينة",
+      en: "Shish Taouk, Shish Kebeb, Lamb cubes, Chicken wings, French fries/ Rice/ Bulgur, Garlic sauce, Tahini",
+      cs: "Shish tatouk, shish kebab, jehněčí kousky, kuřecí křídla, hranolky/ rýže/ bulgur, česneková omáčka, Tahini",
+      ar: "شيش طاووق، شيش كباب، قطع لحم خروف، جوانح دجاج ، بطاطس مقلية/ أرز/ برغل ، ثومية ، طحينة",
     },
     price: 1400,
     img: "/placeholder.svg?height=150&width=150",
