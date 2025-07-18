@@ -26,13 +26,19 @@ const OpenHours = ({
       <ul className="space-y-2 text-muted-foreground">
         <li className="flex justify-between">
           <span>
-            {t("mondayToFriday", {
-              en: "Monday - Friday",
-              cs: "Pondělí - pátek",
-              ar: "الاثنين -  الجمعة",
+            {t("mondayToThursday", {
+              en: "Monday - Thursday",
+              cs: "Pondělí - Čtvrtek",
+              ar: "الاثنين -  الخميس",
             })}
           </span>
           <span>11:00 - 22:00</span>
+        </li>
+        <li className="flex justify-between">
+          <span>
+            {t("friday", { en: "Friday", cs: "Pátek", ar: "الجمعة" })}
+          </span>
+          <span>15:00 - 23:00</span>
         </li>
         <li className="flex justify-between">
           <span>
