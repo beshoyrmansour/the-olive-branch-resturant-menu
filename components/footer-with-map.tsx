@@ -4,6 +4,7 @@ import { useLanguage } from "@/components/language-provider";
 import { RestaurantLogo } from "@/components/restaurant-logo";
 import { RestaurantName } from "@/components/RestaurantName";
 import OpenHours from "./open-hours";
+import SocialMediaLinks from "./SocialMediaLinks";
 
 export function FooterWithMap() {
   const { t, dir } = useLanguage();
@@ -45,6 +46,7 @@ export function FooterWithMap() {
               </p>
             </div>
             <OpenHours titleStyle="text-lg font-raleway-medium text-olive" />
+            <SocialMediaLinks />
           </div>
 
           <div className="h-[300px] md:h-full rounded-2xl overflow-hidden glossy-card">
