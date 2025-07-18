@@ -49,7 +49,7 @@ export function FooterWithMap() {
 
           <div className="h-[300px] md:h-full rounded-2xl overflow-hidden glossy-card">
             <iframe
-              src="https://www.google.com/maps/place/The+Olive+Branch+Prague/@50.0722369,14.3935652,17z/data=!3m1!4b1!4m6!3m5!1s0x470b955eccc1f185:0x5c48578d047c7427!8m2!3d50.0722335!4d14.3961401!16s%2Fg%2F11xmx6ph8s?entry=ttu&g_ep=EgoyMDI1MDcxMy4wIKXMDSoASAFQAw%3D%3D"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.7505302980962!2d14.3961401!3d50.072233499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b955eccc1f185%3A0x5c48578d047c7427!2sThe%20Olive%20Branch%20Prague!5e0!3m2!1sen!2seg!4v1752859482604!5m2!1sen!2seg"
               width="100%"
               height="100%"
               style={{ border: 0 }}
