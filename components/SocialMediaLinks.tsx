@@ -57,10 +57,9 @@ const SocialMediaLinks = () => {
         </a>
 
         <a
-          href="https://www.tiktok.com/@yourrestaurant"
+          href="https://www.tiktok.com/@the.olive.branch4?_t=ZN-8yPXKu5pffu&_r=1"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden"
         >
           <svg
             width="40"
