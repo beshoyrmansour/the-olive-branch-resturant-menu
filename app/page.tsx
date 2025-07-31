@@ -32,7 +32,8 @@ export default function Home() {
                 Authentic cuisine in a historical Czech setting since 1892
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                <Link
+                {/* HIDE LUNCH MENU */}
+                {/* <Link
                   href="/lunch-menu"
                   className={cn(!showLunchMenu && "order-2")}
                 >
@@ -43,7 +44,7 @@ export default function Home() {
                   >
                     View Lunch Menu {!showLunchMenu && "(12:00 - 15:00)"}
                   </Button>
-                </Link>
+                </Link> */}
                 <Link
                   href="/main-menu"
                   className={cn(!showLunchMenu && "order-1")}

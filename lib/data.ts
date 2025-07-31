@@ -39,13 +39,61 @@ export interface MenuItem {
 
 // Mock data
 export const allergies: Allergy[] = [
-  { id: 1, name: { en: "Cereals containing gluten", cs: "Obiloviny obsahující lepek", ar: "حبوب تحتوي على الغلوتين" }, icon: "wheat" },
-  { id: 3, name: { en: "Eggs and egg products", cs: "Vejce a výrobky z nich", ar: "بيض ومنتجاته" }, icon: "egg" },
-  { id: 4, name: { en: "Fish and fish products", cs: "Ryby a výrobky z nich", ar: "أسماك ومنتجاتها" }, icon: "fish" },
-  { id: 5, name: { en: "Groundnut kernels (peanuts)", cs: "Jádra podzemnice olejné (arašídy)", ar: "فول سوداني (فستق عبيد)" }, icon: "peanut" },
-  { id: 7, name: { en: "Milk and milk products", cs: "Mléko a výrobky z něj", ar: "حليب ومنتجاته" }, icon: "milk" },
-  { id: 8, name: { en: "Nuts", cs: "Skořápkové plody", ar: "مكسرات" }, icon: "nut" },
-  { id: 11, name: { en: "Sesame seeds ", cs: "Sezamová semena", ar: "سمسم" }, icon: "sesame" },
+  {
+    id: 1,
+    name: {
+      en: "Cereals containing gluten",
+      cs: "Obiloviny obsahující lepek",
+      ar: "حبوب تحتوي على الغلوتين",
+    },
+    icon: "wheat",
+  },
+  {
+    id: 3,
+    name: {
+      en: "Eggs and egg products",
+      cs: "Vejce a výrobky z nich",
+      ar: "بيض ومنتجاته",
+    },
+    icon: "egg",
+  },
+  {
+    id: 4,
+    name: {
+      en: "Fish and fish products",
+      cs: "Ryby a výrobky z nich",
+      ar: "أسماك ومنتجاتها",
+    },
+    icon: "fish",
+  },
+  {
+    id: 5,
+    name: {
+      en: "Groundnut kernels (peanuts)",
+      cs: "Jádra podzemnice olejné (arašídy)",
+      ar: "فول سوداني (فستق عبيد)",
+    },
+    icon: "peanut",
+  },
+  {
+    id: 7,
+    name: {
+      en: "Milk and milk products",
+      cs: "Mléko a výrobky z něj",
+      ar: "حليب ومنتجاته",
+    },
+    icon: "milk",
+  },
+  {
+    id: 8,
+    name: { en: "Nuts", cs: "Skořápkové plody", ar: "مكسرات" },
+    icon: "nut",
+  },
+  {
+    id: 11,
+    name: { en: "Sesame seeds ", cs: "Sezamová semena", ar: "سمسم" },
+    icon: "sesame",
+  },
 ];
 
 export const categories: Category[] = [
@@ -154,7 +202,7 @@ export const lunchMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: true,
     isAvailable: true,
-    allergies: [1,11],
+    allergies: [1, 11],
   },
   {
     id: 3,
@@ -175,7 +223,7 @@ export const lunchMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,11],
+    allergies: [1, 11],
   },
   {
     id: 4,
@@ -280,7 +328,7 @@ export const lunchMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: true,
     isAvailable: true,
-    allergies: [1,11],
+    allergies: [1, 11],
   },
   {
     id: 3,
@@ -301,7 +349,7 @@ export const lunchMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,11],
+    allergies: [1, 11],
   },
   {
     id: 4,
@@ -406,7 +454,7 @@ export const lunchMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: true,
     isAvailable: true,
-    allergies: [1,11],
+    allergies: [1, 11],
   },
   {
     id: 3,
@@ -427,7 +475,7 @@ export const lunchMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,11],
+    allergies: [1, 11],
   },
   {
     id: 4,
@@ -532,7 +580,7 @@ export const lunchMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: true,
     isAvailable: true,
-    allergies: [1,11],
+    allergies: [1, 11],
   },
   {
     id: 3,
@@ -553,7 +601,7 @@ export const lunchMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,11],
+    allergies: [1, 11],
   },
   {
     id: 4,
@@ -658,7 +706,7 @@ export const lunchMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: true,
     isAvailable: true,
-    allergies: [1,11],
+    allergies: [1, 11],
   },
   {
     id: 3,
@@ -679,7 +727,7 @@ export const lunchMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,11],
+    allergies: [1, 11],
   },
   {
     id: 4,
@@ -744,7 +792,7 @@ export const lunchMenu: MenuItem[] = [
     isAvailable: true,
     allergies: [],
   },
-]
+];
 
 export const mainMenu: MenuItem[] = [
   {
@@ -965,7 +1013,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [8,11],
+    allergies: [8, 11],
   },
   {
     id: 12,
@@ -1185,7 +1233,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,8],
+    allergies: [1, 8],
   },
   {
     id: 23,
@@ -1205,7 +1253,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: true,
     isAvailable: true,
-    allergies: [1,7],
+    allergies: [1, 7],
   },
   {
     id: 24,
@@ -1245,7 +1293,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,7,8,11],
+    allergies: [1, 7, 8, 11],
   },
   {
     id: 26,
@@ -1265,7 +1313,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [7,8],
+    allergies: [7, 8],
   },
   {
     id: 27,
@@ -1305,7 +1353,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,8],
+    allergies: [1, 8],
   },
   {
     id: 29,
@@ -1345,7 +1393,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,11],
+    allergies: [1, 11],
   },
   {
     id: 31,
@@ -1365,7 +1413,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,3,7],
+    allergies: [1, 3, 7],
   },
   {
     id: 32,
@@ -1385,7 +1433,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,3],
+    allergies: [1, 3],
   },
   {
     id: 33,
@@ -1405,7 +1453,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,11],
+    allergies: [1, 11],
   },
   {
     id: 34,
@@ -1464,8 +1512,8 @@ export const mainMenu: MenuItem[] = [
     price: 490,
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
-    isAvailable: true, 
-    allergies: [1,3,7,11],
+    isAvailable: true,
+    allergies: [1, 3, 7, 11],
   },
   {
     id: 37,
@@ -1485,7 +1533,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,3,7,11],
+    allergies: [1, 3, 7, 11],
   },
   {
     id: 38,
@@ -1505,7 +1553,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,3,7,11],
+    allergies: [1, 3, 7, 11],
   },
   {
     id: 39,
@@ -1525,7 +1573,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,4,7],
+    allergies: [1, 4, 7],
   },
   {
     id: 40,
@@ -1545,7 +1593,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,4],
+    allergies: [1, 4],
   },
   {
     id: 41,
@@ -1585,7 +1633,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,4,7],
+    allergies: [1, 4, 7],
   },
   {
     id: 44,
@@ -1665,7 +1713,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,7,8],
+    allergies: [1, 7, 8],
   },
   {
     id: 48, // was 49
@@ -1685,7 +1733,7 @@ export const mainMenu: MenuItem[] = [
     img: "/placeholder.svg?height=150&width=150",
     isVegan: false,
     isAvailable: true,
-    allergies: [1,7,8],
+    allergies: [1, 7, 8],
   },
   {
     id: 49, // was 50
@@ -1917,6 +1965,7 @@ export function getMenuItemsByDay(
 }
 
 export function isLunchTime(): boolean {
+  return false;
   const now = new Date();
   // check if it's between 12 PM and 3 PM and not weekend
   if (now.getDay() === 0 || now.getDay() === 6) {

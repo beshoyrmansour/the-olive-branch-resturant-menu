@@ -51,10 +51,11 @@ export function Header() {
         <div className="lg:hidden flex items-center gap-2 ">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="lg:hidden">
-              <Button variant="outline" size="icon" className="rounded-xl">
+              {/* HIDE LUNCH MENU */}
+              {/* <Button variant="outline" size="icon" className="rounded-xl">
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Toggle menu</span>
-              </Button>
+              </Button> */}
             </SheetTrigger>
             <SheetContent side="left" className="lg:hidden rounded-r-2xl">
               <nav className="flex flex-col gap-4 mt-8">
@@ -79,7 +80,7 @@ export function Header() {
         <Link href="/about" className="flex items-center ">
           <RestaurantLogo variant="small" />
         </Link>
-        <nav className="hidden lg:flex items-center gap-6">
+        {/* <nav className="hidden lg:flex items-center gap-6">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -91,7 +92,7 @@ export function Header() {
               {t("nav." + item.href, item.label)}
             </Link>
           ))}
-        </nav>
+        </nav> */}
 
         <div className="flex items-center gap-2">
           <LanguageSelector />
