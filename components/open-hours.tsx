@@ -53,7 +53,8 @@ const OpenHours = ({
           <span>12:00 - 21:00</span>
         </li>
       </ul>
-      <div className="pt-4">
+      {/* HIDE LUNCH MENU */}
+      {/* <div className="pt-4">
         <p className="font-medium">
           {t("lunchMenuAvailable", {
             en: "Lunch Menu Available",
@@ -69,7 +70,23 @@ const OpenHours = ({
           })}
           , 11:00 - 15:00
         </p>
-      </div>
+      {/* <div className="pt-4">
+        <p className="font-medium">
+          {t("lunchMenuAvailable", {
+            en: "Lunch Menu Available",
+            cs: "Obědové menu k dispozici",
+            ar: "قائمة الغداء متاحة",
+          })}
+        </p>
+        <p className="text-muted-foreground">
+          {t("lunchMenuHours", {
+            en: "Monday - Friday",
+            cs: "Pondělí - Pátek",
+            ar: "الإثنين - الجمعة",
+          })}
+          , 11:00 - 15:00
+        </p>
+      </div> */}
     </div>
   );
 };
