@@ -1965,6 +1965,9 @@ export function getMenuItemsByDay(
 }
 
 export function isLunchTime(): boolean {
+  {
+    /* HIDE LUNCH MENU */
+  }
   return false;
   const now = new Date();
   // check if it's between 12 PM and 3 PM and not weekend
