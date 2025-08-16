@@ -12,6 +12,7 @@ const OpenHours = ({
   className = "",
 }: Props) => {
   const { t, dir } = useLanguage();
+  const HIDE_LUNCH_MENU = process.env.NEXT_PUBLIC_HIDE_LUNCH_MENU === "true";
   return (
     <div className={cn("space-y-4", className)}>
       <h2
@@ -54,39 +55,44 @@ const OpenHours = ({
         </li>
       </ul>
       {/* HIDE LUNCH MENU */}
-      {/* <div className="pt-4">
-        <p className="font-medium">
-          {t("lunchMenuAvailable", {
-            en: "Lunch Menu Available",
-            cs: "Obědové menu k dispozici",
-            ar: "قائمة الغداء متاحة",
-          })}
-        </p>
-        <p className="text-muted-foreground">
-          {t("lunchMenuHours", {
-            en: "Monday - Friday",
-            cs: "Pondělí - Pátek",
-            ar: "الإثنين - الجمعة",
-          })}
-          , 11:00 - 15:00
-        </p>
-      {/* <div className="pt-4">
-        <p className="font-medium">
-          {t("lunchMenuAvailable", {
-            en: "Lunch Menu Available",
-            cs: "Obědové menu k dispozici",
-            ar: "قائمة الغداء متاحة",
-          })}
-        </p>
-        <p className="text-muted-foreground">
-          {t("lunchMenuHours", {
-            en: "Monday - Friday",
-            cs: "Pondělí - Pátek",
-            ar: "الإثنين - الجمعة",
-          })}
-          , 11:00 - 15:00
-        </p>
-      </div> */}
+      {!HIDE_LUNCH_MENU && (
+        <>
+          <div className="pt-4">
+            <p className="font-medium">
+              {t("lunchMenuAvailable", {
+                en: "Lunch Menu Available",
+                cs: "Obědové menu k dispozici",
+                ar: "قائمة الغداء متاحة",
+              })}
+            </p>
+            <p className="text-muted-foreground">
+              {t("lunchMenuHours", {
+                en: "Monday - Friday",
+                cs: "Pondělí - Pátek",
+                ar: "الإثنين - الجمعة",
+              })}
+              , 11:00 - 15:00
+            </p>
+          </div>
+          <div className="pt-4">
+            <p className="font-medium">
+              {t("lunchMenuAvailable", {
+                en: "Lunch Menu Available",
+                cs: "Obědové menu k dispozici",
+                ar: "قائمة الغداء متاحة",
+              })}
+            </p>
+            <p className="text-muted-foreground">
+              {t("lunchMenuHours", {
+                en: "Monday - Friday",
+                cs: "Pondělí - Pátek",
+                ar: "الإثنين - الجمعة",
+              })}
+              , 11:00 - 15:00
+            </p>
+          </div>
+        </>
+      )}
     </div>
   );
 };

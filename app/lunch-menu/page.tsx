@@ -26,12 +26,12 @@ export default function LunchMenuPage() {
   const [isLunch, setIsLunch] = useState(true);
   const [activeCategory, setActiveCategory] = useState<string>("");
   const categoriesContainerRef = useRef<HTMLDivElement>(null);
-
+  const HIDE_LUNCH_MENU = process.env.NEXT_PUBLIC_HIDE_LUNCH_MENU === "true";
   // Set the current weekday on initial load
   useEffect(() => {
     const currentDay = getCurrentWeekDay().toString();
     setSelectedDay(currentDay);
-    setIsLunch(isLunchTime());
+    setIsLunch(isLunchTime() && !HIDE_LUNCH_MENU);
   }, []);
 
   const dayItems = getMenuItemsByDay(lunchMenu, Number.parseInt(selectedDay));

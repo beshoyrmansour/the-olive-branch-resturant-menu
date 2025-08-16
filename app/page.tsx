@@ -12,12 +12,13 @@ import OpenHours from "@/components/open-hours";
 import GoToTheRightMenu from "@/components/go-to-the-right-menu";
 
 export default function Home() {
-  const showLunchMenu = isLunchTime();
+  const HIDE_LUNCH_MENU = process.env.NEXT_PUBLIC_HIDE_LUNCH_MENU === "true";
 
+  const showLunchMenu = isLunchTime() && !HIDE_LUNCH_MENU;
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <GoToTheRightMenu />
+      {!HIDE_LUNCH_MENU && <GoToTheRightMenu />}
       <main className="flex-1">
         <section className="py-12 md:py-20 lg:py-24 bg-gradient-to-b from-background to-muted decorative-border">
           <div className="container px-4 md:px-6">
@@ -33,25 +34,29 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 {/* HIDE LUNCH MENU */}
-                {/* <Link
-                  href="/lunch-menu"
-                  className={cn(!showLunchMenu && "order-2")}
-                >
-                  <Button
-                    size="lg"
-                    className="w-full sm:w-auto rounded-xl"
-                    variant={!showLunchMenu ? "outline" : "default"}
+                {!HIDE_LUNCH_MENU && (
+                  <Link
+                    href="/lunch-menu"
+                    className={cn(!showLunchMenu && "order-2")}
                   >
-                    View Lunch Menu {!showLunchMenu && "(12:00 - 15:00)"}
-                  </Button>
-                </Link> */}
+                    <Button
+                      size="lg"
+                      className="w-full sm:w-auto rounded-xl"
+                      variant={!showLunchMenu ? "outline" : "default"}
+                    >
+                      View Lunch Menu {!showLunchMenu && "(12:00 - 15:00)"}
+                    </Button>
+                  </Link>
+                )}
                 <Link
                   href="/main-menu"
                   className={cn(!showLunchMenu && "order-1")}
                 >
                   <Button
                     size="lg"
-                    variant={showLunchMenu ? "outline" : "default"}
+                    variant={
+                      !HIDE_LUNCH_MENU && showLunchMenu ? "outline" : "default"
+                    }
                     className="w-full sm:w-auto rounded-xl"
                   >
                     View Main Menu

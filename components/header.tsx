@@ -14,7 +14,7 @@ export function Header() {
   const pathname = usePathname();
   const { t, dir } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
-
+  const HIDE_LUNCH_MENU = process.env.NEXT_PUBLIC_HIDE_LUNCH_MENU === "true";
   const navItems = [
     // {
     //   href: "/",
@@ -52,10 +52,12 @@ export function Header() {
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="lg:hidden">
               {/* HIDE LUNCH MENU */}
-              {/* <Button variant="outline" size="icon" className="rounded-xl">
-                <Menu className="h-5 w-5" />
-                <span className="sr-only">Toggle menu</span>
-              </Button> */}
+              {!HIDE_LUNCH_MENU && (
+                <Button variant="outline" size="icon" className="rounded-xl">
+                  <Menu className="h-5 w-5" />
+                  <span className="sr-only">Toggle menu</span>
+                </Button>
+              )}
             </SheetTrigger>
             <SheetContent side="left" className="lg:hidden rounded-r-2xl">
               <nav className="flex flex-col gap-4 mt-8">
