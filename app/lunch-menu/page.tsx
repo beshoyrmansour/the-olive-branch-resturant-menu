@@ -111,9 +111,9 @@ export default function LunchMenuPage() {
               <UtensilsCrossed className="h-24 w-24 text-olive" />
               <h1 className="text-3xl font-raleway-medium text-center  text-olive max-w-80">
                 {t("lunchMenuClosed", {
-                  en: "Lunch Menu Closed for now, Sorry!",
-                  cs: "Obědové menu je nyní bohužel zavřené!",
-                  ar: "قائمة الغداء مغلقة الآن، نأسف!",
+                  en: "Comming Soon!",
+                  cs: "Skoro bude!",
+                  ar: "قريباً!",
                 })}
               </h1>
               <Link href="/main-menu">
@@ -128,7 +128,6 @@ export default function LunchMenuPage() {
                     values={{
                       en: "Go to Main Menu",
                       cs: "Přejít na hlavní menu",
-                      ar: "اذهب إلى القائمة الرئيسية",
                     }}
                   />
                 </Button>
