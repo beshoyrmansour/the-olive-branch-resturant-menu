@@ -33,25 +33,25 @@ const OpenHours = ({
               ar: "الاثنين -  الخميس",
             })}
           </span>
-          <span>11:00 - 22:00</span>
+          <span>11:30 - 22:00</span>
         </li>
         <li className="flex justify-between">
           <span>
             {t("friday", { en: "Friday", cs: "Pátek", ar: "الجمعة" })}
           </span>
-          <span>15:00 - 23:00</span>
+          <span>12:00 - 22:00</span>
         </li>
         <li className="flex justify-between">
           <span>
             {t("saturday", { en: "Saturday", cs: "Sobota", ar: "السبت" })}
           </span>
-          <span>12:00 - 23:00</span>
+          <span>12:00 - 22:00</span>
         </li>
         <li className="flex justify-between">
           <span>
             {t("sunday", { en: "Sunday", cs: "Neděle", ar: "الأحد" })}
           </span>
-          <span>12:00 - 21:00</span>
+          <span>12:00 - 22:00</span>
         </li>
       </ul>
       {/* HIDE LUNCH MENU */}
