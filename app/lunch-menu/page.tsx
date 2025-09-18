@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Header } from "@/components/header";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Clock, ChefHat } from "lucide-react";
+import { Clock, ChefHat, UtensilsCrossed } from "lucide-react";
 import { CategorySection } from "@/components/category-section";
 import { useLanguage } from "@/components/language-provider";
 import {
@@ -19,6 +19,8 @@ import { FooterWithMap } from "@/components/footer-with-map";
 import { DecorativeDivider } from "@/components/decorative-divider";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import TypographyTranslated from "@/components/TypographyTranslated";
+import Link from "next/link";
 
 export default function LunchMenuPage() {
   const { t, language, dir } = useLanguage();
@@ -98,6 +100,46 @@ export default function LunchMenuPage() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  if (HIDE_LUNCH_MENU) {
+    return (
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-1">
+          <div className="flex items-center justify-center h-screen">
+            <div className="flex flex-col items-center">
+              <UtensilsCrossed className="h-24 w-24 text-olive" />
+              <h1 className="text-3xl font-raleway-medium text-center  text-olive max-w-80">
+                {t("lunchMenuClosed", {
+                  en: "Lunch Menu Closed for now, Sorry!",
+                  cs: "Obědové menu je nyní bohužel zavřené!",
+                  ar: "قائمة الغداء مغلقة الآن، نأسف!",
+                })}
+              </h1>
+              <Link href="/main-menu">
+                <Button
+                  size="lg"
+                  variant={"default"}
+                  className="w-full sm:w-auto rounded-xl mt-4"
+                >
+                  <TypographyTranslated
+                    textKey="gotToMainMenu"
+                    defaultText="Main Menu"
+                    values={{
+                      en: "Go to Main Menu",
+                      cs: "Přejít na hlavní menu",
+                      ar: "اذهب إلى القائمة الرئيسية",
+                    }}
+                  />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </main>
+        <FooterWithMap />
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col min-h-screen" dir={dir}>
